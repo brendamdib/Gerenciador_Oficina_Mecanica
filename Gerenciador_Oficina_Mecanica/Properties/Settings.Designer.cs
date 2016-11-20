@@ -26,16 +26,6 @@ namespace Gerenciador_Oficina_Mecanica.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=localhost;Initial Catalog=GerenciaOficina;Integrated Security=True")]
-        public string GerenciaOficinaConnectionString {
-            get {
-                return ((string)(this["GerenciaOficinaConnectionString"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=localhost;Initial Catalog=GerenciaOficina;Persist Security Info=True;" +
             "User ID=sa;Password=f1d500")]
         public string GerenciaOficinaConnection {
