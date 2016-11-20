@@ -46,14 +46,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="frm_Cad_Cliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frm_Cad_Cliente.Designer.cs">
+      <DependentUpon>frm_Cad_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Index.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Index.Designer.cs">
+      <DependentUpon>frm_Index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GerenciaOficinaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GerenciaOficinaDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm_Cad_Cliente.resx">
+      <DependentUpon>frm_Cad_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Index.pt-BR.resx">
+      <DependentUpon>frm_Index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Index.resx">
+      <DependentUpon>frm_Index.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,7 +82,19 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="GerenciaOficinaDataSet.xsc">
+      <DependentUpon>GerenciaOficinaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GerenciaOficinaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GerenciaOficinaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GerenciaOficinaDataSet.xss">
+      <DependentUpon>GerenciaOficinaDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +107,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mobile-mechanic-baltimore-1920x1090.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
