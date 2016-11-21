@@ -57,8 +57,11 @@ namespace Gerenciador_Oficina_Mecanica
 
         private void frm_Cad_Cliente_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'gerenciaOficinaDataSet.tbl_Sexo' table. You can move, or remove it, as needed.
+            this.tbl_SexoTableAdapter.Fill(this.gerenciaOficinaDataSet.tbl_Sexo);
             // TODO: This line of code loads data into the 'gerenciaOficinaDataSet.tbl_Cidade' table. You can move, or remove it, as needed.
-            this.tbl_CidadeTableAdapter.Fill(this.gerenciaOficinaDataSet.tbl_Cidade);
+            //this.tbl_CidadeTableAdapter.Fill(this.gerenciaOficinaDataSet.tbl_Cidade);
+            this.tbl_CidadeTableAdapter.FillBy(this.gerenciaOficinaDataSet.tbl_Cidade, ((int)(System.Convert.ChangeType(1, typeof(int)))));
             // TODO: This line of code loads data into the 'gerenciaOficinaDataSet.tbl_Estado' table. You can move, or remove it, as needed.
             this.tbl_EstadoTableAdapter.Fill(this.gerenciaOficinaDataSet.tbl_Estado);
 
@@ -66,7 +69,11 @@ namespace Gerenciador_Oficina_Mecanica
 
         private void cbo_Estado_SelectedIndexChanged(object sender, EventArgs e)
         {
-            this.tbl_CidadeTableAdapter.Fill(this.gerenciaOficinaDataSet.tbl_Cidade);            
+            if (cbo_Estado.SelectedValue != null )
+            {
+                this.tbl_CidadeTableAdapter.FillBy(this.gerenciaOficinaDataSet.tbl_Cidade, ((int)(System.Convert.ChangeType(cbo_Estado.SelectedValue, typeof(int)))));
+            }
         }
+       
     }
 }

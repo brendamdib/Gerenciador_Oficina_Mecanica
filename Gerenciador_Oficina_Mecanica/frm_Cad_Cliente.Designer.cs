@@ -31,9 +31,16 @@
             this.components = new System.ComponentModel.Container();
             this.pnl_CadCliente = new System.Windows.Forms.Panel();
             this.grp_PessoaFisica = new System.Windows.Forms.GroupBox();
-            this.tbl_EstadoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btn_delVeiculo = new System.Windows.Forms.Button();
+            this.btn_editVeiculo = new System.Windows.Forms.Button();
+            this.btn_addVeiculo = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.tbl_CidadeComboBox = new System.Windows.Forms.ComboBox();
+            this.tbl_CidadeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gerenciaOficinaDataSet = new Gerenciador_Oficina_Mecanica.GerenciaOficinaDataSet();
             this.cbo_Estado = new System.Windows.Forms.ComboBox();
+            this.tbl_EstadoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lbl_Estado = new System.Windows.Forms.Label();
             this.lbl_cidade = new System.Windows.Forms.Label();
             this.lbl_Bairro = new System.Windows.Forms.Label();
@@ -56,7 +63,6 @@
             this.lbl_rg = new System.Windows.Forms.Label();
             this.txt_rg = new System.Windows.Forms.TextBox();
             this.lbl_Cpf = new System.Windows.Forms.Label();
-            this.cbo_Sexo = new System.Windows.Forms.ComboBox();
             this.lbl_Sexo = new System.Windows.Forms.Label();
             this.lbl_DataNasc = new System.Windows.Forms.Label();
             this.txt_DataNasc = new System.Windows.Forms.DateTimePicker();
@@ -70,15 +76,18 @@
             this.grp_PessoaJuridica = new System.Windows.Forms.GroupBox();
             this.tbl_EstadoTableAdapter = new Gerenciador_Oficina_Mecanica.GerenciaOficinaDataSetTableAdapters.tbl_EstadoTableAdapter();
             this.tableAdapterManager = new Gerenciador_Oficina_Mecanica.GerenciaOficinaDataSetTableAdapters.TableAdapterManager();
-            this.tbl_CidadeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tbl_CidadeTableAdapter = new Gerenciador_Oficina_Mecanica.GerenciaOficinaDataSetTableAdapters.tbl_CidadeTableAdapter();
-            this.tbl_CidadeComboBox = new System.Windows.Forms.ComboBox();
+            this.tbl_SexoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tbl_SexoTableAdapter = new Gerenciador_Oficina_Mecanica.GerenciaOficinaDataSetTableAdapters.tbl_SexoTableAdapter();
+            this.tbl_SexoComboBox = new System.Windows.Forms.ComboBox();
             this.pnl_CadCliente.SuspendLayout();
             this.grp_PessoaFisica.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbl_EstadoBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gerenciaOficinaDataSet)).BeginInit();
-            this.grp_TipoCliente.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbl_CidadeBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gerenciaOficinaDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_EstadoBindingSource)).BeginInit();
+            this.grp_TipoCliente.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_SexoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_CadCliente
@@ -102,6 +111,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.grp_PessoaFisica.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.grp_PessoaFisica.Controls.Add(this.tbl_SexoComboBox);
+            this.grp_PessoaFisica.Controls.Add(this.btn_delVeiculo);
+            this.grp_PessoaFisica.Controls.Add(this.btn_editVeiculo);
+            this.grp_PessoaFisica.Controls.Add(this.btn_addVeiculo);
+            this.grp_PessoaFisica.Controls.Add(this.label1);
+            this.grp_PessoaFisica.Controls.Add(this.dataGridView1);
             this.grp_PessoaFisica.Controls.Add(this.tbl_CidadeComboBox);
             this.grp_PessoaFisica.Controls.Add(this.cbo_Estado);
             this.grp_PessoaFisica.Controls.Add(this.lbl_Estado);
@@ -126,7 +141,6 @@
             this.grp_PessoaFisica.Controls.Add(this.lbl_rg);
             this.grp_PessoaFisica.Controls.Add(this.txt_rg);
             this.grp_PessoaFisica.Controls.Add(this.lbl_Cpf);
-            this.grp_PessoaFisica.Controls.Add(this.cbo_Sexo);
             this.grp_PessoaFisica.Controls.Add(this.lbl_Sexo);
             this.grp_PessoaFisica.Controls.Add(this.lbl_DataNasc);
             this.grp_PessoaFisica.Controls.Add(this.txt_DataNasc);
@@ -142,10 +156,76 @@
             this.grp_PessoaFisica.Text = "Pessoa Física";
             this.grp_PessoaFisica.Visible = false;
             // 
-            // tbl_EstadoBindingSource
+            // btn_delVeiculo
             // 
-            this.tbl_EstadoBindingSource.DataMember = "tbl_Estado";
-            this.tbl_EstadoBindingSource.DataSource = this.gerenciaOficinaDataSet;
+            this.btn_delVeiculo.Image = global::Gerenciador_Oficina_Mecanica.Properties.Resources.delete_1_icon;
+            this.btn_delVeiculo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_delVeiculo.Location = new System.Drawing.Point(873, 286);
+            this.btn_delVeiculo.Name = "btn_delVeiculo";
+            this.btn_delVeiculo.Size = new System.Drawing.Size(120, 30);
+            this.btn_delVeiculo.TabIndex = 36;
+            this.btn_delVeiculo.Text = "Excluir Veículo";
+            this.btn_delVeiculo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_delVeiculo.UseVisualStyleBackColor = true;
+            // 
+            // btn_editVeiculo
+            // 
+            this.btn_editVeiculo.Image = global::Gerenciador_Oficina_Mecanica.Properties.Resources.edit_icon;
+            this.btn_editVeiculo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_editVeiculo.Location = new System.Drawing.Point(872, 227);
+            this.btn_editVeiculo.Name = "btn_editVeiculo";
+            this.btn_editVeiculo.Size = new System.Drawing.Size(121, 30);
+            this.btn_editVeiculo.TabIndex = 35;
+            this.btn_editVeiculo.Text = "Editar Veículo";
+            this.btn_editVeiculo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_editVeiculo.UseVisualStyleBackColor = true;
+            // 
+            // btn_addVeiculo
+            // 
+            this.btn_addVeiculo.Image = global::Gerenciador_Oficina_Mecanica.Properties.Resources.add_1_icon;
+            this.btn_addVeiculo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_addVeiculo.Location = new System.Drawing.Point(873, 168);
+            this.btn_addVeiculo.Name = "btn_addVeiculo";
+            this.btn_addVeiculo.Size = new System.Drawing.Size(120, 30);
+            this.btn_addVeiculo.TabIndex = 34;
+            this.btn_addVeiculo.Text = "Adicionar Veículo";
+            this.btn_addVeiculo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_addVeiculo.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 152);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(52, 13);
+            this.label1.TabIndex = 33;
+            this.label1.Text = "Veículos:";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(10, 168);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(857, 148);
+            this.dataGridView1.TabIndex = 32;
+            // 
+            // tbl_CidadeComboBox
+            // 
+            this.tbl_CidadeComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.tbl_CidadeComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.tbl_CidadeComboBox.DataSource = this.tbl_CidadeBindingSource;
+            this.tbl_CidadeComboBox.DisplayMember = "Nome_Cidade";
+            this.tbl_CidadeComboBox.FormattingEnabled = true;
+            this.tbl_CidadeComboBox.Location = new System.Drawing.Point(789, 114);
+            this.tbl_CidadeComboBox.Name = "tbl_CidadeComboBox";
+            this.tbl_CidadeComboBox.Size = new System.Drawing.Size(187, 21);
+            this.tbl_CidadeComboBox.TabIndex = 17;
+            this.tbl_CidadeComboBox.ValueMember = "id";
+            // 
+            // tbl_CidadeBindingSource
+            // 
+            this.tbl_CidadeBindingSource.DataMember = "tbl_Cidade";
+            this.tbl_CidadeBindingSource.DataSource = this.gerenciaOficinaDataSet;
             // 
             // gerenciaOficinaDataSet
             // 
@@ -154,15 +234,22 @@
             // 
             // cbo_Estado
             // 
+            this.cbo_Estado.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbo_Estado.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbo_Estado.DataSource = this.tbl_EstadoBindingSource;
-            this.cbo_Estado.DisplayMember = "uf";
+            this.cbo_Estado.DisplayMember = "Sigla_Estado";
             this.cbo_Estado.FormattingEnabled = true;
             this.cbo_Estado.Location = new System.Drawing.Point(721, 114);
             this.cbo_Estado.Name = "cbo_Estado";
             this.cbo_Estado.Size = new System.Drawing.Size(62, 21);
-            this.cbo_Estado.TabIndex = 30;
+            this.cbo_Estado.TabIndex = 16;
             this.cbo_Estado.ValueMember = "id";
             this.cbo_Estado.SelectedIndexChanged += new System.EventHandler(this.cbo_Estado_SelectedIndexChanged);
+            // 
+            // tbl_EstadoBindingSource
+            // 
+            this.tbl_EstadoBindingSource.DataMember = "tbl_Estado";
+            this.tbl_EstadoBindingSource.DataSource = this.gerenciaOficinaDataSet;
             // 
             // lbl_Estado
             // 
@@ -268,7 +355,7 @@
             ""});
             this.cbo_Operadora.Location = new System.Drawing.Point(700, 74);
             this.cbo_Operadora.Name = "cbo_Operadora";
-            this.cbo_Operadora.Size = new System.Drawing.Size(121, 21);
+            this.cbo_Operadora.Size = new System.Drawing.Size(139, 21);
             this.cbo_Operadora.TabIndex = 11;
             // 
             // lbl_Operadora
@@ -366,20 +453,6 @@
             this.lbl_Cpf.TabIndex = 9;
             this.lbl_Cpf.Text = "CPF:";
             // 
-            // cbo_Sexo
-            // 
-            this.cbo_Sexo.AutoCompleteCustomSource.AddRange(new string[] {
-            "Masculino",
-            "Feminino"});
-            this.cbo_Sexo.FormattingEnabled = true;
-            this.cbo_Sexo.Items.AddRange(new object[] {
-            "Masculino",
-            "Feminino"});
-            this.cbo_Sexo.Location = new System.Drawing.Point(595, 35);
-            this.cbo_Sexo.Name = "cbo_Sexo";
-            this.cbo_Sexo.Size = new System.Drawing.Size(121, 21);
-            this.cbo_Sexo.TabIndex = 4;
-            // 
             // lbl_Sexo
             // 
             this.lbl_Sexo.AutoSize = true;
@@ -448,7 +521,7 @@
             this.grp_TipoCliente.Controls.Add(this.rdo_PessoaFisica);
             this.grp_TipoCliente.Location = new System.Drawing.Point(14, 4);
             this.grp_TipoCliente.Name = "grp_TipoCliente";
-            this.grp_TipoCliente.Size = new System.Drawing.Size(205, 44);
+            this.grp_TipoCliente.Size = new System.Drawing.Size(211, 44);
             this.grp_TipoCliente.TabIndex = 0;
             this.grp_TipoCliente.TabStop = false;
             this.grp_TipoCliente.Text = "Tipo de Cliente";
@@ -458,10 +531,10 @@
             this.rdo_PessoaJuridica.AutoSize = true;
             this.rdo_PessoaJuridica.Location = new System.Drawing.Point(108, 19);
             this.rdo_PessoaJuridica.Name = "rdo_PessoaJuridica";
-            this.rdo_PessoaJuridica.Size = new System.Drawing.Size(92, 17);
+            this.rdo_PessoaJuridica.Size = new System.Drawing.Size(101, 17);
             this.rdo_PessoaJuridica.TabIndex = 1;
             this.rdo_PessoaJuridica.TabStop = true;
-            this.rdo_PessoaJuridica.Text = "Pessoa Física";
+            this.rdo_PessoaJuridica.Text = "Pessoa Jurídica";
             this.rdo_PessoaJuridica.UseVisualStyleBackColor = true;
             this.rdo_PessoaJuridica.CheckedChanged += new System.EventHandler(this.rdo_PessoaJuridica_CheckedChanged);
             // 
@@ -500,27 +573,36 @@
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.tbl_CidadeTableAdapter = null;
             this.tableAdapterManager.tbl_EstadoTableAdapter = this.tbl_EstadoTableAdapter;
+            this.tableAdapterManager.tbl_FabricanteTableAdapter = null;
+            this.tableAdapterManager.tbl_ModelosVeiculosTableAdapter = null;
+            this.tableAdapterManager.tbl_SexoTableAdapter = null;
+            this.tableAdapterManager.tbl_TipoFabricanteTableAdapter = null;
+            this.tableAdapterManager.tbl_VeiculoClienteTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = Gerenciador_Oficina_Mecanica.GerenciaOficinaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // tbl_CidadeBindingSource
-            // 
-            this.tbl_CidadeBindingSource.DataMember = "tbl_Cidade";
-            this.tbl_CidadeBindingSource.DataSource = this.gerenciaOficinaDataSet;
             // 
             // tbl_CidadeTableAdapter
             // 
             this.tbl_CidadeTableAdapter.ClearBeforeFill = true;
             // 
-            // tbl_CidadeComboBox
+            // tbl_SexoBindingSource
             // 
-            this.tbl_CidadeComboBox.DataSource = this.tbl_CidadeBindingSource;
-            this.tbl_CidadeComboBox.DisplayMember = "nome";
-            this.tbl_CidadeComboBox.FormattingEnabled = true;
-            this.tbl_CidadeComboBox.Location = new System.Drawing.Point(789, 114);
-            this.tbl_CidadeComboBox.Name = "tbl_CidadeComboBox";
-            this.tbl_CidadeComboBox.Size = new System.Drawing.Size(187, 21);
-            this.tbl_CidadeComboBox.TabIndex = 31;
-            this.tbl_CidadeComboBox.ValueMember = "id";
+            this.tbl_SexoBindingSource.DataMember = "tbl_Sexo";
+            this.tbl_SexoBindingSource.DataSource = this.gerenciaOficinaDataSet;
+            // 
+            // tbl_SexoTableAdapter
+            // 
+            this.tbl_SexoTableAdapter.ClearBeforeFill = true;
+            // 
+            // tbl_SexoComboBox
+            // 
+            this.tbl_SexoComboBox.DataSource = this.tbl_SexoBindingSource;
+            this.tbl_SexoComboBox.DisplayMember = "Descricao_Sexo";
+            this.tbl_SexoComboBox.FormattingEnabled = true;
+            this.tbl_SexoComboBox.Location = new System.Drawing.Point(595, 36);
+            this.tbl_SexoComboBox.Name = "tbl_SexoComboBox";
+            this.tbl_SexoComboBox.Size = new System.Drawing.Size(120, 21);
+            this.tbl_SexoComboBox.TabIndex = 36;
+            this.tbl_SexoComboBox.ValueMember = "id";
             // 
             // frm_Cad_Cliente
             // 
@@ -537,11 +619,13 @@
             this.pnl_CadCliente.ResumeLayout(false);
             this.grp_PessoaFisica.ResumeLayout(false);
             this.grp_PessoaFisica.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbl_EstadoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_CidadeBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gerenciaOficinaDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_EstadoBindingSource)).EndInit();
             this.grp_TipoCliente.ResumeLayout(false);
             this.grp_TipoCliente.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbl_CidadeBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_SexoBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -555,7 +639,6 @@
         private System.Windows.Forms.GroupBox grp_TipoCliente;
         private System.Windows.Forms.GroupBox grp_PessoaFisica;
         private System.Windows.Forms.GroupBox grp_PessoaJuridica;
-        private System.Windows.Forms.ComboBox cbo_Sexo;
         private System.Windows.Forms.Label lbl_Sexo;
         private System.Windows.Forms.Label lbl_DataNasc;
         private System.Windows.Forms.DateTimePicker txt_DataNasc;
@@ -594,5 +677,13 @@
         private System.Windows.Forms.BindingSource tbl_CidadeBindingSource;
         private GerenciaOficinaDataSetTableAdapters.tbl_CidadeTableAdapter tbl_CidadeTableAdapter;
         private System.Windows.Forms.ComboBox tbl_CidadeComboBox;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btn_delVeiculo;
+        private System.Windows.Forms.Button btn_editVeiculo;
+        private System.Windows.Forms.Button btn_addVeiculo;
+        private System.Windows.Forms.BindingSource tbl_SexoBindingSource;
+        private GerenciaOficinaDataSetTableAdapters.tbl_SexoTableAdapter tbl_SexoTableAdapter;
+        private System.Windows.Forms.ComboBox tbl_SexoComboBox;
     }
 }
