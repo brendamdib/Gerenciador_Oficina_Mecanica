@@ -28,10 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pnl_CadCliente = new System.Windows.Forms.Panel();
             this.grp_PessoaFisica = new System.Windows.Forms.GroupBox();
+            this.tbl_EstadoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gerenciaOficinaDataSet = new Gerenciador_Oficina_Mecanica.GerenciaOficinaDataSet();
+            this.cbo_Estado = new System.Windows.Forms.ComboBox();
             this.lbl_Estado = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbl_cidade = new System.Windows.Forms.Label();
             this.lbl_Bairro = new System.Windows.Forms.Label();
             this.txt_Bairro = new System.Windows.Forms.TextBox();
             this.lbl_Complemento = new System.Windows.Forms.Label();
@@ -64,9 +68,17 @@
             this.rdo_PessoaJuridica = new System.Windows.Forms.RadioButton();
             this.rdo_PessoaFisica = new System.Windows.Forms.RadioButton();
             this.grp_PessoaJuridica = new System.Windows.Forms.GroupBox();
+            this.tbl_EstadoTableAdapter = new Gerenciador_Oficina_Mecanica.GerenciaOficinaDataSetTableAdapters.tbl_EstadoTableAdapter();
+            this.tableAdapterManager = new Gerenciador_Oficina_Mecanica.GerenciaOficinaDataSetTableAdapters.TableAdapterManager();
+            this.tbl_CidadeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tbl_CidadeTableAdapter = new Gerenciador_Oficina_Mecanica.GerenciaOficinaDataSetTableAdapters.tbl_CidadeTableAdapter();
+            this.tbl_CidadeComboBox = new System.Windows.Forms.ComboBox();
             this.pnl_CadCliente.SuspendLayout();
             this.grp_PessoaFisica.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_EstadoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gerenciaOficinaDataSet)).BeginInit();
             this.grp_TipoCliente.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_CidadeBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_CadCliente
@@ -81,7 +93,7 @@
             this.pnl_CadCliente.Controls.Add(this.grp_PessoaJuridica);
             this.pnl_CadCliente.Location = new System.Drawing.Point(13, 13);
             this.pnl_CadCliente.Name = "pnl_CadCliente";
-            this.pnl_CadCliente.Size = new System.Drawing.Size(1013, 603);
+            this.pnl_CadCliente.Size = new System.Drawing.Size(1162, 603);
             this.pnl_CadCliente.TabIndex = 0;
             // 
             // grp_PessoaFisica
@@ -90,8 +102,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.grp_PessoaFisica.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.grp_PessoaFisica.Controls.Add(this.tbl_CidadeComboBox);
+            this.grp_PessoaFisica.Controls.Add(this.cbo_Estado);
             this.grp_PessoaFisica.Controls.Add(this.lbl_Estado);
-            this.grp_PessoaFisica.Controls.Add(this.label2);
+            this.grp_PessoaFisica.Controls.Add(this.lbl_cidade);
             this.grp_PessoaFisica.Controls.Add(this.lbl_Bairro);
             this.grp_PessoaFisica.Controls.Add(this.txt_Bairro);
             this.grp_PessoaFisica.Controls.Add(this.lbl_Complemento);
@@ -122,11 +136,33 @@
             this.grp_PessoaFisica.Controls.Add(this.txt_nome);
             this.grp_PessoaFisica.Location = new System.Drawing.Point(14, 55);
             this.grp_PessoaFisica.Name = "grp_PessoaFisica";
-            this.grp_PessoaFisica.Size = new System.Drawing.Size(982, 543);
+            this.grp_PessoaFisica.Size = new System.Drawing.Size(1117, 543);
             this.grp_PessoaFisica.TabIndex = 1;
             this.grp_PessoaFisica.TabStop = false;
             this.grp_PessoaFisica.Text = "Pessoa Física";
             this.grp_PessoaFisica.Visible = false;
+            // 
+            // tbl_EstadoBindingSource
+            // 
+            this.tbl_EstadoBindingSource.DataMember = "tbl_Estado";
+            this.tbl_EstadoBindingSource.DataSource = this.gerenciaOficinaDataSet;
+            // 
+            // gerenciaOficinaDataSet
+            // 
+            this.gerenciaOficinaDataSet.DataSetName = "GerenciaOficinaDataSet";
+            this.gerenciaOficinaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // cbo_Estado
+            // 
+            this.cbo_Estado.DataSource = this.tbl_EstadoBindingSource;
+            this.cbo_Estado.DisplayMember = "uf";
+            this.cbo_Estado.FormattingEnabled = true;
+            this.cbo_Estado.Location = new System.Drawing.Point(721, 114);
+            this.cbo_Estado.Name = "cbo_Estado";
+            this.cbo_Estado.Size = new System.Drawing.Size(62, 21);
+            this.cbo_Estado.TabIndex = 30;
+            this.cbo_Estado.ValueMember = "id";
+            this.cbo_Estado.SelectedIndexChanged += new System.EventHandler(this.cbo_Estado_SelectedIndexChanged);
             // 
             // lbl_Estado
             // 
@@ -137,14 +173,14 @@
             this.lbl_Estado.TabIndex = 26;
             this.lbl_Estado.Text = "Estado:";
             // 
-            // label2
+            // lbl_cidade
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(842, 98);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 13);
-            this.label2.TabIndex = 25;
-            this.label2.Text = "Bairro:";
+            this.lbl_cidade.AutoSize = true;
+            this.lbl_cidade.Location = new System.Drawing.Point(786, 98);
+            this.lbl_cidade.Name = "lbl_cidade";
+            this.lbl_cidade.Size = new System.Drawing.Size(43, 13);
+            this.lbl_cidade.TabIndex = 25;
+            this.lbl_cidade.Text = "Cidade:";
             // 
             // lbl_Bairro
             // 
@@ -449,28 +485,63 @@
             this.grp_PessoaJuridica.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.grp_PessoaJuridica.Location = new System.Drawing.Point(14, 54);
             this.grp_PessoaJuridica.Name = "grp_PessoaJuridica";
-            this.grp_PessoaJuridica.Size = new System.Drawing.Size(982, 543);
+            this.grp_PessoaJuridica.Size = new System.Drawing.Size(1117, 543);
             this.grp_PessoaJuridica.TabIndex = 2;
             this.grp_PessoaJuridica.TabStop = false;
             this.grp_PessoaJuridica.Text = "Pessoa Jurídica";
             this.grp_PessoaJuridica.Visible = false;
+            // 
+            // tbl_EstadoTableAdapter
+            // 
+            this.tbl_EstadoTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.tbl_CidadeTableAdapter = null;
+            this.tableAdapterManager.tbl_EstadoTableAdapter = this.tbl_EstadoTableAdapter;
+            this.tableAdapterManager.UpdateOrder = Gerenciador_Oficina_Mecanica.GerenciaOficinaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // tbl_CidadeBindingSource
+            // 
+            this.tbl_CidadeBindingSource.DataMember = "tbl_Cidade";
+            this.tbl_CidadeBindingSource.DataSource = this.gerenciaOficinaDataSet;
+            // 
+            // tbl_CidadeTableAdapter
+            // 
+            this.tbl_CidadeTableAdapter.ClearBeforeFill = true;
+            // 
+            // tbl_CidadeComboBox
+            // 
+            this.tbl_CidadeComboBox.DataSource = this.tbl_CidadeBindingSource;
+            this.tbl_CidadeComboBox.DisplayMember = "nome";
+            this.tbl_CidadeComboBox.FormattingEnabled = true;
+            this.tbl_CidadeComboBox.Location = new System.Drawing.Point(789, 114);
+            this.tbl_CidadeComboBox.Name = "tbl_CidadeComboBox";
+            this.tbl_CidadeComboBox.Size = new System.Drawing.Size(187, 21);
+            this.tbl_CidadeComboBox.TabIndex = 31;
+            this.tbl_CidadeComboBox.ValueMember = "id";
             // 
             // frm_Cad_Cliente
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1034, 624);
+            this.ClientSize = new System.Drawing.Size(1169, 624);
             this.Controls.Add(this.pnl_CadCliente);
             this.Name = "frm_Cad_Cliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Cadastro de Clientes";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frm_Cad_Cliente_Load);
             this.pnl_CadCliente.ResumeLayout(false);
             this.grp_PessoaFisica.ResumeLayout(false);
             this.grp_PessoaFisica.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_EstadoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gerenciaOficinaDataSet)).EndInit();
             this.grp_TipoCliente.ResumeLayout(false);
             this.grp_TipoCliente.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_CidadeBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -509,12 +580,19 @@
         private System.Windows.Forms.TextBox txt_Endereco;
         private System.Windows.Forms.Label lbl_Endereco;
         private System.Windows.Forms.Label lbl_Estado;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbl_cidade;
         private System.Windows.Forms.Label lbl_Bairro;
         private System.Windows.Forms.TextBox txt_Bairro;
         private System.Windows.Forms.Label lbl_Complemento;
         private System.Windows.Forms.TextBox txt_EndComplemento;        
         private System.Windows.Forms.BindingSource tblEstadoBindingSource;
-        
+        private GerenciaOficinaDataSet gerenciaOficinaDataSet;
+        private System.Windows.Forms.BindingSource tbl_EstadoBindingSource;
+        private GerenciaOficinaDataSetTableAdapters.tbl_EstadoTableAdapter tbl_EstadoTableAdapter;
+        private GerenciaOficinaDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.ComboBox cbo_Estado;
+        private System.Windows.Forms.BindingSource tbl_CidadeBindingSource;
+        private GerenciaOficinaDataSetTableAdapters.tbl_CidadeTableAdapter tbl_CidadeTableAdapter;
+        private System.Windows.Forms.ComboBox tbl_CidadeComboBox;
     }
 }

@@ -45,6 +45,28 @@ namespace Gerenciador_Oficina_Mecanica
             {
                 grp_PessoaJuridica.Visible = false;
             }
-        }       
+        }
+
+        private void tbl_EstadoBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.tbl_EstadoBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.gerenciaOficinaDataSet);
+            
+        }
+
+        private void frm_Cad_Cliente_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'gerenciaOficinaDataSet.tbl_Cidade' table. You can move, or remove it, as needed.
+            this.tbl_CidadeTableAdapter.Fill(this.gerenciaOficinaDataSet.tbl_Cidade);
+            // TODO: This line of code loads data into the 'gerenciaOficinaDataSet.tbl_Estado' table. You can move, or remove it, as needed.
+            this.tbl_EstadoTableAdapter.Fill(this.gerenciaOficinaDataSet.tbl_Estado);
+
+        }
+
+        private void cbo_Estado_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.tbl_CidadeTableAdapter.Fill(this.gerenciaOficinaDataSet.tbl_Cidade);            
+        }
     }
 }

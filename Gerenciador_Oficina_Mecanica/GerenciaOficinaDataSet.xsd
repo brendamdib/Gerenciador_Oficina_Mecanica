@@ -31,7 +31,7 @@ SELECT id, nome, coduf FROM tbl_Cidade WHERE (id = SCOPE_IDENTITY())</CommandTex
                   </DbCommand>
                 </InsertCommand>
                 <SelectCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT id, nome, coduf FROM dbo.tbl_Cidade</CommandText>
                     <Parameters />
                   </DbCommand>
@@ -123,7 +123,7 @@ SELECT uf, nome, id FROM tbl_Estado WHERE (id = @id)</CommandText>
   <xs:element name="GerenciaOficinaDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="GerenciaOficinaDataSet" msprop:Generator_UserDSName="GerenciaOficinaDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="tbl_Cidade" msprop:Generator_TableClassName="tbl_CidadeDataTable" msprop:Generator_TableVarName="tabletbl_Cidade" msprop:Generator_TablePropName="tbl_Cidade" msprop:Generator_RowDeletingName="tbl_CidadeRowDeleting" msprop:Generator_RowChangingName="tbl_CidadeRowChanging" msprop:Generator_RowEvHandlerName="tbl_CidadeRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_CidadeRowDeleted" msprop:Generator_UserTableName="tbl_Cidade" msprop:Generator_RowChangedName="tbl_CidadeRowChanged" msprop:Generator_RowEvArgName="tbl_CidadeRowChangeEvent" msprop:Generator_RowClassName="tbl_CidadeRow">
+        <xs:element name="tbl_Cidade" msprop:Generator_TableClassName="tbl_CidadeDataTable" msprop:Generator_TableVarName="tabletbl_Cidade" msprop:Generator_RowChangedName="tbl_CidadeRowChanged" msprop:Generator_TablePropName="tbl_Cidade" msprop:Generator_RowDeletingName="tbl_CidadeRowDeleting" msprop:Generator_RowChangingName="tbl_CidadeRowChanging" msprop:Generator_RowEvHandlerName="tbl_CidadeRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_CidadeRowDeleted" msprop:Generator_RowClassName="tbl_CidadeRow" msprop:Generator_UserTableName="tbl_Cidade" msprop:Generator_RowEvArgName="tbl_CidadeRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -138,7 +138,7 @@ SELECT uf, nome, id FROM tbl_Estado WHERE (id = @id)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="tbl_Estado" msprop:Generator_TableClassName="tbl_EstadoDataTable" msprop:Generator_TableVarName="tabletbl_Estado" msprop:Generator_TablePropName="tbl_Estado" msprop:Generator_RowDeletingName="tbl_EstadoRowDeleting" msprop:Generator_RowChangingName="tbl_EstadoRowChanging" msprop:Generator_RowEvHandlerName="tbl_EstadoRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_EstadoRowDeleted" msprop:Generator_UserTableName="tbl_Estado" msprop:Generator_RowChangedName="tbl_EstadoRowChanged" msprop:Generator_RowEvArgName="tbl_EstadoRowChangeEvent" msprop:Generator_RowClassName="tbl_EstadoRow">
+        <xs:element name="tbl_Estado" msprop:Generator_TableClassName="tbl_EstadoDataTable" msprop:Generator_TableVarName="tabletbl_Estado" msprop:Generator_RowChangedName="tbl_EstadoRowChanged" msprop:Generator_TablePropName="tbl_Estado" msprop:Generator_RowDeletingName="tbl_EstadoRowDeleting" msprop:Generator_RowChangingName="tbl_EstadoRowChanging" msprop:Generator_RowEvHandlerName="tbl_EstadoRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_EstadoRowDeleted" msprop:Generator_RowClassName="tbl_EstadoRow" msprop:Generator_UserTableName="tbl_Estado" msprop:Generator_RowEvArgName="tbl_EstadoRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="uf" msprop:Generator_ColumnVarNameInTable="columnuf" msprop:Generator_ColumnPropNameInRow="uf" msprop:Generator_ColumnPropNameInTable="ufColumn" msprop:Generator_UserColumnName="uf" minOccurs="0">
