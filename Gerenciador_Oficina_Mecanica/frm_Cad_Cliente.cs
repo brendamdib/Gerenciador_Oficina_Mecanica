@@ -23,7 +23,7 @@ namespace Gerenciador_Oficina_Mecanica
 
         private void rdo_PessoaFisica_CheckedChanged(object sender, EventArgs e)
         {
-            if (rdo_PessoaFisica.Checked == true)
+            if (rdo_Cli_PF.Checked == true)
             {
                 grp_PessoaFisica.Visible = true;
                 grp_PessoaJuridica.Visible = false;
@@ -36,7 +36,7 @@ namespace Gerenciador_Oficina_Mecanica
 
         private void rdo_PessoaJuridica_CheckedChanged(object sender, EventArgs e)
         {
-            if (rdo_PessoaJuridica.Checked == true)
+            if (rdo_Cli_PJ.Checked == true)
             {
                 grp_PessoaJuridica.Visible = true;
                 grp_PessoaFisica.Visible = false;
@@ -51,12 +51,17 @@ namespace Gerenciador_Oficina_Mecanica
         {
             this.Validate();
             this.tbl_EstadoBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.gerenciaOficinaDataSet);
-            
+            this.tableAdapterManager.UpdateAll(this.gerenciaOficinaDataSet);            
         }
 
         private void frm_Cad_Cliente_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'gerenciaOficinaDataSet.tbl_Clientes_PJ' table. You can move, or remove it, as needed.
+            this.tbl_Clientes_PJTableAdapter.Fill(this.gerenciaOficinaDataSet.tbl_Clientes_PJ);
+            // TODO: This line of code loads data into the 'gerenciaOficinaDataSet.tbl_Clientes_PF' table. You can move, or remove it, as needed.
+            this.tbl_Clientes_PFTableAdapter.Fill(this.gerenciaOficinaDataSet.tbl_Clientes_PF);
+            // TODO: This line of code loads data into the 'gerenciaOficinaDataSet.tbl_OperadorasTelefonia' table. You can move, or remove it, as needed.
+            this.tbl_OperadorasTelefoniaTableAdapter.Fill(this.gerenciaOficinaDataSet.tbl_OperadorasTelefonia);
             // TODO: This line of code loads data into the 'gerenciaOficinaDataSet.tbl_Sexo' table. You can move, or remove it, as needed.
             this.tbl_SexoTableAdapter.Fill(this.gerenciaOficinaDataSet.tbl_Sexo);
             // TODO: This line of code loads data into the 'gerenciaOficinaDataSet.tbl_Cidade' table. You can move, or remove it, as needed.
@@ -64,16 +69,19 @@ namespace Gerenciador_Oficina_Mecanica
             this.tbl_CidadeTableAdapter.FillBy(this.gerenciaOficinaDataSet.tbl_Cidade, ((int)(System.Convert.ChangeType(1, typeof(int)))));
             // TODO: This line of code loads data into the 'gerenciaOficinaDataSet.tbl_Estado' table. You can move, or remove it, as needed.
             this.tbl_EstadoTableAdapter.Fill(this.gerenciaOficinaDataSet.tbl_Estado);
-
         }
 
         private void cbo_Estado_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cbo_Estado.SelectedValue != null )
+            if (cbo_CliPF_Estado.SelectedValue != null )
             {
-                this.tbl_CidadeTableAdapter.FillBy(this.gerenciaOficinaDataSet.tbl_Cidade, ((int)(System.Convert.ChangeType(cbo_Estado.SelectedValue, typeof(int)))));
+                this.tbl_CidadeTableAdapter.FillBy(this.gerenciaOficinaDataSet.tbl_Cidade, ((int)(System.Convert.ChangeType(cbo_CliPF_Estado.SelectedValue, typeof(int)))));
             }
         }
-       
+
+        private void btn_Cli_Salvar_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

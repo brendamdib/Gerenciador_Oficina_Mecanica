@@ -191,6 +191,9 @@
   <data name="ajudaToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Ajuda</value>
   </data>
+  <data name="&gt;&gt;contasAPagarToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;sairToolStripMenuItem.Name" xml:space="preserve">
     <value>sairToolStripMenuItem</value>
   </data>
@@ -253,9 +256,6 @@
   </data>
   <data name="&gt;&gt;clientesToolStripMenuItem.Name" xml:space="preserve">
     <value>clientesToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;clientesToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;cadastroToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -374,7 +374,7 @@
   <data name="sobreToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Sobre</value>
   </data>
-  <data name="&gt;&gt;contasAPagarToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;clientesToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;toolStripMenuItem2.Name" xml:space="preserve">

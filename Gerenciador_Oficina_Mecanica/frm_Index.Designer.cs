@@ -68,6 +68,7 @@
             // 
             resources.ApplyResources(this.veículosToolStripMenuItem, "veículosToolStripMenuItem");
             this.veículosToolStripMenuItem.Name = "veículosToolStripMenuItem";
+            this.veículosToolStripMenuItem.Click += new System.EventHandler(this.veículosToolStripMenuItem_Click);
             // 
             // clientesToolStripMenuItem
             // 
@@ -79,6 +80,7 @@
             // 
             resources.ApplyResources(this.fornecedorToolStripMenuItem, "fornecedorToolStripMenuItem");
             this.fornecedorToolStripMenuItem.Name = "fornecedorToolStripMenuItem";
+            this.fornecedorToolStripMenuItem.Click += new System.EventHandler(this.fornecedorToolStripMenuItem_Click);
             // 
             // funcionáriosToolStripMenuItem
             // 

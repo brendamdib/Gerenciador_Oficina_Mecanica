@@ -33,5 +33,19 @@ namespace Gerenciador_Oficina_Mecanica
         {
             this.Close();
         }
+
+        private void veículosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_Cad_Veiculo frmCadVeiculo = new frm_Cad_Veiculo();
+            frmCadVeiculo.MdiParent = this;
+            frmCadVeiculo.Show();
+        }
+
+        private void fornecedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_Cad_Fornecedor frmCadFornecedor = new frm_Cad_Fornecedor();
+            frmCadFornecedor.MdiParent = this;
+            frmCadFornecedor.Show();
+        }
     }
 }
