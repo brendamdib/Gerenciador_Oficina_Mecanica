@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Net;
+using System.Windows;
 
 
 namespace Gerenciador_Oficina_Mecanica
@@ -81,7 +82,25 @@ namespace Gerenciador_Oficina_Mecanica
 
         private void btn_Cli_Salvar_Click(object sender, EventArgs e)
         {
-            
+            FuncoesSQL SalvaCli = new FuncoesSQL();
+
+            SalvaCli.Nome_Cliente = txt_CliPF_Nome.Text;
+            SalvaCli.DataNasc_Cliente = txt_CliPF_DataNasc.Text;
+            SalvaCli.Sexo_Cliente = Convert.ToInt32(cbo_CliPF_Sexo.SelectedValue);
+            SalvaCli.CPF_Cliente = txt_CliPF_Cpf.Text;
+            SalvaCli.RG_Cliente = txt_CliPF_RG.Text;
+            SalvaCli.Email_Cliente = txt_CliPF_Email.Text;
+            SalvaCli.TelRes_Cliente = txt_CliPF_TelRes.Text;
+            SalvaCli.TelCom_Cliente = txt_CliPF_TelCom.Text;
+            SalvaCli.TelCel_Cliente = txt_CliPF_TelCel.Text;
+            SalvaCli.OperadoraCel_Cliente = Convert.ToInt32(cbo_CliPF_Operadora.SelectedValue);
+            SalvaCli.CEP_Cliente = txt_CliPF_Cep.Text;
+            SalvaCli.Endereco_Cliente = txt_CliPF_End.Text;
+            SalvaCli.CompEndereco_Cliente = txt_CliPF_EndComp.Text;
+            SalvaCli.Bairro_Cliente = txt_CliPF_Bairro.Text;
+            SalvaCli.Estado_Cliente = Convert.ToInt32(cbo_CliPF_Estado.SelectedValue);
+            SalvaCli.Cidade_Cliente = Convert.ToInt32(cbo_CliPF_Cidade.SelectedValue);
+            SalvaCli.Status_Cliente = 0;
         }
     }
 }

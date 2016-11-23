@@ -44,6 +44,14 @@ namespace Gerenciador_Oficina_Mecanica {
         
         private tbl_Clientes_PJDataTable tabletbl_Clientes_PJ;
         
+        private tbl_FormaPgtoDataTable tabletbl_FormaPgto;
+        
+        private tbl_FornecedoresDataTable tabletbl_Fornecedores;
+        
+        private tbl_OrcamentosDataTable tabletbl_Orcamentos;
+        
+        private tbl_ServicosDataTable tabletbl_Servicos;
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -101,6 +109,18 @@ namespace Gerenciador_Oficina_Mecanica {
                 }
                 if ((ds.Tables["tbl_Clientes_PJ"] != null)) {
                     base.Tables.Add(new tbl_Clientes_PJDataTable(ds.Tables["tbl_Clientes_PJ"]));
+                }
+                if ((ds.Tables["tbl_FormaPgto"] != null)) {
+                    base.Tables.Add(new tbl_FormaPgtoDataTable(ds.Tables["tbl_FormaPgto"]));
+                }
+                if ((ds.Tables["tbl_Fornecedores"] != null)) {
+                    base.Tables.Add(new tbl_FornecedoresDataTable(ds.Tables["tbl_Fornecedores"]));
+                }
+                if ((ds.Tables["tbl_Orcamentos"] != null)) {
+                    base.Tables.Add(new tbl_OrcamentosDataTable(ds.Tables["tbl_Orcamentos"]));
+                }
+                if ((ds.Tables["tbl_Servicos"] != null)) {
+                    base.Tables.Add(new tbl_ServicosDataTable(ds.Tables["tbl_Servicos"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -222,6 +242,46 @@ namespace Gerenciador_Oficina_Mecanica {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public tbl_FormaPgtoDataTable tbl_FormaPgto {
+            get {
+                return this.tabletbl_FormaPgto;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public tbl_FornecedoresDataTable tbl_Fornecedores {
+            get {
+                return this.tabletbl_Fornecedores;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public tbl_OrcamentosDataTable tbl_Orcamentos {
+            get {
+                return this.tabletbl_Orcamentos;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public tbl_ServicosDataTable tbl_Servicos {
+            get {
+                return this.tabletbl_Servicos;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.BrowsableAttribute(true)]
         [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Visible)]
         public override global::System.Data.SchemaSerializationMode SchemaSerializationMode {
@@ -317,6 +377,18 @@ namespace Gerenciador_Oficina_Mecanica {
                 if ((ds.Tables["tbl_Clientes_PJ"] != null)) {
                     base.Tables.Add(new tbl_Clientes_PJDataTable(ds.Tables["tbl_Clientes_PJ"]));
                 }
+                if ((ds.Tables["tbl_FormaPgto"] != null)) {
+                    base.Tables.Add(new tbl_FormaPgtoDataTable(ds.Tables["tbl_FormaPgto"]));
+                }
+                if ((ds.Tables["tbl_Fornecedores"] != null)) {
+                    base.Tables.Add(new tbl_FornecedoresDataTable(ds.Tables["tbl_Fornecedores"]));
+                }
+                if ((ds.Tables["tbl_Orcamentos"] != null)) {
+                    base.Tables.Add(new tbl_OrcamentosDataTable(ds.Tables["tbl_Orcamentos"]));
+                }
+                if ((ds.Tables["tbl_Servicos"] != null)) {
+                    base.Tables.Add(new tbl_ServicosDataTable(ds.Tables["tbl_Servicos"]));
+                }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
                 this.Namespace = ds.Namespace;
@@ -410,6 +482,30 @@ namespace Gerenciador_Oficina_Mecanica {
                     this.tabletbl_Clientes_PJ.InitVars();
                 }
             }
+            this.tabletbl_FormaPgto = ((tbl_FormaPgtoDataTable)(base.Tables["tbl_FormaPgto"]));
+            if ((initTable == true)) {
+                if ((this.tabletbl_FormaPgto != null)) {
+                    this.tabletbl_FormaPgto.InitVars();
+                }
+            }
+            this.tabletbl_Fornecedores = ((tbl_FornecedoresDataTable)(base.Tables["tbl_Fornecedores"]));
+            if ((initTable == true)) {
+                if ((this.tabletbl_Fornecedores != null)) {
+                    this.tabletbl_Fornecedores.InitVars();
+                }
+            }
+            this.tabletbl_Orcamentos = ((tbl_OrcamentosDataTable)(base.Tables["tbl_Orcamentos"]));
+            if ((initTable == true)) {
+                if ((this.tabletbl_Orcamentos != null)) {
+                    this.tabletbl_Orcamentos.InitVars();
+                }
+            }
+            this.tabletbl_Servicos = ((tbl_ServicosDataTable)(base.Tables["tbl_Servicos"]));
+            if ((initTable == true)) {
+                if ((this.tabletbl_Servicos != null)) {
+                    this.tabletbl_Servicos.InitVars();
+                }
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -440,6 +536,14 @@ namespace Gerenciador_Oficina_Mecanica {
             base.Tables.Add(this.tabletbl_Clientes_PF);
             this.tabletbl_Clientes_PJ = new tbl_Clientes_PJDataTable();
             base.Tables.Add(this.tabletbl_Clientes_PJ);
+            this.tabletbl_FormaPgto = new tbl_FormaPgtoDataTable();
+            base.Tables.Add(this.tabletbl_FormaPgto);
+            this.tabletbl_Fornecedores = new tbl_FornecedoresDataTable();
+            base.Tables.Add(this.tabletbl_Fornecedores);
+            this.tabletbl_Orcamentos = new tbl_OrcamentosDataTable();
+            base.Tables.Add(this.tabletbl_Orcamentos);
+            this.tabletbl_Servicos = new tbl_ServicosDataTable();
+            base.Tables.Add(this.tabletbl_Servicos);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -499,6 +603,30 @@ namespace Gerenciador_Oficina_Mecanica {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private bool ShouldSerializetbl_Clientes_PJ() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private bool ShouldSerializetbl_FormaPgto() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private bool ShouldSerializetbl_Fornecedores() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private bool ShouldSerializetbl_Orcamentos() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private bool ShouldSerializetbl_Servicos() {
             return false;
         }
         
@@ -586,6 +714,18 @@ namespace Gerenciador_Oficina_Mecanica {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void tbl_Clientes_PJRowChangeEventHandler(object sender, tbl_Clientes_PJRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public delegate void tbl_FormaPgtoRowChangeEventHandler(object sender, tbl_FormaPgtoRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public delegate void tbl_FornecedoresRowChangeEventHandler(object sender, tbl_FornecedoresRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public delegate void tbl_OrcamentosRowChangeEventHandler(object sender, tbl_OrcamentosRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public delegate void tbl_ServicosRowChangeEventHandler(object sender, tbl_ServicosRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -4028,6 +4168,1565 @@ namespace Gerenciador_Oficina_Mecanica {
         }
         
         /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class tbl_FormaPgtoDataTable : global::System.Data.TypedTableBase<tbl_FormaPgtoRow> {
+            
+            private global::System.Data.DataColumn columnid;
+            
+            private global::System.Data.DataColumn columnDescricao_FormaPgto;
+            
+            private global::System.Data.DataColumn columnTaxa_FormaPgto;
+            
+            private global::System.Data.DataColumn columnDesconto_FormaPgto;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public tbl_FormaPgtoDataTable() {
+                this.TableName = "tbl_FormaPgto";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal tbl_FormaPgtoDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected tbl_FormaPgtoDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn idColumn {
+                get {
+                    return this.columnid;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Descricao_FormaPgtoColumn {
+                get {
+                    return this.columnDescricao_FormaPgto;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Taxa_FormaPgtoColumn {
+                get {
+                    return this.columnTaxa_FormaPgto;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Desconto_FormaPgtoColumn {
+                get {
+                    return this.columnDesconto_FormaPgto;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public tbl_FormaPgtoRow this[int index] {
+                get {
+                    return ((tbl_FormaPgtoRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event tbl_FormaPgtoRowChangeEventHandler tbl_FormaPgtoRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event tbl_FormaPgtoRowChangeEventHandler tbl_FormaPgtoRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event tbl_FormaPgtoRowChangeEventHandler tbl_FormaPgtoRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event tbl_FormaPgtoRowChangeEventHandler tbl_FormaPgtoRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void Addtbl_FormaPgtoRow(tbl_FormaPgtoRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public tbl_FormaPgtoRow Addtbl_FormaPgtoRow(string Descricao_FormaPgto, double Taxa_FormaPgto, double Desconto_FormaPgto) {
+                tbl_FormaPgtoRow rowtbl_FormaPgtoRow = ((tbl_FormaPgtoRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        null,
+                        Descricao_FormaPgto,
+                        Taxa_FormaPgto,
+                        Desconto_FormaPgto};
+                rowtbl_FormaPgtoRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowtbl_FormaPgtoRow);
+                return rowtbl_FormaPgtoRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public tbl_FormaPgtoRow FindByid(int id) {
+                return ((tbl_FormaPgtoRow)(this.Rows.Find(new object[] {
+                            id})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                tbl_FormaPgtoDataTable cln = ((tbl_FormaPgtoDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new tbl_FormaPgtoDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal void InitVars() {
+                this.columnid = base.Columns["id"];
+                this.columnDescricao_FormaPgto = base.Columns["Descricao_FormaPgto"];
+                this.columnTaxa_FormaPgto = base.Columns["Taxa_FormaPgto"];
+                this.columnDesconto_FormaPgto = base.Columns["Desconto_FormaPgto"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            private void InitClass() {
+                this.columnid = new global::System.Data.DataColumn("id", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnid);
+                this.columnDescricao_FormaPgto = new global::System.Data.DataColumn("Descricao_FormaPgto", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDescricao_FormaPgto);
+                this.columnTaxa_FormaPgto = new global::System.Data.DataColumn("Taxa_FormaPgto", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTaxa_FormaPgto);
+                this.columnDesconto_FormaPgto = new global::System.Data.DataColumn("Desconto_FormaPgto", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDesconto_FormaPgto);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnid}, true));
+                this.columnid.AutoIncrement = true;
+                this.columnid.AutoIncrementSeed = -1;
+                this.columnid.AutoIncrementStep = -1;
+                this.columnid.AllowDBNull = false;
+                this.columnid.ReadOnly = true;
+                this.columnid.Unique = true;
+                this.columnDescricao_FormaPgto.AllowDBNull = false;
+                this.columnDescricao_FormaPgto.MaxLength = 50;
+                this.columnTaxa_FormaPgto.AllowDBNull = false;
+                this.columnDesconto_FormaPgto.AllowDBNull = false;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public tbl_FormaPgtoRow Newtbl_FormaPgtoRow() {
+                return ((tbl_FormaPgtoRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new tbl_FormaPgtoRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(tbl_FormaPgtoRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.tbl_FormaPgtoRowChanged != null)) {
+                    this.tbl_FormaPgtoRowChanged(this, new tbl_FormaPgtoRowChangeEvent(((tbl_FormaPgtoRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.tbl_FormaPgtoRowChanging != null)) {
+                    this.tbl_FormaPgtoRowChanging(this, new tbl_FormaPgtoRowChangeEvent(((tbl_FormaPgtoRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.tbl_FormaPgtoRowDeleted != null)) {
+                    this.tbl_FormaPgtoRowDeleted(this, new tbl_FormaPgtoRowChangeEvent(((tbl_FormaPgtoRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.tbl_FormaPgtoRowDeleting != null)) {
+                    this.tbl_FormaPgtoRowDeleting(this, new tbl_FormaPgtoRowChangeEvent(((tbl_FormaPgtoRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void Removetbl_FormaPgtoRow(tbl_FormaPgtoRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                GerenciaOficinaDataSet ds = new GerenciaOficinaDataSet();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "tbl_FormaPgtoDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class tbl_FornecedoresDataTable : global::System.Data.TypedTableBase<tbl_FornecedoresRow> {
+            
+            private global::System.Data.DataColumn columnid;
+            
+            private global::System.Data.DataColumn columnNomeFant_Fornecedor;
+            
+            private global::System.Data.DataColumn columnRazaoSocial_Fornecedor;
+            
+            private global::System.Data.DataColumn columnCNPJ_Fornecedor;
+            
+            private global::System.Data.DataColumn columnIE_Fornecedor;
+            
+            private global::System.Data.DataColumn columnEmail_Fornecedor;
+            
+            private global::System.Data.DataColumn columnTelGeral_Fornecedor;
+            
+            private global::System.Data.DataColumn columnTelRamal_Fornecedor;
+            
+            private global::System.Data.DataColumn columnTelCel_Fornecedor;
+            
+            private global::System.Data.DataColumn columnOperadoraCel_Fornecedor;
+            
+            private global::System.Data.DataColumn columnContatoResp_Fornecedor;
+            
+            private global::System.Data.DataColumn columnCEP_Fornecedor;
+            
+            private global::System.Data.DataColumn columnEndereco_Fornecedor;
+            
+            private global::System.Data.DataColumn columnCompEnd_Fornecedor;
+            
+            private global::System.Data.DataColumn columnBairro_Fornecedor;
+            
+            private global::System.Data.DataColumn columnEstado_Fornecedor;
+            
+            private global::System.Data.DataColumn columnCidade_Fornecedor;
+            
+            private global::System.Data.DataColumn columnStatus_Fornecedor;
+            
+            private global::System.Data.DataColumn columnObs_Fornecedor;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public tbl_FornecedoresDataTable() {
+                this.TableName = "tbl_Fornecedores";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal tbl_FornecedoresDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected tbl_FornecedoresDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn idColumn {
+                get {
+                    return this.columnid;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn NomeFant_FornecedorColumn {
+                get {
+                    return this.columnNomeFant_Fornecedor;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn RazaoSocial_FornecedorColumn {
+                get {
+                    return this.columnRazaoSocial_Fornecedor;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CNPJ_FornecedorColumn {
+                get {
+                    return this.columnCNPJ_Fornecedor;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn IE_FornecedorColumn {
+                get {
+                    return this.columnIE_Fornecedor;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Email_FornecedorColumn {
+                get {
+                    return this.columnEmail_Fornecedor;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn TelGeral_FornecedorColumn {
+                get {
+                    return this.columnTelGeral_Fornecedor;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn TelRamal_FornecedorColumn {
+                get {
+                    return this.columnTelRamal_Fornecedor;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn TelCel_FornecedorColumn {
+                get {
+                    return this.columnTelCel_Fornecedor;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn OperadoraCel_FornecedorColumn {
+                get {
+                    return this.columnOperadoraCel_Fornecedor;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ContatoResp_FornecedorColumn {
+                get {
+                    return this.columnContatoResp_Fornecedor;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CEP_FornecedorColumn {
+                get {
+                    return this.columnCEP_Fornecedor;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Endereco_FornecedorColumn {
+                get {
+                    return this.columnEndereco_Fornecedor;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CompEnd_FornecedorColumn {
+                get {
+                    return this.columnCompEnd_Fornecedor;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Bairro_FornecedorColumn {
+                get {
+                    return this.columnBairro_Fornecedor;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Estado_FornecedorColumn {
+                get {
+                    return this.columnEstado_Fornecedor;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Cidade_FornecedorColumn {
+                get {
+                    return this.columnCidade_Fornecedor;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Status_FornecedorColumn {
+                get {
+                    return this.columnStatus_Fornecedor;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Obs_FornecedorColumn {
+                get {
+                    return this.columnObs_Fornecedor;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public tbl_FornecedoresRow this[int index] {
+                get {
+                    return ((tbl_FornecedoresRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event tbl_FornecedoresRowChangeEventHandler tbl_FornecedoresRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event tbl_FornecedoresRowChangeEventHandler tbl_FornecedoresRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event tbl_FornecedoresRowChangeEventHandler tbl_FornecedoresRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event tbl_FornecedoresRowChangeEventHandler tbl_FornecedoresRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void Addtbl_FornecedoresRow(tbl_FornecedoresRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public tbl_FornecedoresRow Addtbl_FornecedoresRow(
+                        string NomeFant_Fornecedor, 
+                        string RazaoSocial_Fornecedor, 
+                        string CNPJ_Fornecedor, 
+                        string IE_Fornecedor, 
+                        string Email_Fornecedor, 
+                        string TelGeral_Fornecedor, 
+                        string TelRamal_Fornecedor, 
+                        string TelCel_Fornecedor, 
+                        int OperadoraCel_Fornecedor, 
+                        string ContatoResp_Fornecedor, 
+                        string CEP_Fornecedor, 
+                        string Endereco_Fornecedor, 
+                        string CompEnd_Fornecedor, 
+                        string Bairro_Fornecedor, 
+                        int Estado_Fornecedor, 
+                        int Cidade_Fornecedor, 
+                        int Status_Fornecedor, 
+                        string Obs_Fornecedor) {
+                tbl_FornecedoresRow rowtbl_FornecedoresRow = ((tbl_FornecedoresRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        null,
+                        NomeFant_Fornecedor,
+                        RazaoSocial_Fornecedor,
+                        CNPJ_Fornecedor,
+                        IE_Fornecedor,
+                        Email_Fornecedor,
+                        TelGeral_Fornecedor,
+                        TelRamal_Fornecedor,
+                        TelCel_Fornecedor,
+                        OperadoraCel_Fornecedor,
+                        ContatoResp_Fornecedor,
+                        CEP_Fornecedor,
+                        Endereco_Fornecedor,
+                        CompEnd_Fornecedor,
+                        Bairro_Fornecedor,
+                        Estado_Fornecedor,
+                        Cidade_Fornecedor,
+                        Status_Fornecedor,
+                        Obs_Fornecedor};
+                rowtbl_FornecedoresRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowtbl_FornecedoresRow);
+                return rowtbl_FornecedoresRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public tbl_FornecedoresRow FindByid(int id) {
+                return ((tbl_FornecedoresRow)(this.Rows.Find(new object[] {
+                            id})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                tbl_FornecedoresDataTable cln = ((tbl_FornecedoresDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new tbl_FornecedoresDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal void InitVars() {
+                this.columnid = base.Columns["id"];
+                this.columnNomeFant_Fornecedor = base.Columns["NomeFant_Fornecedor"];
+                this.columnRazaoSocial_Fornecedor = base.Columns["RazaoSocial_Fornecedor"];
+                this.columnCNPJ_Fornecedor = base.Columns["CNPJ_Fornecedor"];
+                this.columnIE_Fornecedor = base.Columns["IE_Fornecedor"];
+                this.columnEmail_Fornecedor = base.Columns["Email_Fornecedor"];
+                this.columnTelGeral_Fornecedor = base.Columns["TelGeral_Fornecedor"];
+                this.columnTelRamal_Fornecedor = base.Columns["TelRamal_Fornecedor"];
+                this.columnTelCel_Fornecedor = base.Columns["TelCel_Fornecedor"];
+                this.columnOperadoraCel_Fornecedor = base.Columns["OperadoraCel_Fornecedor"];
+                this.columnContatoResp_Fornecedor = base.Columns["ContatoResp_Fornecedor"];
+                this.columnCEP_Fornecedor = base.Columns["CEP_Fornecedor"];
+                this.columnEndereco_Fornecedor = base.Columns["Endereco_Fornecedor"];
+                this.columnCompEnd_Fornecedor = base.Columns["CompEnd_Fornecedor"];
+                this.columnBairro_Fornecedor = base.Columns["Bairro_Fornecedor"];
+                this.columnEstado_Fornecedor = base.Columns["Estado_Fornecedor"];
+                this.columnCidade_Fornecedor = base.Columns["Cidade_Fornecedor"];
+                this.columnStatus_Fornecedor = base.Columns["Status_Fornecedor"];
+                this.columnObs_Fornecedor = base.Columns["Obs_Fornecedor"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            private void InitClass() {
+                this.columnid = new global::System.Data.DataColumn("id", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnid);
+                this.columnNomeFant_Fornecedor = new global::System.Data.DataColumn("NomeFant_Fornecedor", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNomeFant_Fornecedor);
+                this.columnRazaoSocial_Fornecedor = new global::System.Data.DataColumn("RazaoSocial_Fornecedor", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRazaoSocial_Fornecedor);
+                this.columnCNPJ_Fornecedor = new global::System.Data.DataColumn("CNPJ_Fornecedor", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCNPJ_Fornecedor);
+                this.columnIE_Fornecedor = new global::System.Data.DataColumn("IE_Fornecedor", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIE_Fornecedor);
+                this.columnEmail_Fornecedor = new global::System.Data.DataColumn("Email_Fornecedor", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEmail_Fornecedor);
+                this.columnTelGeral_Fornecedor = new global::System.Data.DataColumn("TelGeral_Fornecedor", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTelGeral_Fornecedor);
+                this.columnTelRamal_Fornecedor = new global::System.Data.DataColumn("TelRamal_Fornecedor", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTelRamal_Fornecedor);
+                this.columnTelCel_Fornecedor = new global::System.Data.DataColumn("TelCel_Fornecedor", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTelCel_Fornecedor);
+                this.columnOperadoraCel_Fornecedor = new global::System.Data.DataColumn("OperadoraCel_Fornecedor", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnOperadoraCel_Fornecedor);
+                this.columnContatoResp_Fornecedor = new global::System.Data.DataColumn("ContatoResp_Fornecedor", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnContatoResp_Fornecedor);
+                this.columnCEP_Fornecedor = new global::System.Data.DataColumn("CEP_Fornecedor", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCEP_Fornecedor);
+                this.columnEndereco_Fornecedor = new global::System.Data.DataColumn("Endereco_Fornecedor", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEndereco_Fornecedor);
+                this.columnCompEnd_Fornecedor = new global::System.Data.DataColumn("CompEnd_Fornecedor", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCompEnd_Fornecedor);
+                this.columnBairro_Fornecedor = new global::System.Data.DataColumn("Bairro_Fornecedor", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBairro_Fornecedor);
+                this.columnEstado_Fornecedor = new global::System.Data.DataColumn("Estado_Fornecedor", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEstado_Fornecedor);
+                this.columnCidade_Fornecedor = new global::System.Data.DataColumn("Cidade_Fornecedor", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCidade_Fornecedor);
+                this.columnStatus_Fornecedor = new global::System.Data.DataColumn("Status_Fornecedor", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnStatus_Fornecedor);
+                this.columnObs_Fornecedor = new global::System.Data.DataColumn("Obs_Fornecedor", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnObs_Fornecedor);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnid}, true));
+                this.columnid.AutoIncrement = true;
+                this.columnid.AutoIncrementSeed = -1;
+                this.columnid.AutoIncrementStep = -1;
+                this.columnid.AllowDBNull = false;
+                this.columnid.ReadOnly = true;
+                this.columnid.Unique = true;
+                this.columnNomeFant_Fornecedor.AllowDBNull = false;
+                this.columnNomeFant_Fornecedor.MaxLength = 50;
+                this.columnRazaoSocial_Fornecedor.AllowDBNull = false;
+                this.columnRazaoSocial_Fornecedor.MaxLength = 50;
+                this.columnCNPJ_Fornecedor.AllowDBNull = false;
+                this.columnCNPJ_Fornecedor.MaxLength = 17;
+                this.columnIE_Fornecedor.AllowDBNull = false;
+                this.columnIE_Fornecedor.MaxLength = 14;
+                this.columnEmail_Fornecedor.MaxLength = 30;
+                this.columnTelGeral_Fornecedor.MaxLength = 13;
+                this.columnTelRamal_Fornecedor.MaxLength = 13;
+                this.columnTelCel_Fornecedor.MaxLength = 14;
+                this.columnContatoResp_Fornecedor.AllowDBNull = false;
+                this.columnContatoResp_Fornecedor.MaxLength = 14;
+                this.columnCEP_Fornecedor.MaxLength = 10;
+                this.columnEndereco_Fornecedor.AllowDBNull = false;
+                this.columnEndereco_Fornecedor.MaxLength = 30;
+                this.columnCompEnd_Fornecedor.MaxLength = 20;
+                this.columnBairro_Fornecedor.AllowDBNull = false;
+                this.columnBairro_Fornecedor.MaxLength = 20;
+                this.columnEstado_Fornecedor.AllowDBNull = false;
+                this.columnCidade_Fornecedor.AllowDBNull = false;
+                this.columnStatus_Fornecedor.AllowDBNull = false;
+                this.columnObs_Fornecedor.MaxLength = 2147483647;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public tbl_FornecedoresRow Newtbl_FornecedoresRow() {
+                return ((tbl_FornecedoresRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new tbl_FornecedoresRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(tbl_FornecedoresRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.tbl_FornecedoresRowChanged != null)) {
+                    this.tbl_FornecedoresRowChanged(this, new tbl_FornecedoresRowChangeEvent(((tbl_FornecedoresRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.tbl_FornecedoresRowChanging != null)) {
+                    this.tbl_FornecedoresRowChanging(this, new tbl_FornecedoresRowChangeEvent(((tbl_FornecedoresRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.tbl_FornecedoresRowDeleted != null)) {
+                    this.tbl_FornecedoresRowDeleted(this, new tbl_FornecedoresRowChangeEvent(((tbl_FornecedoresRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.tbl_FornecedoresRowDeleting != null)) {
+                    this.tbl_FornecedoresRowDeleting(this, new tbl_FornecedoresRowChangeEvent(((tbl_FornecedoresRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void Removetbl_FornecedoresRow(tbl_FornecedoresRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                GerenciaOficinaDataSet ds = new GerenciaOficinaDataSet();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "tbl_FornecedoresDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class tbl_OrcamentosDataTable : global::System.Data.TypedTableBase<tbl_OrcamentosRow> {
+            
+            private global::System.Data.DataColumn columnNum_Orcamento;
+            
+            private global::System.Data.DataColumn columnCodCli_Orcamento;
+            
+            private global::System.Data.DataColumn columnCodVeiculoCli_Orcamento;
+            
+            private global::System.Data.DataColumn columnDt_Orcamento;
+            
+            private global::System.Data.DataColumn columnDtAprov_Orcamento;
+            
+            private global::System.Data.DataColumn columnStatus_Orcamento;
+            
+            private global::System.Data.DataColumn columnCodServico_Orcamento;
+            
+            private global::System.Data.DataColumn columnCodPeca_Orcamento;
+            
+            private global::System.Data.DataColumn columnQuantPeca_Orcamento;
+            
+            private global::System.Data.DataColumn columnVlrTotServicos_Orcamento;
+            
+            private global::System.Data.DataColumn columnVlrTotPecas_Orcamento;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public tbl_OrcamentosDataTable() {
+                this.TableName = "tbl_Orcamentos";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal tbl_OrcamentosDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected tbl_OrcamentosDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Num_OrcamentoColumn {
+                get {
+                    return this.columnNum_Orcamento;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CodCli_OrcamentoColumn {
+                get {
+                    return this.columnCodCli_Orcamento;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CodVeiculoCli_OrcamentoColumn {
+                get {
+                    return this.columnCodVeiculoCli_Orcamento;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Dt_OrcamentoColumn {
+                get {
+                    return this.columnDt_Orcamento;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DtAprov_OrcamentoColumn {
+                get {
+                    return this.columnDtAprov_Orcamento;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Status_OrcamentoColumn {
+                get {
+                    return this.columnStatus_Orcamento;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CodServico_OrcamentoColumn {
+                get {
+                    return this.columnCodServico_Orcamento;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CodPeca_OrcamentoColumn {
+                get {
+                    return this.columnCodPeca_Orcamento;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn QuantPeca_OrcamentoColumn {
+                get {
+                    return this.columnQuantPeca_Orcamento;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn VlrTotServicos_OrcamentoColumn {
+                get {
+                    return this.columnVlrTotServicos_Orcamento;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn VlrTotPecas_OrcamentoColumn {
+                get {
+                    return this.columnVlrTotPecas_Orcamento;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public tbl_OrcamentosRow this[int index] {
+                get {
+                    return ((tbl_OrcamentosRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event tbl_OrcamentosRowChangeEventHandler tbl_OrcamentosRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event tbl_OrcamentosRowChangeEventHandler tbl_OrcamentosRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event tbl_OrcamentosRowChangeEventHandler tbl_OrcamentosRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event tbl_OrcamentosRowChangeEventHandler tbl_OrcamentosRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void Addtbl_OrcamentosRow(tbl_OrcamentosRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public tbl_OrcamentosRow Addtbl_OrcamentosRow(int Num_Orcamento, int CodCli_Orcamento, int CodVeiculoCli_Orcamento, System.DateTime Dt_Orcamento, System.DateTime DtAprov_Orcamento, int Status_Orcamento, int CodServico_Orcamento, int CodPeca_Orcamento, int QuantPeca_Orcamento, decimal VlrTotServicos_Orcamento, decimal VlrTotPecas_Orcamento) {
+                tbl_OrcamentosRow rowtbl_OrcamentosRow = ((tbl_OrcamentosRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        Num_Orcamento,
+                        CodCli_Orcamento,
+                        CodVeiculoCli_Orcamento,
+                        Dt_Orcamento,
+                        DtAprov_Orcamento,
+                        Status_Orcamento,
+                        CodServico_Orcamento,
+                        CodPeca_Orcamento,
+                        QuantPeca_Orcamento,
+                        VlrTotServicos_Orcamento,
+                        VlrTotPecas_Orcamento};
+                rowtbl_OrcamentosRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowtbl_OrcamentosRow);
+                return rowtbl_OrcamentosRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public tbl_OrcamentosRow FindByCodCli_Orcamento(int CodCli_Orcamento) {
+                return ((tbl_OrcamentosRow)(this.Rows.Find(new object[] {
+                            CodCli_Orcamento})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                tbl_OrcamentosDataTable cln = ((tbl_OrcamentosDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new tbl_OrcamentosDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal void InitVars() {
+                this.columnNum_Orcamento = base.Columns["Num_Orcamento"];
+                this.columnCodCli_Orcamento = base.Columns["CodCli_Orcamento"];
+                this.columnCodVeiculoCli_Orcamento = base.Columns["CodVeiculoCli_Orcamento"];
+                this.columnDt_Orcamento = base.Columns["Dt_Orcamento"];
+                this.columnDtAprov_Orcamento = base.Columns["DtAprov_Orcamento"];
+                this.columnStatus_Orcamento = base.Columns["Status_Orcamento"];
+                this.columnCodServico_Orcamento = base.Columns["CodServico_Orcamento"];
+                this.columnCodPeca_Orcamento = base.Columns["CodPeca_Orcamento"];
+                this.columnQuantPeca_Orcamento = base.Columns["QuantPeca_Orcamento"];
+                this.columnVlrTotServicos_Orcamento = base.Columns["VlrTotServicos_Orcamento"];
+                this.columnVlrTotPecas_Orcamento = base.Columns["VlrTotPecas_Orcamento"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            private void InitClass() {
+                this.columnNum_Orcamento = new global::System.Data.DataColumn("Num_Orcamento", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNum_Orcamento);
+                this.columnCodCli_Orcamento = new global::System.Data.DataColumn("CodCli_Orcamento", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCodCli_Orcamento);
+                this.columnCodVeiculoCli_Orcamento = new global::System.Data.DataColumn("CodVeiculoCli_Orcamento", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCodVeiculoCli_Orcamento);
+                this.columnDt_Orcamento = new global::System.Data.DataColumn("Dt_Orcamento", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDt_Orcamento);
+                this.columnDtAprov_Orcamento = new global::System.Data.DataColumn("DtAprov_Orcamento", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDtAprov_Orcamento);
+                this.columnStatus_Orcamento = new global::System.Data.DataColumn("Status_Orcamento", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnStatus_Orcamento);
+                this.columnCodServico_Orcamento = new global::System.Data.DataColumn("CodServico_Orcamento", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCodServico_Orcamento);
+                this.columnCodPeca_Orcamento = new global::System.Data.DataColumn("CodPeca_Orcamento", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCodPeca_Orcamento);
+                this.columnQuantPeca_Orcamento = new global::System.Data.DataColumn("QuantPeca_Orcamento", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnQuantPeca_Orcamento);
+                this.columnVlrTotServicos_Orcamento = new global::System.Data.DataColumn("VlrTotServicos_Orcamento", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnVlrTotServicos_Orcamento);
+                this.columnVlrTotPecas_Orcamento = new global::System.Data.DataColumn("VlrTotPecas_Orcamento", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnVlrTotPecas_Orcamento);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnCodCli_Orcamento}, true));
+                this.columnNum_Orcamento.AllowDBNull = false;
+                this.columnCodCli_Orcamento.AllowDBNull = false;
+                this.columnCodCli_Orcamento.Unique = true;
+                this.columnCodVeiculoCli_Orcamento.AllowDBNull = false;
+                this.columnDt_Orcamento.AllowDBNull = false;
+                this.columnStatus_Orcamento.AllowDBNull = false;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public tbl_OrcamentosRow Newtbl_OrcamentosRow() {
+                return ((tbl_OrcamentosRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new tbl_OrcamentosRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(tbl_OrcamentosRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.tbl_OrcamentosRowChanged != null)) {
+                    this.tbl_OrcamentosRowChanged(this, new tbl_OrcamentosRowChangeEvent(((tbl_OrcamentosRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.tbl_OrcamentosRowChanging != null)) {
+                    this.tbl_OrcamentosRowChanging(this, new tbl_OrcamentosRowChangeEvent(((tbl_OrcamentosRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.tbl_OrcamentosRowDeleted != null)) {
+                    this.tbl_OrcamentosRowDeleted(this, new tbl_OrcamentosRowChangeEvent(((tbl_OrcamentosRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.tbl_OrcamentosRowDeleting != null)) {
+                    this.tbl_OrcamentosRowDeleting(this, new tbl_OrcamentosRowChangeEvent(((tbl_OrcamentosRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void Removetbl_OrcamentosRow(tbl_OrcamentosRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                GerenciaOficinaDataSet ds = new GerenciaOficinaDataSet();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "tbl_OrcamentosDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class tbl_ServicosDataTable : global::System.Data.TypedTableBase<tbl_ServicosRow> {
+            
+            private global::System.Data.DataColumn columnid;
+            
+            private global::System.Data.DataColumn columnDescricao_Servico;
+            
+            private global::System.Data.DataColumn columnVlr_Servico;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public tbl_ServicosDataTable() {
+                this.TableName = "tbl_Servicos";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal tbl_ServicosDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected tbl_ServicosDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn idColumn {
+                get {
+                    return this.columnid;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Descricao_ServicoColumn {
+                get {
+                    return this.columnDescricao_Servico;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Vlr_ServicoColumn {
+                get {
+                    return this.columnVlr_Servico;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public tbl_ServicosRow this[int index] {
+                get {
+                    return ((tbl_ServicosRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event tbl_ServicosRowChangeEventHandler tbl_ServicosRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event tbl_ServicosRowChangeEventHandler tbl_ServicosRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event tbl_ServicosRowChangeEventHandler tbl_ServicosRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event tbl_ServicosRowChangeEventHandler tbl_ServicosRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void Addtbl_ServicosRow(tbl_ServicosRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public tbl_ServicosRow Addtbl_ServicosRow(string Descricao_Servico, decimal Vlr_Servico) {
+                tbl_ServicosRow rowtbl_ServicosRow = ((tbl_ServicosRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        null,
+                        Descricao_Servico,
+                        Vlr_Servico};
+                rowtbl_ServicosRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowtbl_ServicosRow);
+                return rowtbl_ServicosRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public tbl_ServicosRow FindByid(int id) {
+                return ((tbl_ServicosRow)(this.Rows.Find(new object[] {
+                            id})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                tbl_ServicosDataTable cln = ((tbl_ServicosDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new tbl_ServicosDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal void InitVars() {
+                this.columnid = base.Columns["id"];
+                this.columnDescricao_Servico = base.Columns["Descricao_Servico"];
+                this.columnVlr_Servico = base.Columns["Vlr_Servico"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            private void InitClass() {
+                this.columnid = new global::System.Data.DataColumn("id", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnid);
+                this.columnDescricao_Servico = new global::System.Data.DataColumn("Descricao_Servico", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDescricao_Servico);
+                this.columnVlr_Servico = new global::System.Data.DataColumn("Vlr_Servico", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnVlr_Servico);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnid}, true));
+                this.columnid.AutoIncrement = true;
+                this.columnid.AutoIncrementSeed = -1;
+                this.columnid.AutoIncrementStep = -1;
+                this.columnid.AllowDBNull = false;
+                this.columnid.ReadOnly = true;
+                this.columnid.Unique = true;
+                this.columnDescricao_Servico.AllowDBNull = false;
+                this.columnDescricao_Servico.MaxLength = 50;
+                this.columnVlr_Servico.AllowDBNull = false;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public tbl_ServicosRow Newtbl_ServicosRow() {
+                return ((tbl_ServicosRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new tbl_ServicosRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(tbl_ServicosRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.tbl_ServicosRowChanged != null)) {
+                    this.tbl_ServicosRowChanged(this, new tbl_ServicosRowChangeEvent(((tbl_ServicosRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.tbl_ServicosRowChanging != null)) {
+                    this.tbl_ServicosRowChanging(this, new tbl_ServicosRowChangeEvent(((tbl_ServicosRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.tbl_ServicosRowDeleted != null)) {
+                    this.tbl_ServicosRowDeleted(this, new tbl_ServicosRowChangeEvent(((tbl_ServicosRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.tbl_ServicosRowDeleting != null)) {
+                    this.tbl_ServicosRowDeleting(this, new tbl_ServicosRowChangeEvent(((tbl_ServicosRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void Removetbl_ServicosRow(tbl_ServicosRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                GerenciaOficinaDataSet ds = new GerenciaOficinaDataSet();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "tbl_ServicosDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class tbl_CidadeRow : global::System.Data.DataRow {
@@ -5140,6 +6839,716 @@ namespace Gerenciador_Oficina_Mecanica {
         }
         
         /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class tbl_FormaPgtoRow : global::System.Data.DataRow {
+            
+            private tbl_FormaPgtoDataTable tabletbl_FormaPgto;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal tbl_FormaPgtoRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tabletbl_FormaPgto = ((tbl_FormaPgtoDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int id {
+                get {
+                    return ((int)(this[this.tabletbl_FormaPgto.idColumn]));
+                }
+                set {
+                    this[this.tabletbl_FormaPgto.idColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Descricao_FormaPgto {
+                get {
+                    return ((string)(this[this.tabletbl_FormaPgto.Descricao_FormaPgtoColumn]));
+                }
+                set {
+                    this[this.tabletbl_FormaPgto.Descricao_FormaPgtoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Taxa_FormaPgto {
+                get {
+                    return ((double)(this[this.tabletbl_FormaPgto.Taxa_FormaPgtoColumn]));
+                }
+                set {
+                    this[this.tabletbl_FormaPgto.Taxa_FormaPgtoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Desconto_FormaPgto {
+                get {
+                    return ((double)(this[this.tabletbl_FormaPgto.Desconto_FormaPgtoColumn]));
+                }
+                set {
+                    this[this.tabletbl_FormaPgto.Desconto_FormaPgtoColumn] = value;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class tbl_FornecedoresRow : global::System.Data.DataRow {
+            
+            private tbl_FornecedoresDataTable tabletbl_Fornecedores;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal tbl_FornecedoresRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tabletbl_Fornecedores = ((tbl_FornecedoresDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int id {
+                get {
+                    return ((int)(this[this.tabletbl_Fornecedores.idColumn]));
+                }
+                set {
+                    this[this.tabletbl_Fornecedores.idColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string NomeFant_Fornecedor {
+                get {
+                    return ((string)(this[this.tabletbl_Fornecedores.NomeFant_FornecedorColumn]));
+                }
+                set {
+                    this[this.tabletbl_Fornecedores.NomeFant_FornecedorColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string RazaoSocial_Fornecedor {
+                get {
+                    return ((string)(this[this.tabletbl_Fornecedores.RazaoSocial_FornecedorColumn]));
+                }
+                set {
+                    this[this.tabletbl_Fornecedores.RazaoSocial_FornecedorColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string CNPJ_Fornecedor {
+                get {
+                    return ((string)(this[this.tabletbl_Fornecedores.CNPJ_FornecedorColumn]));
+                }
+                set {
+                    this[this.tabletbl_Fornecedores.CNPJ_FornecedorColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string IE_Fornecedor {
+                get {
+                    return ((string)(this[this.tabletbl_Fornecedores.IE_FornecedorColumn]));
+                }
+                set {
+                    this[this.tabletbl_Fornecedores.IE_FornecedorColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Email_Fornecedor {
+                get {
+                    try {
+                        return ((string)(this[this.tabletbl_Fornecedores.Email_FornecedorColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Email_Fornecedor\' in table \'tbl_Fornecedores\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Fornecedores.Email_FornecedorColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string TelGeral_Fornecedor {
+                get {
+                    try {
+                        return ((string)(this[this.tabletbl_Fornecedores.TelGeral_FornecedorColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TelGeral_Fornecedor\' in table \'tbl_Fornecedores\' is DBNull." +
+                                "", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Fornecedores.TelGeral_FornecedorColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string TelRamal_Fornecedor {
+                get {
+                    try {
+                        return ((string)(this[this.tabletbl_Fornecedores.TelRamal_FornecedorColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TelRamal_Fornecedor\' in table \'tbl_Fornecedores\' is DBNull." +
+                                "", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Fornecedores.TelRamal_FornecedorColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string TelCel_Fornecedor {
+                get {
+                    try {
+                        return ((string)(this[this.tabletbl_Fornecedores.TelCel_FornecedorColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TelCel_Fornecedor\' in table \'tbl_Fornecedores\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Fornecedores.TelCel_FornecedorColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int OperadoraCel_Fornecedor {
+                get {
+                    try {
+                        return ((int)(this[this.tabletbl_Fornecedores.OperadoraCel_FornecedorColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'OperadoraCel_Fornecedor\' in table \'tbl_Fornecedores\' is DBN" +
+                                "ull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Fornecedores.OperadoraCel_FornecedorColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string ContatoResp_Fornecedor {
+                get {
+                    return ((string)(this[this.tabletbl_Fornecedores.ContatoResp_FornecedorColumn]));
+                }
+                set {
+                    this[this.tabletbl_Fornecedores.ContatoResp_FornecedorColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string CEP_Fornecedor {
+                get {
+                    try {
+                        return ((string)(this[this.tabletbl_Fornecedores.CEP_FornecedorColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CEP_Fornecedor\' in table \'tbl_Fornecedores\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Fornecedores.CEP_FornecedorColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Endereco_Fornecedor {
+                get {
+                    return ((string)(this[this.tabletbl_Fornecedores.Endereco_FornecedorColumn]));
+                }
+                set {
+                    this[this.tabletbl_Fornecedores.Endereco_FornecedorColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string CompEnd_Fornecedor {
+                get {
+                    try {
+                        return ((string)(this[this.tabletbl_Fornecedores.CompEnd_FornecedorColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CompEnd_Fornecedor\' in table \'tbl_Fornecedores\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Fornecedores.CompEnd_FornecedorColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Bairro_Fornecedor {
+                get {
+                    return ((string)(this[this.tabletbl_Fornecedores.Bairro_FornecedorColumn]));
+                }
+                set {
+                    this[this.tabletbl_Fornecedores.Bairro_FornecedorColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int Estado_Fornecedor {
+                get {
+                    return ((int)(this[this.tabletbl_Fornecedores.Estado_FornecedorColumn]));
+                }
+                set {
+                    this[this.tabletbl_Fornecedores.Estado_FornecedorColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int Cidade_Fornecedor {
+                get {
+                    return ((int)(this[this.tabletbl_Fornecedores.Cidade_FornecedorColumn]));
+                }
+                set {
+                    this[this.tabletbl_Fornecedores.Cidade_FornecedorColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int Status_Fornecedor {
+                get {
+                    return ((int)(this[this.tabletbl_Fornecedores.Status_FornecedorColumn]));
+                }
+                set {
+                    this[this.tabletbl_Fornecedores.Status_FornecedorColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Obs_Fornecedor {
+                get {
+                    try {
+                        return ((string)(this[this.tabletbl_Fornecedores.Obs_FornecedorColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Obs_Fornecedor\' in table \'tbl_Fornecedores\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Fornecedores.Obs_FornecedorColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsEmail_FornecedorNull() {
+                return this.IsNull(this.tabletbl_Fornecedores.Email_FornecedorColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetEmail_FornecedorNull() {
+                this[this.tabletbl_Fornecedores.Email_FornecedorColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsTelGeral_FornecedorNull() {
+                return this.IsNull(this.tabletbl_Fornecedores.TelGeral_FornecedorColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetTelGeral_FornecedorNull() {
+                this[this.tabletbl_Fornecedores.TelGeral_FornecedorColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsTelRamal_FornecedorNull() {
+                return this.IsNull(this.tabletbl_Fornecedores.TelRamal_FornecedorColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetTelRamal_FornecedorNull() {
+                this[this.tabletbl_Fornecedores.TelRamal_FornecedorColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsTelCel_FornecedorNull() {
+                return this.IsNull(this.tabletbl_Fornecedores.TelCel_FornecedorColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetTelCel_FornecedorNull() {
+                this[this.tabletbl_Fornecedores.TelCel_FornecedorColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsOperadoraCel_FornecedorNull() {
+                return this.IsNull(this.tabletbl_Fornecedores.OperadoraCel_FornecedorColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetOperadoraCel_FornecedorNull() {
+                this[this.tabletbl_Fornecedores.OperadoraCel_FornecedorColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsCEP_FornecedorNull() {
+                return this.IsNull(this.tabletbl_Fornecedores.CEP_FornecedorColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetCEP_FornecedorNull() {
+                this[this.tabletbl_Fornecedores.CEP_FornecedorColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsCompEnd_FornecedorNull() {
+                return this.IsNull(this.tabletbl_Fornecedores.CompEnd_FornecedorColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetCompEnd_FornecedorNull() {
+                this[this.tabletbl_Fornecedores.CompEnd_FornecedorColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsObs_FornecedorNull() {
+                return this.IsNull(this.tabletbl_Fornecedores.Obs_FornecedorColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetObs_FornecedorNull() {
+                this[this.tabletbl_Fornecedores.Obs_FornecedorColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class tbl_OrcamentosRow : global::System.Data.DataRow {
+            
+            private tbl_OrcamentosDataTable tabletbl_Orcamentos;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal tbl_OrcamentosRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tabletbl_Orcamentos = ((tbl_OrcamentosDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int Num_Orcamento {
+                get {
+                    return ((int)(this[this.tabletbl_Orcamentos.Num_OrcamentoColumn]));
+                }
+                set {
+                    this[this.tabletbl_Orcamentos.Num_OrcamentoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int CodCli_Orcamento {
+                get {
+                    return ((int)(this[this.tabletbl_Orcamentos.CodCli_OrcamentoColumn]));
+                }
+                set {
+                    this[this.tabletbl_Orcamentos.CodCli_OrcamentoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int CodVeiculoCli_Orcamento {
+                get {
+                    return ((int)(this[this.tabletbl_Orcamentos.CodVeiculoCli_OrcamentoColumn]));
+                }
+                set {
+                    this[this.tabletbl_Orcamentos.CodVeiculoCli_OrcamentoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public System.DateTime Dt_Orcamento {
+                get {
+                    return ((global::System.DateTime)(this[this.tabletbl_Orcamentos.Dt_OrcamentoColumn]));
+                }
+                set {
+                    this[this.tabletbl_Orcamentos.Dt_OrcamentoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public System.DateTime DtAprov_Orcamento {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tabletbl_Orcamentos.DtAprov_OrcamentoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DtAprov_Orcamento\' in table \'tbl_Orcamentos\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Orcamentos.DtAprov_OrcamentoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int Status_Orcamento {
+                get {
+                    return ((int)(this[this.tabletbl_Orcamentos.Status_OrcamentoColumn]));
+                }
+                set {
+                    this[this.tabletbl_Orcamentos.Status_OrcamentoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int CodServico_Orcamento {
+                get {
+                    try {
+                        return ((int)(this[this.tabletbl_Orcamentos.CodServico_OrcamentoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CodServico_Orcamento\' in table \'tbl_Orcamentos\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Orcamentos.CodServico_OrcamentoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int CodPeca_Orcamento {
+                get {
+                    try {
+                        return ((int)(this[this.tabletbl_Orcamentos.CodPeca_OrcamentoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CodPeca_Orcamento\' in table \'tbl_Orcamentos\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Orcamentos.CodPeca_OrcamentoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int QuantPeca_Orcamento {
+                get {
+                    try {
+                        return ((int)(this[this.tabletbl_Orcamentos.QuantPeca_OrcamentoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'QuantPeca_Orcamento\' in table \'tbl_Orcamentos\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Orcamentos.QuantPeca_OrcamentoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal VlrTotServicos_Orcamento {
+                get {
+                    try {
+                        return ((decimal)(this[this.tabletbl_Orcamentos.VlrTotServicos_OrcamentoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'VlrTotServicos_Orcamento\' in table \'tbl_Orcamentos\' is DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Orcamentos.VlrTotServicos_OrcamentoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal VlrTotPecas_Orcamento {
+                get {
+                    try {
+                        return ((decimal)(this[this.tabletbl_Orcamentos.VlrTotPecas_OrcamentoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'VlrTotPecas_Orcamento\' in table \'tbl_Orcamentos\' is DBNull." +
+                                "", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Orcamentos.VlrTotPecas_OrcamentoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsDtAprov_OrcamentoNull() {
+                return this.IsNull(this.tabletbl_Orcamentos.DtAprov_OrcamentoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetDtAprov_OrcamentoNull() {
+                this[this.tabletbl_Orcamentos.DtAprov_OrcamentoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsCodServico_OrcamentoNull() {
+                return this.IsNull(this.tabletbl_Orcamentos.CodServico_OrcamentoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetCodServico_OrcamentoNull() {
+                this[this.tabletbl_Orcamentos.CodServico_OrcamentoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsCodPeca_OrcamentoNull() {
+                return this.IsNull(this.tabletbl_Orcamentos.CodPeca_OrcamentoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetCodPeca_OrcamentoNull() {
+                this[this.tabletbl_Orcamentos.CodPeca_OrcamentoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsQuantPeca_OrcamentoNull() {
+                return this.IsNull(this.tabletbl_Orcamentos.QuantPeca_OrcamentoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetQuantPeca_OrcamentoNull() {
+                this[this.tabletbl_Orcamentos.QuantPeca_OrcamentoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsVlrTotServicos_OrcamentoNull() {
+                return this.IsNull(this.tabletbl_Orcamentos.VlrTotServicos_OrcamentoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetVlrTotServicos_OrcamentoNull() {
+                this[this.tabletbl_Orcamentos.VlrTotServicos_OrcamentoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsVlrTotPecas_OrcamentoNull() {
+                return this.IsNull(this.tabletbl_Orcamentos.VlrTotPecas_OrcamentoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetVlrTotPecas_OrcamentoNull() {
+                this[this.tabletbl_Orcamentos.VlrTotPecas_OrcamentoColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class tbl_ServicosRow : global::System.Data.DataRow {
+            
+            private tbl_ServicosDataTable tabletbl_Servicos;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal tbl_ServicosRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tabletbl_Servicos = ((tbl_ServicosDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int id {
+                get {
+                    return ((int)(this[this.tabletbl_Servicos.idColumn]));
+                }
+                set {
+                    this[this.tabletbl_Servicos.idColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Descricao_Servico {
+                get {
+                    return ((string)(this[this.tabletbl_Servicos.Descricao_ServicoColumn]));
+                }
+                set {
+                    this[this.tabletbl_Servicos.Descricao_ServicoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal Vlr_Servico {
+                get {
+                    return ((decimal)(this[this.tabletbl_Servicos.Vlr_ServicoColumn]));
+                }
+                set {
+                    this[this.tabletbl_Servicos.Vlr_ServicoColumn] = value;
+                }
+            }
+        }
+        
+        /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -5465,6 +7874,142 @@ namespace Gerenciador_Oficina_Mecanica {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public tbl_Clientes_PJRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public class tbl_FormaPgtoRowChangeEvent : global::System.EventArgs {
+            
+            private tbl_FormaPgtoRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public tbl_FormaPgtoRowChangeEvent(tbl_FormaPgtoRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public tbl_FormaPgtoRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public class tbl_FornecedoresRowChangeEvent : global::System.EventArgs {
+            
+            private tbl_FornecedoresRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public tbl_FornecedoresRowChangeEvent(tbl_FornecedoresRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public tbl_FornecedoresRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public class tbl_OrcamentosRowChangeEvent : global::System.EventArgs {
+            
+            private tbl_OrcamentosRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public tbl_OrcamentosRowChangeEvent(tbl_OrcamentosRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public tbl_OrcamentosRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public class tbl_ServicosRowChangeEvent : global::System.EventArgs {
+            
+            private tbl_ServicosRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public tbl_ServicosRowChangeEvent(tbl_ServicosRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public tbl_ServicosRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -9975,6 +12520,2212 @@ SELECT id, NomeFant_Cliente, RazaoSocial_Cliente, CNPJ_Cliente, IE_Cliente, Emai
     }
     
     /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class tbl_FormaPgtoTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public tbl_FormaPgtoTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "tbl_FormaPgto";
+            tableMapping.ColumnMappings.Add("id", "id");
+            tableMapping.ColumnMappings.Add("Descricao_FormaPgto", "Descricao_FormaPgto");
+            tableMapping.ColumnMappings.Add("Taxa_FormaPgto", "Taxa_FormaPgto");
+            tableMapping.ColumnMappings.Add("Desconto_FormaPgto", "Desconto_FormaPgto");
+            this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.DeleteCommand.Connection = this.Connection;
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[tbl_FormaPgto] WHERE (([id] = @Original_id) AND ([Descricao_Fo" +
+                "rmaPgto] = @Original_Descricao_FormaPgto) AND ([Taxa_FormaPgto] = @Original_Taxa" +
+                "_FormaPgto) AND ([Desconto_FormaPgto] = @Original_Desconto_FormaPgto))";
+            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Descricao_FormaPgto", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Descricao_FormaPgto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Taxa_FormaPgto", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Taxa_FormaPgto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Desconto_FormaPgto", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Desconto_FormaPgto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.InsertCommand.Connection = this.Connection;
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[tbl_FormaPgto] ([Descricao_FormaPgto], [Taxa_FormaPgto], [Desconto_FormaPgto]) VALUES (@Descricao_FormaPgto, @Taxa_FormaPgto, @Desconto_FormaPgto);
+SELECT id, Descricao_FormaPgto, Taxa_FormaPgto, Desconto_FormaPgto FROM tbl_FormaPgto WHERE (id = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Descricao_FormaPgto", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Descricao_FormaPgto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Taxa_FormaPgto", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Taxa_FormaPgto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Desconto_FormaPgto", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Desconto_FormaPgto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.UpdateCommand.Connection = this.Connection;
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[tbl_FormaPgto] SET [Descricao_FormaPgto] = @Descricao_FormaPgto, [Taxa_FormaPgto] = @Taxa_FormaPgto, [Desconto_FormaPgto] = @Desconto_FormaPgto WHERE (([id] = @Original_id) AND ([Descricao_FormaPgto] = @Original_Descricao_FormaPgto) AND ([Taxa_FormaPgto] = @Original_Taxa_FormaPgto) AND ([Desconto_FormaPgto] = @Original_Desconto_FormaPgto));
+SELECT id, Descricao_FormaPgto, Taxa_FormaPgto, Desconto_FormaPgto FROM tbl_FormaPgto WHERE (id = @id)";
+            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Descricao_FormaPgto", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Descricao_FormaPgto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Taxa_FormaPgto", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Taxa_FormaPgto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Desconto_FormaPgto", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Desconto_FormaPgto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Descricao_FormaPgto", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Descricao_FormaPgto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Taxa_FormaPgto", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Taxa_FormaPgto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Desconto_FormaPgto", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Desconto_FormaPgto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::Gerenciador_Oficina_Mecanica.Properties.Settings.Default.GerenciaOficinaConnection;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "SELECT id, Descricao_FormaPgto, Taxa_FormaPgto, Desconto_FormaPgto FROM dbo.tbl_F" +
+                "ormaPgto";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(GerenciaOficinaDataSet.tbl_FormaPgtoDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual GerenciaOficinaDataSet.tbl_FormaPgtoDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            GerenciaOficinaDataSet.tbl_FormaPgtoDataTable dataTable = new GerenciaOficinaDataSet.tbl_FormaPgtoDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(GerenciaOficinaDataSet.tbl_FormaPgtoDataTable dataTable) {
+            return this.Adapter.Update(dataTable);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(GerenciaOficinaDataSet dataSet) {
+            return this.Adapter.Update(dataSet, "tbl_FormaPgto");
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow dataRow) {
+            return this.Adapter.Update(new global::System.Data.DataRow[] {
+                        dataRow});
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow[] dataRows) {
+            return this.Adapter.Update(dataRows);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
+        public virtual int Delete(int Original_id, string Original_Descricao_FormaPgto, double Original_Taxa_FormaPgto, double Original_Desconto_FormaPgto) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_id));
+            if ((Original_Descricao_FormaPgto == null)) {
+                throw new global::System.ArgumentNullException("Original_Descricao_FormaPgto");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_Descricao_FormaPgto));
+            }
+            this.Adapter.DeleteCommand.Parameters[2].Value = ((double)(Original_Taxa_FormaPgto));
+            this.Adapter.DeleteCommand.Parameters[3].Value = ((double)(Original_Desconto_FormaPgto));
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
+            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.DeleteCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.DeleteCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+        public virtual int Insert(string Descricao_FormaPgto, double Taxa_FormaPgto, double Desconto_FormaPgto) {
+            if ((Descricao_FormaPgto == null)) {
+                throw new global::System.ArgumentNullException("Descricao_FormaPgto");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(Descricao_FormaPgto));
+            }
+            this.Adapter.InsertCommand.Parameters[1].Value = ((double)(Taxa_FormaPgto));
+            this.Adapter.InsertCommand.Parameters[2].Value = ((double)(Desconto_FormaPgto));
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.InsertCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.InsertCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(string Descricao_FormaPgto, double Taxa_FormaPgto, double Desconto_FormaPgto, int Original_id, string Original_Descricao_FormaPgto, double Original_Taxa_FormaPgto, double Original_Desconto_FormaPgto, int id) {
+            if ((Descricao_FormaPgto == null)) {
+                throw new global::System.ArgumentNullException("Descricao_FormaPgto");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(Descricao_FormaPgto));
+            }
+            this.Adapter.UpdateCommand.Parameters[1].Value = ((double)(Taxa_FormaPgto));
+            this.Adapter.UpdateCommand.Parameters[2].Value = ((double)(Desconto_FormaPgto));
+            this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(Original_id));
+            if ((Original_Descricao_FormaPgto == null)) {
+                throw new global::System.ArgumentNullException("Original_Descricao_FormaPgto");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Original_Descricao_FormaPgto));
+            }
+            this.Adapter.UpdateCommand.Parameters[5].Value = ((double)(Original_Taxa_FormaPgto));
+            this.Adapter.UpdateCommand.Parameters[6].Value = ((double)(Original_Desconto_FormaPgto));
+            this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(id));
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
+            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.UpdateCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.UpdateCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(string Descricao_FormaPgto, double Taxa_FormaPgto, double Desconto_FormaPgto, int Original_id, string Original_Descricao_FormaPgto, double Original_Taxa_FormaPgto, double Original_Desconto_FormaPgto) {
+            return this.Update(Descricao_FormaPgto, Taxa_FormaPgto, Desconto_FormaPgto, Original_id, Original_Descricao_FormaPgto, Original_Taxa_FormaPgto, Original_Desconto_FormaPgto, Original_id);
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class tbl_FornecedoresTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public tbl_FornecedoresTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "tbl_Fornecedores";
+            tableMapping.ColumnMappings.Add("id", "id");
+            tableMapping.ColumnMappings.Add("NomeFant_Fornecedor", "NomeFant_Fornecedor");
+            tableMapping.ColumnMappings.Add("RazaoSocial_Fornecedor", "RazaoSocial_Fornecedor");
+            tableMapping.ColumnMappings.Add("CNPJ_Fornecedor", "CNPJ_Fornecedor");
+            tableMapping.ColumnMappings.Add("IE_Fornecedor", "IE_Fornecedor");
+            tableMapping.ColumnMappings.Add("Email_Fornecedor", "Email_Fornecedor");
+            tableMapping.ColumnMappings.Add("TelGeral_Fornecedor", "TelGeral_Fornecedor");
+            tableMapping.ColumnMappings.Add("TelRamal_Fornecedor", "TelRamal_Fornecedor");
+            tableMapping.ColumnMappings.Add("TelCel_Fornecedor", "TelCel_Fornecedor");
+            tableMapping.ColumnMappings.Add("OperadoraCel_Fornecedor", "OperadoraCel_Fornecedor");
+            tableMapping.ColumnMappings.Add("ContatoResp_Fornecedor", "ContatoResp_Fornecedor");
+            tableMapping.ColumnMappings.Add("CEP_Fornecedor", "CEP_Fornecedor");
+            tableMapping.ColumnMappings.Add("Endereco_Fornecedor", "Endereco_Fornecedor");
+            tableMapping.ColumnMappings.Add("CompEnd_Fornecedor", "CompEnd_Fornecedor");
+            tableMapping.ColumnMappings.Add("Bairro_Fornecedor", "Bairro_Fornecedor");
+            tableMapping.ColumnMappings.Add("Estado_Fornecedor", "Estado_Fornecedor");
+            tableMapping.ColumnMappings.Add("Cidade_Fornecedor", "Cidade_Fornecedor");
+            tableMapping.ColumnMappings.Add("Status_Fornecedor", "Status_Fornecedor");
+            tableMapping.ColumnMappings.Add("Obs_Fornecedor", "Obs_Fornecedor");
+            this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.DeleteCommand.Connection = this.Connection;
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[tbl_Fornecedores] WHERE (([id] = @Original_id) AND ([NomeFant_" +
+                "Fornecedor] = @Original_NomeFant_Fornecedor) AND ([RazaoSocial_Fornecedor] = @Or" +
+                "iginal_RazaoSocial_Fornecedor) AND ([CNPJ_Fornecedor] = @Original_CNPJ_Fornecedo" +
+                "r) AND ([IE_Fornecedor] = @Original_IE_Fornecedor) AND ((@IsNull_Email_Fornecedo" +
+                "r = 1 AND [Email_Fornecedor] IS NULL) OR ([Email_Fornecedor] = @Original_Email_F" +
+                "ornecedor)) AND ((@IsNull_TelGeral_Fornecedor = 1 AND [TelGeral_Fornecedor] IS N" +
+                "ULL) OR ([TelGeral_Fornecedor] = @Original_TelGeral_Fornecedor)) AND ((@IsNull_T" +
+                "elRamal_Fornecedor = 1 AND [TelRamal_Fornecedor] IS NULL) OR ([TelRamal_Forneced" +
+                "or] = @Original_TelRamal_Fornecedor)) AND ((@IsNull_TelCel_Fornecedor = 1 AND [T" +
+                "elCel_Fornecedor] IS NULL) OR ([TelCel_Fornecedor] = @Original_TelCel_Fornecedor" +
+                ")) AND ((@IsNull_OperadoraCel_Fornecedor = 1 AND [OperadoraCel_Fornecedor] IS NU" +
+                "LL) OR ([OperadoraCel_Fornecedor] = @Original_OperadoraCel_Fornecedor)) AND ([Co" +
+                "ntatoResp_Fornecedor] = @Original_ContatoResp_Fornecedor) AND ((@IsNull_CEP_Forn" +
+                "ecedor = 1 AND [CEP_Fornecedor] IS NULL) OR ([CEP_Fornecedor] = @Original_CEP_Fo" +
+                "rnecedor)) AND ([Endereco_Fornecedor] = @Original_Endereco_Fornecedor) AND ((@Is" +
+                "Null_CompEnd_Fornecedor = 1 AND [CompEnd_Fornecedor] IS NULL) OR ([CompEnd_Forne" +
+                "cedor] = @Original_CompEnd_Fornecedor)) AND ([Bairro_Fornecedor] = @Original_Bai" +
+                "rro_Fornecedor) AND ([Estado_Fornecedor] = @Original_Estado_Fornecedor) AND ([Ci" +
+                "dade_Fornecedor] = @Original_Cidade_Fornecedor) AND ([Status_Fornecedor] = @Orig" +
+                "inal_Status_Fornecedor))";
+            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_NomeFant_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NomeFant_Fornecedor", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_RazaoSocial_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "RazaoSocial_Fornecedor", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CNPJ_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CNPJ_Fornecedor", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IE_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IE_Fornecedor", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Email_Fornecedor", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Email_Fornecedor", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Email_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Email_Fornecedor", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_TelGeral_Fornecedor", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TelGeral_Fornecedor", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TelGeral_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TelGeral_Fornecedor", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_TelRamal_Fornecedor", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TelRamal_Fornecedor", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TelRamal_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TelRamal_Fornecedor", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_TelCel_Fornecedor", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TelCel_Fornecedor", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TelCel_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TelCel_Fornecedor", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_OperadoraCel_Fornecedor", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OperadoraCel_Fornecedor", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OperadoraCel_Fornecedor", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OperadoraCel_Fornecedor", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ContatoResp_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ContatoResp_Fornecedor", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_CEP_Fornecedor", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CEP_Fornecedor", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CEP_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CEP_Fornecedor", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Endereco_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Endereco_Fornecedor", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_CompEnd_Fornecedor", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CompEnd_Fornecedor", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CompEnd_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CompEnd_Fornecedor", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Bairro_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Bairro_Fornecedor", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Estado_Fornecedor", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Estado_Fornecedor", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Cidade_Fornecedor", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cidade_Fornecedor", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Status_Fornecedor", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Status_Fornecedor", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.InsertCommand.Connection = this.Connection;
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[tbl_Fornecedores] ([NomeFant_Fornecedor], [RazaoSocial_Fornecedor], [CNPJ_Fornecedor], [IE_Fornecedor], [Email_Fornecedor], [TelGeral_Fornecedor], [TelRamal_Fornecedor], [TelCel_Fornecedor], [OperadoraCel_Fornecedor], [ContatoResp_Fornecedor], [CEP_Fornecedor], [Endereco_Fornecedor], [CompEnd_Fornecedor], [Bairro_Fornecedor], [Estado_Fornecedor], [Cidade_Fornecedor], [Status_Fornecedor], [Obs_Fornecedor]) VALUES (@NomeFant_Fornecedor, @RazaoSocial_Fornecedor, @CNPJ_Fornecedor, @IE_Fornecedor, @Email_Fornecedor, @TelGeral_Fornecedor, @TelRamal_Fornecedor, @TelCel_Fornecedor, @OperadoraCel_Fornecedor, @ContatoResp_Fornecedor, @CEP_Fornecedor, @Endereco_Fornecedor, @CompEnd_Fornecedor, @Bairro_Fornecedor, @Estado_Fornecedor, @Cidade_Fornecedor, @Status_Fornecedor, @Obs_Fornecedor);
+SELECT id, NomeFant_Fornecedor, RazaoSocial_Fornecedor, CNPJ_Fornecedor, IE_Fornecedor, Email_Fornecedor, TelGeral_Fornecedor, TelRamal_Fornecedor, TelCel_Fornecedor, OperadoraCel_Fornecedor, ContatoResp_Fornecedor, CEP_Fornecedor, Endereco_Fornecedor, CompEnd_Fornecedor, Bairro_Fornecedor, Estado_Fornecedor, Cidade_Fornecedor, Status_Fornecedor, Obs_Fornecedor FROM tbl_Fornecedores WHERE (id = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NomeFant_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NomeFant_Fornecedor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RazaoSocial_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "RazaoSocial_Fornecedor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CNPJ_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CNPJ_Fornecedor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IE_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IE_Fornecedor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Email_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Email_Fornecedor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TelGeral_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TelGeral_Fornecedor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TelRamal_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TelRamal_Fornecedor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TelCel_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TelCel_Fornecedor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OperadoraCel_Fornecedor", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OperadoraCel_Fornecedor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ContatoResp_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ContatoResp_Fornecedor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CEP_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CEP_Fornecedor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Endereco_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Endereco_Fornecedor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CompEnd_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CompEnd_Fornecedor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Bairro_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Bairro_Fornecedor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Estado_Fornecedor", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Estado_Fornecedor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Cidade_Fornecedor", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cidade_Fornecedor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Status_Fornecedor", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Status_Fornecedor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Obs_Fornecedor", global::System.Data.SqlDbType.Text, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Obs_Fornecedor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.UpdateCommand.Connection = this.Connection;
+            this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[tbl_Fornecedores] SET [NomeFant_Fornecedor] = @NomeFant_Fornecedor," +
+                " [RazaoSocial_Fornecedor] = @RazaoSocial_Fornecedor, [CNPJ_Fornecedor] = @CNPJ_F" +
+                "ornecedor, [IE_Fornecedor] = @IE_Fornecedor, [Email_Fornecedor] = @Email_Fornece" +
+                "dor, [TelGeral_Fornecedor] = @TelGeral_Fornecedor, [TelRamal_Fornecedor] = @TelR" +
+                "amal_Fornecedor, [TelCel_Fornecedor] = @TelCel_Fornecedor, [OperadoraCel_Fornece" +
+                "dor] = @OperadoraCel_Fornecedor, [ContatoResp_Fornecedor] = @ContatoResp_Fornece" +
+                "dor, [CEP_Fornecedor] = @CEP_Fornecedor, [Endereco_Fornecedor] = @Endereco_Forne" +
+                "cedor, [CompEnd_Fornecedor] = @CompEnd_Fornecedor, [Bairro_Fornecedor] = @Bairro" +
+                "_Fornecedor, [Estado_Fornecedor] = @Estado_Fornecedor, [Cidade_Fornecedor] = @Ci" +
+                "dade_Fornecedor, [Status_Fornecedor] = @Status_Fornecedor, [Obs_Fornecedor] = @O" +
+                "bs_Fornecedor WHERE (([id] = @Original_id) AND ([NomeFant_Fornecedor] = @Origina" +
+                "l_NomeFant_Fornecedor) AND ([RazaoSocial_Fornecedor] = @Original_RazaoSocial_For" +
+                "necedor) AND ([CNPJ_Fornecedor] = @Original_CNPJ_Fornecedor) AND ([IE_Fornecedor" +
+                "] = @Original_IE_Fornecedor) AND ((@IsNull_Email_Fornecedor = 1 AND [Email_Forne" +
+                "cedor] IS NULL) OR ([Email_Fornecedor] = @Original_Email_Fornecedor)) AND ((@IsN" +
+                "ull_TelGeral_Fornecedor = 1 AND [TelGeral_Fornecedor] IS NULL) OR ([TelGeral_For" +
+                "necedor] = @Original_TelGeral_Fornecedor)) AND ((@IsNull_TelRamal_Fornecedor = 1" +
+                " AND [TelRamal_Fornecedor] IS NULL) OR ([TelRamal_Fornecedor] = @Original_TelRam" +
+                "al_Fornecedor)) AND ((@IsNull_TelCel_Fornecedor = 1 AND [TelCel_Fornecedor] IS N" +
+                "ULL) OR ([TelCel_Fornecedor] = @Original_TelCel_Fornecedor)) AND ((@IsNull_Opera" +
+                "doraCel_Fornecedor = 1 AND [OperadoraCel_Fornecedor] IS NULL) OR ([OperadoraCel_" +
+                "Fornecedor] = @Original_OperadoraCel_Fornecedor)) AND ([ContatoResp_Fornecedor] " +
+                "= @Original_ContatoResp_Fornecedor) AND ((@IsNull_CEP_Fornecedor = 1 AND [CEP_Fo" +
+                "rnecedor] IS NULL) OR ([CEP_Fornecedor] = @Original_CEP_Fornecedor)) AND ([Ender" +
+                "eco_Fornecedor] = @Original_Endereco_Fornecedor) AND ((@IsNull_CompEnd_Fornecedo" +
+                "r = 1 AND [CompEnd_Fornecedor] IS NULL) OR ([CompEnd_Fornecedor] = @Original_Com" +
+                "pEnd_Fornecedor)) AND ([Bairro_Fornecedor] = @Original_Bairro_Fornecedor) AND ([" +
+                "Estado_Fornecedor] = @Original_Estado_Fornecedor) AND ([Cidade_Fornecedor] = @Or" +
+                "iginal_Cidade_Fornecedor) AND ([Status_Fornecedor] = @Original_Status_Fornecedor" +
+                "));\r\nSELECT id, NomeFant_Fornecedor, RazaoSocial_Fornecedor, CNPJ_Fornecedor, IE" +
+                "_Fornecedor, Email_Fornecedor, TelGeral_Fornecedor, TelRamal_Fornecedor, TelCel_" +
+                "Fornecedor, OperadoraCel_Fornecedor, ContatoResp_Fornecedor, CEP_Fornecedor, End" +
+                "ereco_Fornecedor, CompEnd_Fornecedor, Bairro_Fornecedor, Estado_Fornecedor, Cida" +
+                "de_Fornecedor, Status_Fornecedor, Obs_Fornecedor FROM tbl_Fornecedores WHERE (id" +
+                " = @id)";
+            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NomeFant_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NomeFant_Fornecedor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RazaoSocial_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "RazaoSocial_Fornecedor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CNPJ_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CNPJ_Fornecedor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IE_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IE_Fornecedor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Email_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Email_Fornecedor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TelGeral_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TelGeral_Fornecedor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TelRamal_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TelRamal_Fornecedor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TelCel_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TelCel_Fornecedor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OperadoraCel_Fornecedor", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OperadoraCel_Fornecedor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ContatoResp_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ContatoResp_Fornecedor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CEP_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CEP_Fornecedor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Endereco_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Endereco_Fornecedor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CompEnd_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CompEnd_Fornecedor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Bairro_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Bairro_Fornecedor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Estado_Fornecedor", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Estado_Fornecedor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Cidade_Fornecedor", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cidade_Fornecedor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Status_Fornecedor", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Status_Fornecedor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Obs_Fornecedor", global::System.Data.SqlDbType.Text, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Obs_Fornecedor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_NomeFant_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NomeFant_Fornecedor", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_RazaoSocial_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "RazaoSocial_Fornecedor", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CNPJ_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CNPJ_Fornecedor", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IE_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IE_Fornecedor", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Email_Fornecedor", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Email_Fornecedor", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Email_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Email_Fornecedor", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_TelGeral_Fornecedor", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TelGeral_Fornecedor", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TelGeral_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TelGeral_Fornecedor", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_TelRamal_Fornecedor", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TelRamal_Fornecedor", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TelRamal_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TelRamal_Fornecedor", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_TelCel_Fornecedor", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TelCel_Fornecedor", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TelCel_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TelCel_Fornecedor", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_OperadoraCel_Fornecedor", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OperadoraCel_Fornecedor", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OperadoraCel_Fornecedor", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OperadoraCel_Fornecedor", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ContatoResp_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ContatoResp_Fornecedor", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_CEP_Fornecedor", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CEP_Fornecedor", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CEP_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CEP_Fornecedor", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Endereco_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Endereco_Fornecedor", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_CompEnd_Fornecedor", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CompEnd_Fornecedor", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CompEnd_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CompEnd_Fornecedor", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Bairro_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Bairro_Fornecedor", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Estado_Fornecedor", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Estado_Fornecedor", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Cidade_Fornecedor", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cidade_Fornecedor", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Status_Fornecedor", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Status_Fornecedor", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::Gerenciador_Oficina_Mecanica.Properties.Settings.Default.GerenciaOficinaConnection;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = @"SELECT id, NomeFant_Fornecedor, RazaoSocial_Fornecedor, CNPJ_Fornecedor, IE_Fornecedor, Email_Fornecedor, TelGeral_Fornecedor, TelRamal_Fornecedor, TelCel_Fornecedor, OperadoraCel_Fornecedor, ContatoResp_Fornecedor, CEP_Fornecedor, Endereco_Fornecedor, CompEnd_Fornecedor, Bairro_Fornecedor, Estado_Fornecedor, Cidade_Fornecedor, Status_Fornecedor, Obs_Fornecedor FROM dbo.tbl_Fornecedores";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(GerenciaOficinaDataSet.tbl_FornecedoresDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual GerenciaOficinaDataSet.tbl_FornecedoresDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            GerenciaOficinaDataSet.tbl_FornecedoresDataTable dataTable = new GerenciaOficinaDataSet.tbl_FornecedoresDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(GerenciaOficinaDataSet.tbl_FornecedoresDataTable dataTable) {
+            return this.Adapter.Update(dataTable);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(GerenciaOficinaDataSet dataSet) {
+            return this.Adapter.Update(dataSet, "tbl_Fornecedores");
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow dataRow) {
+            return this.Adapter.Update(new global::System.Data.DataRow[] {
+                        dataRow});
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow[] dataRows) {
+            return this.Adapter.Update(dataRows);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
+        public virtual int Delete(
+                    int Original_id, 
+                    string Original_NomeFant_Fornecedor, 
+                    string Original_RazaoSocial_Fornecedor, 
+                    string Original_CNPJ_Fornecedor, 
+                    string Original_IE_Fornecedor, 
+                    string Original_Email_Fornecedor, 
+                    string Original_TelGeral_Fornecedor, 
+                    string Original_TelRamal_Fornecedor, 
+                    string Original_TelCel_Fornecedor, 
+                    global::System.Nullable<int> Original_OperadoraCel_Fornecedor, 
+                    string Original_ContatoResp_Fornecedor, 
+                    string Original_CEP_Fornecedor, 
+                    string Original_Endereco_Fornecedor, 
+                    string Original_CompEnd_Fornecedor, 
+                    string Original_Bairro_Fornecedor, 
+                    int Original_Estado_Fornecedor, 
+                    int Original_Cidade_Fornecedor, 
+                    int Original_Status_Fornecedor) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_id));
+            if ((Original_NomeFant_Fornecedor == null)) {
+                throw new global::System.ArgumentNullException("Original_NomeFant_Fornecedor");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_NomeFant_Fornecedor));
+            }
+            if ((Original_RazaoSocial_Fornecedor == null)) {
+                throw new global::System.ArgumentNullException("Original_RazaoSocial_Fornecedor");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_RazaoSocial_Fornecedor));
+            }
+            if ((Original_CNPJ_Fornecedor == null)) {
+                throw new global::System.ArgumentNullException("Original_CNPJ_Fornecedor");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((string)(Original_CNPJ_Fornecedor));
+            }
+            if ((Original_IE_Fornecedor == null)) {
+                throw new global::System.ArgumentNullException("Original_IE_Fornecedor");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_IE_Fornecedor));
+            }
+            if ((Original_Email_Fornecedor == null)) {
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_Email_Fornecedor));
+            }
+            if ((Original_TelGeral_Fornecedor == null)) {
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_TelGeral_Fornecedor));
+            }
+            if ((Original_TelRamal_Fornecedor == null)) {
+                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_TelRamal_Fornecedor));
+            }
+            if ((Original_TelCel_Fornecedor == null)) {
+                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[12].Value = ((string)(Original_TelCel_Fornecedor));
+            }
+            if ((Original_OperadoraCel_Fornecedor.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[14].Value = ((int)(Original_OperadoraCel_Fornecedor.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[14].Value = global::System.DBNull.Value;
+            }
+            if ((Original_ContatoResp_Fornecedor == null)) {
+                throw new global::System.ArgumentNullException("Original_ContatoResp_Fornecedor");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[15].Value = ((string)(Original_ContatoResp_Fornecedor));
+            }
+            if ((Original_CEP_Fornecedor == null)) {
+                this.Adapter.DeleteCommand.Parameters[16].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[17].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[16].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[17].Value = ((string)(Original_CEP_Fornecedor));
+            }
+            if ((Original_Endereco_Fornecedor == null)) {
+                throw new global::System.ArgumentNullException("Original_Endereco_Fornecedor");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[18].Value = ((string)(Original_Endereco_Fornecedor));
+            }
+            if ((Original_CompEnd_Fornecedor == null)) {
+                this.Adapter.DeleteCommand.Parameters[19].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[20].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[19].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[20].Value = ((string)(Original_CompEnd_Fornecedor));
+            }
+            if ((Original_Bairro_Fornecedor == null)) {
+                throw new global::System.ArgumentNullException("Original_Bairro_Fornecedor");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[21].Value = ((string)(Original_Bairro_Fornecedor));
+            }
+            this.Adapter.DeleteCommand.Parameters[22].Value = ((int)(Original_Estado_Fornecedor));
+            this.Adapter.DeleteCommand.Parameters[23].Value = ((int)(Original_Cidade_Fornecedor));
+            this.Adapter.DeleteCommand.Parameters[24].Value = ((int)(Original_Status_Fornecedor));
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
+            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.DeleteCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.DeleteCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+        public virtual int Insert(
+                    string NomeFant_Fornecedor, 
+                    string RazaoSocial_Fornecedor, 
+                    string CNPJ_Fornecedor, 
+                    string IE_Fornecedor, 
+                    string Email_Fornecedor, 
+                    string TelGeral_Fornecedor, 
+                    string TelRamal_Fornecedor, 
+                    string TelCel_Fornecedor, 
+                    global::System.Nullable<int> OperadoraCel_Fornecedor, 
+                    string ContatoResp_Fornecedor, 
+                    string CEP_Fornecedor, 
+                    string Endereco_Fornecedor, 
+                    string CompEnd_Fornecedor, 
+                    string Bairro_Fornecedor, 
+                    int Estado_Fornecedor, 
+                    int Cidade_Fornecedor, 
+                    int Status_Fornecedor, 
+                    string Obs_Fornecedor) {
+            if ((NomeFant_Fornecedor == null)) {
+                throw new global::System.ArgumentNullException("NomeFant_Fornecedor");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(NomeFant_Fornecedor));
+            }
+            if ((RazaoSocial_Fornecedor == null)) {
+                throw new global::System.ArgumentNullException("RazaoSocial_Fornecedor");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(RazaoSocial_Fornecedor));
+            }
+            if ((CNPJ_Fornecedor == null)) {
+                throw new global::System.ArgumentNullException("CNPJ_Fornecedor");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(CNPJ_Fornecedor));
+            }
+            if ((IE_Fornecedor == null)) {
+                throw new global::System.ArgumentNullException("IE_Fornecedor");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(IE_Fornecedor));
+            }
+            if ((Email_Fornecedor == null)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(Email_Fornecedor));
+            }
+            if ((TelGeral_Fornecedor == null)) {
+                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(TelGeral_Fornecedor));
+            }
+            if ((TelRamal_Fornecedor == null)) {
+                this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(TelRamal_Fornecedor));
+            }
+            if ((TelCel_Fornecedor == null)) {
+                this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[7].Value = ((string)(TelCel_Fornecedor));
+            }
+            if ((OperadoraCel_Fornecedor.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[8].Value = ((int)(OperadoraCel_Fornecedor.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            if ((ContatoResp_Fornecedor == null)) {
+                throw new global::System.ArgumentNullException("ContatoResp_Fornecedor");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[9].Value = ((string)(ContatoResp_Fornecedor));
+            }
+            if ((CEP_Fornecedor == null)) {
+                this.Adapter.InsertCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[10].Value = ((string)(CEP_Fornecedor));
+            }
+            if ((Endereco_Fornecedor == null)) {
+                throw new global::System.ArgumentNullException("Endereco_Fornecedor");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[11].Value = ((string)(Endereco_Fornecedor));
+            }
+            if ((CompEnd_Fornecedor == null)) {
+                this.Adapter.InsertCommand.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[12].Value = ((string)(CompEnd_Fornecedor));
+            }
+            if ((Bairro_Fornecedor == null)) {
+                throw new global::System.ArgumentNullException("Bairro_Fornecedor");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[13].Value = ((string)(Bairro_Fornecedor));
+            }
+            this.Adapter.InsertCommand.Parameters[14].Value = ((int)(Estado_Fornecedor));
+            this.Adapter.InsertCommand.Parameters[15].Value = ((int)(Cidade_Fornecedor));
+            this.Adapter.InsertCommand.Parameters[16].Value = ((int)(Status_Fornecedor));
+            if ((Obs_Fornecedor == null)) {
+                this.Adapter.InsertCommand.Parameters[17].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[17].Value = ((string)(Obs_Fornecedor));
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.InsertCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.InsertCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(
+                    string NomeFant_Fornecedor, 
+                    string RazaoSocial_Fornecedor, 
+                    string CNPJ_Fornecedor, 
+                    string IE_Fornecedor, 
+                    string Email_Fornecedor, 
+                    string TelGeral_Fornecedor, 
+                    string TelRamal_Fornecedor, 
+                    string TelCel_Fornecedor, 
+                    global::System.Nullable<int> OperadoraCel_Fornecedor, 
+                    string ContatoResp_Fornecedor, 
+                    string CEP_Fornecedor, 
+                    string Endereco_Fornecedor, 
+                    string CompEnd_Fornecedor, 
+                    string Bairro_Fornecedor, 
+                    int Estado_Fornecedor, 
+                    int Cidade_Fornecedor, 
+                    int Status_Fornecedor, 
+                    string Obs_Fornecedor, 
+                    int Original_id, 
+                    string Original_NomeFant_Fornecedor, 
+                    string Original_RazaoSocial_Fornecedor, 
+                    string Original_CNPJ_Fornecedor, 
+                    string Original_IE_Fornecedor, 
+                    string Original_Email_Fornecedor, 
+                    string Original_TelGeral_Fornecedor, 
+                    string Original_TelRamal_Fornecedor, 
+                    string Original_TelCel_Fornecedor, 
+                    global::System.Nullable<int> Original_OperadoraCel_Fornecedor, 
+                    string Original_ContatoResp_Fornecedor, 
+                    string Original_CEP_Fornecedor, 
+                    string Original_Endereco_Fornecedor, 
+                    string Original_CompEnd_Fornecedor, 
+                    string Original_Bairro_Fornecedor, 
+                    int Original_Estado_Fornecedor, 
+                    int Original_Cidade_Fornecedor, 
+                    int Original_Status_Fornecedor, 
+                    int id) {
+            if ((NomeFant_Fornecedor == null)) {
+                throw new global::System.ArgumentNullException("NomeFant_Fornecedor");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(NomeFant_Fornecedor));
+            }
+            if ((RazaoSocial_Fornecedor == null)) {
+                throw new global::System.ArgumentNullException("RazaoSocial_Fornecedor");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(RazaoSocial_Fornecedor));
+            }
+            if ((CNPJ_Fornecedor == null)) {
+                throw new global::System.ArgumentNullException("CNPJ_Fornecedor");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(CNPJ_Fornecedor));
+            }
+            if ((IE_Fornecedor == null)) {
+                throw new global::System.ArgumentNullException("IE_Fornecedor");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(IE_Fornecedor));
+            }
+            if ((Email_Fornecedor == null)) {
+                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Email_Fornecedor));
+            }
+            if ((TelGeral_Fornecedor == null)) {
+                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(TelGeral_Fornecedor));
+            }
+            if ((TelRamal_Fornecedor == null)) {
+                this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(TelRamal_Fornecedor));
+            }
+            if ((TelCel_Fornecedor == null)) {
+                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(TelCel_Fornecedor));
+            }
+            if ((OperadoraCel_Fornecedor.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(OperadoraCel_Fornecedor.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            if ((ContatoResp_Fornecedor == null)) {
+                throw new global::System.ArgumentNullException("ContatoResp_Fornecedor");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(ContatoResp_Fornecedor));
+            }
+            if ((CEP_Fornecedor == null)) {
+                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(CEP_Fornecedor));
+            }
+            if ((Endereco_Fornecedor == null)) {
+                throw new global::System.ArgumentNullException("Endereco_Fornecedor");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Endereco_Fornecedor));
+            }
+            if ((CompEnd_Fornecedor == null)) {
+                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(CompEnd_Fornecedor));
+            }
+            if ((Bairro_Fornecedor == null)) {
+                throw new global::System.ArgumentNullException("Bairro_Fornecedor");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Bairro_Fornecedor));
+            }
+            this.Adapter.UpdateCommand.Parameters[14].Value = ((int)(Estado_Fornecedor));
+            this.Adapter.UpdateCommand.Parameters[15].Value = ((int)(Cidade_Fornecedor));
+            this.Adapter.UpdateCommand.Parameters[16].Value = ((int)(Status_Fornecedor));
+            if ((Obs_Fornecedor == null)) {
+                this.Adapter.UpdateCommand.Parameters[17].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((string)(Obs_Fornecedor));
+            }
+            this.Adapter.UpdateCommand.Parameters[18].Value = ((int)(Original_id));
+            if ((Original_NomeFant_Fornecedor == null)) {
+                throw new global::System.ArgumentNullException("Original_NomeFant_Fornecedor");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((string)(Original_NomeFant_Fornecedor));
+            }
+            if ((Original_RazaoSocial_Fornecedor == null)) {
+                throw new global::System.ArgumentNullException("Original_RazaoSocial_Fornecedor");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((string)(Original_RazaoSocial_Fornecedor));
+            }
+            if ((Original_CNPJ_Fornecedor == null)) {
+                throw new global::System.ArgumentNullException("Original_CNPJ_Fornecedor");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((string)(Original_CNPJ_Fornecedor));
+            }
+            if ((Original_IE_Fornecedor == null)) {
+                throw new global::System.ArgumentNullException("Original_IE_Fornecedor");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[22].Value = ((string)(Original_IE_Fornecedor));
+            }
+            if ((Original_Email_Fornecedor == null)) {
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[24].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[24].Value = ((string)(Original_Email_Fornecedor));
+            }
+            if ((Original_TelGeral_Fornecedor == null)) {
+                this.Adapter.UpdateCommand.Parameters[25].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[26].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[25].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[26].Value = ((string)(Original_TelGeral_Fornecedor));
+            }
+            if ((Original_TelRamal_Fornecedor == null)) {
+                this.Adapter.UpdateCommand.Parameters[27].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[28].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[27].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[28].Value = ((string)(Original_TelRamal_Fornecedor));
+            }
+            if ((Original_TelCel_Fornecedor == null)) {
+                this.Adapter.UpdateCommand.Parameters[29].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[30].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[29].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[30].Value = ((string)(Original_TelCel_Fornecedor));
+            }
+            if ((Original_OperadoraCel_Fornecedor.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[31].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[32].Value = ((int)(Original_OperadoraCel_Fornecedor.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[31].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[32].Value = global::System.DBNull.Value;
+            }
+            if ((Original_ContatoResp_Fornecedor == null)) {
+                throw new global::System.ArgumentNullException("Original_ContatoResp_Fornecedor");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[33].Value = ((string)(Original_ContatoResp_Fornecedor));
+            }
+            if ((Original_CEP_Fornecedor == null)) {
+                this.Adapter.UpdateCommand.Parameters[34].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[35].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[34].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[35].Value = ((string)(Original_CEP_Fornecedor));
+            }
+            if ((Original_Endereco_Fornecedor == null)) {
+                throw new global::System.ArgumentNullException("Original_Endereco_Fornecedor");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[36].Value = ((string)(Original_Endereco_Fornecedor));
+            }
+            if ((Original_CompEnd_Fornecedor == null)) {
+                this.Adapter.UpdateCommand.Parameters[37].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[38].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[37].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[38].Value = ((string)(Original_CompEnd_Fornecedor));
+            }
+            if ((Original_Bairro_Fornecedor == null)) {
+                throw new global::System.ArgumentNullException("Original_Bairro_Fornecedor");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[39].Value = ((string)(Original_Bairro_Fornecedor));
+            }
+            this.Adapter.UpdateCommand.Parameters[40].Value = ((int)(Original_Estado_Fornecedor));
+            this.Adapter.UpdateCommand.Parameters[41].Value = ((int)(Original_Cidade_Fornecedor));
+            this.Adapter.UpdateCommand.Parameters[42].Value = ((int)(Original_Status_Fornecedor));
+            this.Adapter.UpdateCommand.Parameters[43].Value = ((int)(id));
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
+            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.UpdateCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.UpdateCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(
+                    string NomeFant_Fornecedor, 
+                    string RazaoSocial_Fornecedor, 
+                    string CNPJ_Fornecedor, 
+                    string IE_Fornecedor, 
+                    string Email_Fornecedor, 
+                    string TelGeral_Fornecedor, 
+                    string TelRamal_Fornecedor, 
+                    string TelCel_Fornecedor, 
+                    global::System.Nullable<int> OperadoraCel_Fornecedor, 
+                    string ContatoResp_Fornecedor, 
+                    string CEP_Fornecedor, 
+                    string Endereco_Fornecedor, 
+                    string CompEnd_Fornecedor, 
+                    string Bairro_Fornecedor, 
+                    int Estado_Fornecedor, 
+                    int Cidade_Fornecedor, 
+                    int Status_Fornecedor, 
+                    string Obs_Fornecedor, 
+                    int Original_id, 
+                    string Original_NomeFant_Fornecedor, 
+                    string Original_RazaoSocial_Fornecedor, 
+                    string Original_CNPJ_Fornecedor, 
+                    string Original_IE_Fornecedor, 
+                    string Original_Email_Fornecedor, 
+                    string Original_TelGeral_Fornecedor, 
+                    string Original_TelRamal_Fornecedor, 
+                    string Original_TelCel_Fornecedor, 
+                    global::System.Nullable<int> Original_OperadoraCel_Fornecedor, 
+                    string Original_ContatoResp_Fornecedor, 
+                    string Original_CEP_Fornecedor, 
+                    string Original_Endereco_Fornecedor, 
+                    string Original_CompEnd_Fornecedor, 
+                    string Original_Bairro_Fornecedor, 
+                    int Original_Estado_Fornecedor, 
+                    int Original_Cidade_Fornecedor, 
+                    int Original_Status_Fornecedor) {
+            return this.Update(NomeFant_Fornecedor, RazaoSocial_Fornecedor, CNPJ_Fornecedor, IE_Fornecedor, Email_Fornecedor, TelGeral_Fornecedor, TelRamal_Fornecedor, TelCel_Fornecedor, OperadoraCel_Fornecedor, ContatoResp_Fornecedor, CEP_Fornecedor, Endereco_Fornecedor, CompEnd_Fornecedor, Bairro_Fornecedor, Estado_Fornecedor, Cidade_Fornecedor, Status_Fornecedor, Obs_Fornecedor, Original_id, Original_NomeFant_Fornecedor, Original_RazaoSocial_Fornecedor, Original_CNPJ_Fornecedor, Original_IE_Fornecedor, Original_Email_Fornecedor, Original_TelGeral_Fornecedor, Original_TelRamal_Fornecedor, Original_TelCel_Fornecedor, Original_OperadoraCel_Fornecedor, Original_ContatoResp_Fornecedor, Original_CEP_Fornecedor, Original_Endereco_Fornecedor, Original_CompEnd_Fornecedor, Original_Bairro_Fornecedor, Original_Estado_Fornecedor, Original_Cidade_Fornecedor, Original_Status_Fornecedor, Original_id);
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class tbl_OrcamentosTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public tbl_OrcamentosTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "tbl_Orcamentos";
+            tableMapping.ColumnMappings.Add("Num_Orcamento", "Num_Orcamento");
+            tableMapping.ColumnMappings.Add("CodCli_Orcamento", "CodCli_Orcamento");
+            tableMapping.ColumnMappings.Add("CodVeiculoCli_Orcamento", "CodVeiculoCli_Orcamento");
+            tableMapping.ColumnMappings.Add("Dt_Orcamento", "Dt_Orcamento");
+            tableMapping.ColumnMappings.Add("DtAprov_Orcamento", "DtAprov_Orcamento");
+            tableMapping.ColumnMappings.Add("Status_Orcamento", "Status_Orcamento");
+            tableMapping.ColumnMappings.Add("CodServico_Orcamento", "CodServico_Orcamento");
+            tableMapping.ColumnMappings.Add("CodPeca_Orcamento", "CodPeca_Orcamento");
+            tableMapping.ColumnMappings.Add("QuantPeca_Orcamento", "QuantPeca_Orcamento");
+            tableMapping.ColumnMappings.Add("VlrTotServicos_Orcamento", "VlrTotServicos_Orcamento");
+            tableMapping.ColumnMappings.Add("VlrTotPecas_Orcamento", "VlrTotPecas_Orcamento");
+            this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.DeleteCommand.Connection = this.Connection;
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[tbl_Orcamentos] WHERE (([Num_Orcamento] = @Original_Num_Orcamento) AND ([CodCli_Orcamento] = @Original_CodCli_Orcamento) AND ([CodVeiculoCli_Orcamento] = @Original_CodVeiculoCli_Orcamento) AND ([Dt_Orcamento] = @Original_Dt_Orcamento) AND ((@IsNull_DtAprov_Orcamento = 1 AND [DtAprov_Orcamento] IS NULL) OR ([DtAprov_Orcamento] = @Original_DtAprov_Orcamento)) AND ([Status_Orcamento] = @Original_Status_Orcamento) AND ((@IsNull_CodServico_Orcamento = 1 AND [CodServico_Orcamento] IS NULL) OR ([CodServico_Orcamento] = @Original_CodServico_Orcamento)) AND ((@IsNull_CodPeca_Orcamento = 1 AND [CodPeca_Orcamento] IS NULL) OR ([CodPeca_Orcamento] = @Original_CodPeca_Orcamento)) AND ((@IsNull_QuantPeca_Orcamento = 1 AND [QuantPeca_Orcamento] IS NULL) OR ([QuantPeca_Orcamento] = @Original_QuantPeca_Orcamento)) AND ((@IsNull_VlrTotServicos_Orcamento = 1 AND [VlrTotServicos_Orcamento] IS NULL) OR ([VlrTotServicos_Orcamento] = @Original_VlrTotServicos_Orcamento)) AND ((@IsNull_VlrTotPecas_Orcamento = 1 AND [VlrTotPecas_Orcamento] IS NULL) OR ([VlrTotPecas_Orcamento] = @Original_VlrTotPecas_Orcamento)))";
+            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Num_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Num_Orcamento", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CodCli_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CodCli_Orcamento", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CodVeiculoCli_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CodVeiculoCli_Orcamento", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Dt_Orcamento", global::System.Data.SqlDbType.SmallDateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Dt_Orcamento", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_DtAprov_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DtAprov_Orcamento", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_DtAprov_Orcamento", global::System.Data.SqlDbType.SmallDateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DtAprov_Orcamento", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Status_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Status_Orcamento", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_CodServico_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CodServico_Orcamento", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CodServico_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CodServico_Orcamento", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_CodPeca_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CodPeca_Orcamento", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CodPeca_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CodPeca_Orcamento", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_QuantPeca_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "QuantPeca_Orcamento", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_QuantPeca_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "QuantPeca_Orcamento", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_VlrTotServicos_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "VlrTotServicos_Orcamento", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_VlrTotServicos_Orcamento", global::System.Data.SqlDbType.SmallMoney, 0, global::System.Data.ParameterDirection.Input, 0, 0, "VlrTotServicos_Orcamento", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_VlrTotPecas_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "VlrTotPecas_Orcamento", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_VlrTotPecas_Orcamento", global::System.Data.SqlDbType.SmallMoney, 0, global::System.Data.ParameterDirection.Input, 0, 0, "VlrTotPecas_Orcamento", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.InsertCommand.Connection = this.Connection;
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[tbl_Orcamentos] ([Num_Orcamento], [CodCli_Orcamento], [CodVeiculoCli_Orcamento], [Dt_Orcamento], [DtAprov_Orcamento], [Status_Orcamento], [CodServico_Orcamento], [CodPeca_Orcamento], [QuantPeca_Orcamento], [VlrTotServicos_Orcamento], [VlrTotPecas_Orcamento]) VALUES (@Num_Orcamento, @CodCli_Orcamento, @CodVeiculoCli_Orcamento, @Dt_Orcamento, @DtAprov_Orcamento, @Status_Orcamento, @CodServico_Orcamento, @CodPeca_Orcamento, @QuantPeca_Orcamento, @VlrTotServicos_Orcamento, @VlrTotPecas_Orcamento);
+SELECT Num_Orcamento, CodCli_Orcamento, CodVeiculoCli_Orcamento, Dt_Orcamento, DtAprov_Orcamento, Status_Orcamento, CodServico_Orcamento, CodPeca_Orcamento, QuantPeca_Orcamento, VlrTotServicos_Orcamento, VlrTotPecas_Orcamento FROM tbl_Orcamentos WHERE (CodCli_Orcamento = @CodCli_Orcamento)";
+            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Num_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Num_Orcamento", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CodCli_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CodCli_Orcamento", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CodVeiculoCli_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CodVeiculoCli_Orcamento", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Dt_Orcamento", global::System.Data.SqlDbType.SmallDateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Dt_Orcamento", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DtAprov_Orcamento", global::System.Data.SqlDbType.SmallDateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DtAprov_Orcamento", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Status_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Status_Orcamento", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CodServico_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CodServico_Orcamento", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CodPeca_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CodPeca_Orcamento", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@QuantPeca_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "QuantPeca_Orcamento", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@VlrTotServicos_Orcamento", global::System.Data.SqlDbType.SmallMoney, 0, global::System.Data.ParameterDirection.Input, 0, 0, "VlrTotServicos_Orcamento", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@VlrTotPecas_Orcamento", global::System.Data.SqlDbType.SmallMoney, 0, global::System.Data.ParameterDirection.Input, 0, 0, "VlrTotPecas_Orcamento", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.UpdateCommand.Connection = this.Connection;
+            this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[tbl_Orcamentos] SET [Num_Orcamento] = @Num_Orcamento, [CodCli_Orcam" +
+                "ento] = @CodCli_Orcamento, [CodVeiculoCli_Orcamento] = @CodVeiculoCli_Orcamento," +
+                " [Dt_Orcamento] = @Dt_Orcamento, [DtAprov_Orcamento] = @DtAprov_Orcamento, [Stat" +
+                "us_Orcamento] = @Status_Orcamento, [CodServico_Orcamento] = @CodServico_Orcament" +
+                "o, [CodPeca_Orcamento] = @CodPeca_Orcamento, [QuantPeca_Orcamento] = @QuantPeca_" +
+                "Orcamento, [VlrTotServicos_Orcamento] = @VlrTotServicos_Orcamento, [VlrTotPecas_" +
+                "Orcamento] = @VlrTotPecas_Orcamento WHERE (([Num_Orcamento] = @Original_Num_Orca" +
+                "mento) AND ([CodCli_Orcamento] = @Original_CodCli_Orcamento) AND ([CodVeiculoCli" +
+                "_Orcamento] = @Original_CodVeiculoCli_Orcamento) AND ([Dt_Orcamento] = @Original" +
+                "_Dt_Orcamento) AND ((@IsNull_DtAprov_Orcamento = 1 AND [DtAprov_Orcamento] IS NU" +
+                "LL) OR ([DtAprov_Orcamento] = @Original_DtAprov_Orcamento)) AND ([Status_Orcamen" +
+                "to] = @Original_Status_Orcamento) AND ((@IsNull_CodServico_Orcamento = 1 AND [Co" +
+                "dServico_Orcamento] IS NULL) OR ([CodServico_Orcamento] = @Original_CodServico_O" +
+                "rcamento)) AND ((@IsNull_CodPeca_Orcamento = 1 AND [CodPeca_Orcamento] IS NULL) " +
+                "OR ([CodPeca_Orcamento] = @Original_CodPeca_Orcamento)) AND ((@IsNull_QuantPeca_" +
+                "Orcamento = 1 AND [QuantPeca_Orcamento] IS NULL) OR ([QuantPeca_Orcamento] = @Or" +
+                "iginal_QuantPeca_Orcamento)) AND ((@IsNull_VlrTotServicos_Orcamento = 1 AND [Vlr" +
+                "TotServicos_Orcamento] IS NULL) OR ([VlrTotServicos_Orcamento] = @Original_VlrTo" +
+                "tServicos_Orcamento)) AND ((@IsNull_VlrTotPecas_Orcamento = 1 AND [VlrTotPecas_O" +
+                "rcamento] IS NULL) OR ([VlrTotPecas_Orcamento] = @Original_VlrTotPecas_Orcamento" +
+                ")));\r\nSELECT Num_Orcamento, CodCli_Orcamento, CodVeiculoCli_Orcamento, Dt_Orcame" +
+                "nto, DtAprov_Orcamento, Status_Orcamento, CodServico_Orcamento, CodPeca_Orcament" +
+                "o, QuantPeca_Orcamento, VlrTotServicos_Orcamento, VlrTotPecas_Orcamento FROM tbl" +
+                "_Orcamentos WHERE (CodCli_Orcamento = @CodCli_Orcamento)";
+            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Num_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Num_Orcamento", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CodCli_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CodCli_Orcamento", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CodVeiculoCli_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CodVeiculoCli_Orcamento", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Dt_Orcamento", global::System.Data.SqlDbType.SmallDateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Dt_Orcamento", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DtAprov_Orcamento", global::System.Data.SqlDbType.SmallDateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DtAprov_Orcamento", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Status_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Status_Orcamento", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CodServico_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CodServico_Orcamento", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CodPeca_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CodPeca_Orcamento", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@QuantPeca_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "QuantPeca_Orcamento", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@VlrTotServicos_Orcamento", global::System.Data.SqlDbType.SmallMoney, 0, global::System.Data.ParameterDirection.Input, 0, 0, "VlrTotServicos_Orcamento", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@VlrTotPecas_Orcamento", global::System.Data.SqlDbType.SmallMoney, 0, global::System.Data.ParameterDirection.Input, 0, 0, "VlrTotPecas_Orcamento", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Num_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Num_Orcamento", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CodCli_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CodCli_Orcamento", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CodVeiculoCli_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CodVeiculoCli_Orcamento", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Dt_Orcamento", global::System.Data.SqlDbType.SmallDateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Dt_Orcamento", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_DtAprov_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DtAprov_Orcamento", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_DtAprov_Orcamento", global::System.Data.SqlDbType.SmallDateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DtAprov_Orcamento", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Status_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Status_Orcamento", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_CodServico_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CodServico_Orcamento", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CodServico_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CodServico_Orcamento", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_CodPeca_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CodPeca_Orcamento", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CodPeca_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CodPeca_Orcamento", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_QuantPeca_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "QuantPeca_Orcamento", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_QuantPeca_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "QuantPeca_Orcamento", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_VlrTotServicos_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "VlrTotServicos_Orcamento", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_VlrTotServicos_Orcamento", global::System.Data.SqlDbType.SmallMoney, 0, global::System.Data.ParameterDirection.Input, 0, 0, "VlrTotServicos_Orcamento", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_VlrTotPecas_Orcamento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "VlrTotPecas_Orcamento", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_VlrTotPecas_Orcamento", global::System.Data.SqlDbType.SmallMoney, 0, global::System.Data.ParameterDirection.Input, 0, 0, "VlrTotPecas_Orcamento", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::Gerenciador_Oficina_Mecanica.Properties.Settings.Default.GerenciaOficinaConnection;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "SELECT Num_Orcamento, CodCli_Orcamento, CodVeiculoCli_Orcamento, Dt_Orcamento, Dt" +
+                "Aprov_Orcamento, Status_Orcamento, CodServico_Orcamento, CodPeca_Orcamento, Quan" +
+                "tPeca_Orcamento, VlrTotServicos_Orcamento, VlrTotPecas_Orcamento FROM dbo.tbl_Or" +
+                "camentos";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(GerenciaOficinaDataSet.tbl_OrcamentosDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual GerenciaOficinaDataSet.tbl_OrcamentosDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            GerenciaOficinaDataSet.tbl_OrcamentosDataTable dataTable = new GerenciaOficinaDataSet.tbl_OrcamentosDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(GerenciaOficinaDataSet.tbl_OrcamentosDataTable dataTable) {
+            return this.Adapter.Update(dataTable);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(GerenciaOficinaDataSet dataSet) {
+            return this.Adapter.Update(dataSet, "tbl_Orcamentos");
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow dataRow) {
+            return this.Adapter.Update(new global::System.Data.DataRow[] {
+                        dataRow});
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow[] dataRows) {
+            return this.Adapter.Update(dataRows);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
+        public virtual int Delete(int Original_Num_Orcamento, int Original_CodCli_Orcamento, int Original_CodVeiculoCli_Orcamento, System.DateTime Original_Dt_Orcamento, global::System.Nullable<global::System.DateTime> Original_DtAprov_Orcamento, int Original_Status_Orcamento, global::System.Nullable<int> Original_CodServico_Orcamento, global::System.Nullable<int> Original_CodPeca_Orcamento, global::System.Nullable<int> Original_QuantPeca_Orcamento, global::System.Nullable<decimal> Original_VlrTotServicos_Orcamento, global::System.Nullable<decimal> Original_VlrTotPecas_Orcamento) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Num_Orcamento));
+            this.Adapter.DeleteCommand.Parameters[1].Value = ((int)(Original_CodCli_Orcamento));
+            this.Adapter.DeleteCommand.Parameters[2].Value = ((int)(Original_CodVeiculoCli_Orcamento));
+            this.Adapter.DeleteCommand.Parameters[3].Value = ((System.DateTime)(Original_Dt_Orcamento));
+            if ((Original_DtAprov_Orcamento.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((System.DateTime)(Original_DtAprov_Orcamento.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            this.Adapter.DeleteCommand.Parameters[6].Value = ((int)(Original_Status_Orcamento));
+            if ((Original_CodServico_Orcamento.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((int)(Original_CodServico_Orcamento.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            if ((Original_CodPeca_Orcamento.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((int)(Original_CodPeca_Orcamento.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            if ((Original_QuantPeca_Orcamento.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[12].Value = ((int)(Original_QuantPeca_Orcamento.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            if ((Original_VlrTotServicos_Orcamento.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[14].Value = ((decimal)(Original_VlrTotServicos_Orcamento.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[14].Value = global::System.DBNull.Value;
+            }
+            if ((Original_VlrTotPecas_Orcamento.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[16].Value = ((decimal)(Original_VlrTotPecas_Orcamento.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[16].Value = global::System.DBNull.Value;
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
+            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.DeleteCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.DeleteCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+        public virtual int Insert(int Num_Orcamento, int CodCli_Orcamento, int CodVeiculoCli_Orcamento, System.DateTime Dt_Orcamento, global::System.Nullable<global::System.DateTime> DtAprov_Orcamento, int Status_Orcamento, global::System.Nullable<int> CodServico_Orcamento, global::System.Nullable<int> CodPeca_Orcamento, global::System.Nullable<int> QuantPeca_Orcamento, global::System.Nullable<decimal> VlrTotServicos_Orcamento, global::System.Nullable<decimal> VlrTotPecas_Orcamento) {
+            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(Num_Orcamento));
+            this.Adapter.InsertCommand.Parameters[1].Value = ((int)(CodCli_Orcamento));
+            this.Adapter.InsertCommand.Parameters[2].Value = ((int)(CodVeiculoCli_Orcamento));
+            this.Adapter.InsertCommand.Parameters[3].Value = ((System.DateTime)(Dt_Orcamento));
+            if ((DtAprov_Orcamento.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((System.DateTime)(DtAprov_Orcamento.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            this.Adapter.InsertCommand.Parameters[5].Value = ((int)(Status_Orcamento));
+            if ((CodServico_Orcamento.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[6].Value = ((int)(CodServico_Orcamento.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            if ((CodPeca_Orcamento.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[7].Value = ((int)(CodPeca_Orcamento.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            if ((QuantPeca_Orcamento.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[8].Value = ((int)(QuantPeca_Orcamento.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            if ((VlrTotServicos_Orcamento.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[9].Value = ((decimal)(VlrTotServicos_Orcamento.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            if ((VlrTotPecas_Orcamento.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[10].Value = ((decimal)(VlrTotPecas_Orcamento.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.InsertCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.InsertCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(
+                    int Num_Orcamento, 
+                    int CodCli_Orcamento, 
+                    int CodVeiculoCli_Orcamento, 
+                    System.DateTime Dt_Orcamento, 
+                    global::System.Nullable<global::System.DateTime> DtAprov_Orcamento, 
+                    int Status_Orcamento, 
+                    global::System.Nullable<int> CodServico_Orcamento, 
+                    global::System.Nullable<int> CodPeca_Orcamento, 
+                    global::System.Nullable<int> QuantPeca_Orcamento, 
+                    global::System.Nullable<decimal> VlrTotServicos_Orcamento, 
+                    global::System.Nullable<decimal> VlrTotPecas_Orcamento, 
+                    int Original_Num_Orcamento, 
+                    int Original_CodCli_Orcamento, 
+                    int Original_CodVeiculoCli_Orcamento, 
+                    System.DateTime Original_Dt_Orcamento, 
+                    global::System.Nullable<global::System.DateTime> Original_DtAprov_Orcamento, 
+                    int Original_Status_Orcamento, 
+                    global::System.Nullable<int> Original_CodServico_Orcamento, 
+                    global::System.Nullable<int> Original_CodPeca_Orcamento, 
+                    global::System.Nullable<int> Original_QuantPeca_Orcamento, 
+                    global::System.Nullable<decimal> Original_VlrTotServicos_Orcamento, 
+                    global::System.Nullable<decimal> Original_VlrTotPecas_Orcamento) {
+            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(Num_Orcamento));
+            this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(CodCli_Orcamento));
+            this.Adapter.UpdateCommand.Parameters[2].Value = ((int)(CodVeiculoCli_Orcamento));
+            this.Adapter.UpdateCommand.Parameters[3].Value = ((System.DateTime)(Dt_Orcamento));
+            if ((DtAprov_Orcamento.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((System.DateTime)(DtAprov_Orcamento.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Status_Orcamento));
+            if ((CodServico_Orcamento.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(CodServico_Orcamento.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            if ((CodPeca_Orcamento.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(CodPeca_Orcamento.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            if ((QuantPeca_Orcamento.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(QuantPeca_Orcamento.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            if ((VlrTotServicos_Orcamento.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((decimal)(VlrTotServicos_Orcamento.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            if ((VlrTotPecas_Orcamento.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((decimal)(VlrTotPecas_Orcamento.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            this.Adapter.UpdateCommand.Parameters[11].Value = ((int)(Original_Num_Orcamento));
+            this.Adapter.UpdateCommand.Parameters[12].Value = ((int)(Original_CodCli_Orcamento));
+            this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(Original_CodVeiculoCli_Orcamento));
+            this.Adapter.UpdateCommand.Parameters[14].Value = ((System.DateTime)(Original_Dt_Orcamento));
+            if ((Original_DtAprov_Orcamento.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((System.DateTime)(Original_DtAprov_Orcamento.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[16].Value = global::System.DBNull.Value;
+            }
+            this.Adapter.UpdateCommand.Parameters[17].Value = ((int)(Original_Status_Orcamento));
+            if ((Original_CodServico_Orcamento.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((int)(Original_CodServico_Orcamento.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[19].Value = global::System.DBNull.Value;
+            }
+            if ((Original_CodPeca_Orcamento.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((int)(Original_CodPeca_Orcamento.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[21].Value = global::System.DBNull.Value;
+            }
+            if ((Original_QuantPeca_Orcamento.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((int)(Original_QuantPeca_Orcamento.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[23].Value = global::System.DBNull.Value;
+            }
+            if ((Original_VlrTotServicos_Orcamento.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[25].Value = ((decimal)(Original_VlrTotServicos_Orcamento.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[25].Value = global::System.DBNull.Value;
+            }
+            if ((Original_VlrTotPecas_Orcamento.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[27].Value = ((decimal)(Original_VlrTotPecas_Orcamento.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[27].Value = global::System.DBNull.Value;
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
+            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.UpdateCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.UpdateCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(
+                    int Num_Orcamento, 
+                    int CodVeiculoCli_Orcamento, 
+                    System.DateTime Dt_Orcamento, 
+                    global::System.Nullable<global::System.DateTime> DtAprov_Orcamento, 
+                    int Status_Orcamento, 
+                    global::System.Nullable<int> CodServico_Orcamento, 
+                    global::System.Nullable<int> CodPeca_Orcamento, 
+                    global::System.Nullable<int> QuantPeca_Orcamento, 
+                    global::System.Nullable<decimal> VlrTotServicos_Orcamento, 
+                    global::System.Nullable<decimal> VlrTotPecas_Orcamento, 
+                    int Original_Num_Orcamento, 
+                    int Original_CodCli_Orcamento, 
+                    int Original_CodVeiculoCli_Orcamento, 
+                    System.DateTime Original_Dt_Orcamento, 
+                    global::System.Nullable<global::System.DateTime> Original_DtAprov_Orcamento, 
+                    int Original_Status_Orcamento, 
+                    global::System.Nullable<int> Original_CodServico_Orcamento, 
+                    global::System.Nullable<int> Original_CodPeca_Orcamento, 
+                    global::System.Nullable<int> Original_QuantPeca_Orcamento, 
+                    global::System.Nullable<decimal> Original_VlrTotServicos_Orcamento, 
+                    global::System.Nullable<decimal> Original_VlrTotPecas_Orcamento) {
+            return this.Update(Num_Orcamento, Original_CodCli_Orcamento, CodVeiculoCli_Orcamento, Dt_Orcamento, DtAprov_Orcamento, Status_Orcamento, CodServico_Orcamento, CodPeca_Orcamento, QuantPeca_Orcamento, VlrTotServicos_Orcamento, VlrTotPecas_Orcamento, Original_Num_Orcamento, Original_CodCli_Orcamento, Original_CodVeiculoCli_Orcamento, Original_Dt_Orcamento, Original_DtAprov_Orcamento, Original_Status_Orcamento, Original_CodServico_Orcamento, Original_CodPeca_Orcamento, Original_QuantPeca_Orcamento, Original_VlrTotServicos_Orcamento, Original_VlrTotPecas_Orcamento);
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class tbl_ServicosTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public tbl_ServicosTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "tbl_Servicos";
+            tableMapping.ColumnMappings.Add("id", "id");
+            tableMapping.ColumnMappings.Add("Descricao_Servico", "Descricao_Servico");
+            tableMapping.ColumnMappings.Add("Vlr_Servico", "Vlr_Servico");
+            this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.DeleteCommand.Connection = this.Connection;
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[tbl_Servicos] WHERE (([id] = @Original_id) AND ([Descricao_Ser" +
+                "vico] = @Original_Descricao_Servico) AND ([Vlr_Servico] = @Original_Vlr_Servico)" +
+                ")";
+            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Descricao_Servico", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Descricao_Servico", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Vlr_Servico", global::System.Data.SqlDbType.SmallMoney, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Vlr_Servico", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.InsertCommand.Connection = this.Connection;
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[tbl_Servicos] ([Descricao_Servico], [Vlr_Servico]) VALUES (@De" +
+                "scricao_Servico, @Vlr_Servico);\r\nSELECT id, Descricao_Servico, Vlr_Servico FROM " +
+                "tbl_Servicos WHERE (id = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Descricao_Servico", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Descricao_Servico", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Vlr_Servico", global::System.Data.SqlDbType.SmallMoney, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Vlr_Servico", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.UpdateCommand.Connection = this.Connection;
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[tbl_Servicos] SET [Descricao_Servico] = @Descricao_Servico, [Vlr_Servico] = @Vlr_Servico WHERE (([id] = @Original_id) AND ([Descricao_Servico] = @Original_Descricao_Servico) AND ([Vlr_Servico] = @Original_Vlr_Servico));
+SELECT id, Descricao_Servico, Vlr_Servico FROM tbl_Servicos WHERE (id = @id)";
+            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Descricao_Servico", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Descricao_Servico", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Vlr_Servico", global::System.Data.SqlDbType.SmallMoney, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Vlr_Servico", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Descricao_Servico", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Descricao_Servico", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Vlr_Servico", global::System.Data.SqlDbType.SmallMoney, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Vlr_Servico", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::Gerenciador_Oficina_Mecanica.Properties.Settings.Default.GerenciaOficinaConnection;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "SELECT id, Descricao_Servico, Vlr_Servico FROM dbo.tbl_Servicos";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(GerenciaOficinaDataSet.tbl_ServicosDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual GerenciaOficinaDataSet.tbl_ServicosDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            GerenciaOficinaDataSet.tbl_ServicosDataTable dataTable = new GerenciaOficinaDataSet.tbl_ServicosDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(GerenciaOficinaDataSet.tbl_ServicosDataTable dataTable) {
+            return this.Adapter.Update(dataTable);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(GerenciaOficinaDataSet dataSet) {
+            return this.Adapter.Update(dataSet, "tbl_Servicos");
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow dataRow) {
+            return this.Adapter.Update(new global::System.Data.DataRow[] {
+                        dataRow});
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow[] dataRows) {
+            return this.Adapter.Update(dataRows);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
+        public virtual int Delete(int Original_id, string Original_Descricao_Servico, decimal Original_Vlr_Servico) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_id));
+            if ((Original_Descricao_Servico == null)) {
+                throw new global::System.ArgumentNullException("Original_Descricao_Servico");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_Descricao_Servico));
+            }
+            this.Adapter.DeleteCommand.Parameters[2].Value = ((decimal)(Original_Vlr_Servico));
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
+            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.DeleteCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.DeleteCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+        public virtual int Insert(string Descricao_Servico, decimal Vlr_Servico) {
+            if ((Descricao_Servico == null)) {
+                throw new global::System.ArgumentNullException("Descricao_Servico");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(Descricao_Servico));
+            }
+            this.Adapter.InsertCommand.Parameters[1].Value = ((decimal)(Vlr_Servico));
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.InsertCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.InsertCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(string Descricao_Servico, decimal Vlr_Servico, int Original_id, string Original_Descricao_Servico, decimal Original_Vlr_Servico, int id) {
+            if ((Descricao_Servico == null)) {
+                throw new global::System.ArgumentNullException("Descricao_Servico");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(Descricao_Servico));
+            }
+            this.Adapter.UpdateCommand.Parameters[1].Value = ((decimal)(Vlr_Servico));
+            this.Adapter.UpdateCommand.Parameters[2].Value = ((int)(Original_id));
+            if ((Original_Descricao_Servico == null)) {
+                throw new global::System.ArgumentNullException("Original_Descricao_Servico");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(Original_Descricao_Servico));
+            }
+            this.Adapter.UpdateCommand.Parameters[4].Value = ((decimal)(Original_Vlr_Servico));
+            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(id));
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
+            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.UpdateCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.UpdateCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(string Descricao_Servico, decimal Vlr_Servico, int Original_id, string Original_Descricao_Servico, decimal Original_Vlr_Servico) {
+            return this.Update(Descricao_Servico, Vlr_Servico, Original_id, Original_Descricao_Servico, Original_Vlr_Servico, Original_id);
+        }
+    }
+    
+    /// <summary>
     ///TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
     ///</summary>
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -10005,6 +14756,14 @@ SELECT id, NomeFant_Cliente, RazaoSocial_Cliente, CNPJ_Cliente, IE_Cliente, Emai
         private tbl_Clientes_PFTableAdapter _tbl_Clientes_PFTableAdapter;
         
         private tbl_Clientes_PJTableAdapter _tbl_Clientes_PJTableAdapter;
+        
+        private tbl_FormaPgtoTableAdapter _tbl_FormaPgtoTableAdapter;
+        
+        private tbl_FornecedoresTableAdapter _tbl_FornecedoresTableAdapter;
+        
+        private tbl_OrcamentosTableAdapter _tbl_OrcamentosTableAdapter;
+        
+        private tbl_ServicosTableAdapter _tbl_ServicosTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -10163,6 +14922,62 @@ SELECT id, NomeFant_Cliente, RazaoSocial_Cliente, CNPJ_Cliente, IE_Cliente, Emai
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
+            "a", "System.Drawing.Design.UITypeEditor")]
+        public tbl_FormaPgtoTableAdapter tbl_FormaPgtoTableAdapter {
+            get {
+                return this._tbl_FormaPgtoTableAdapter;
+            }
+            set {
+                this._tbl_FormaPgtoTableAdapter = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
+            "a", "System.Drawing.Design.UITypeEditor")]
+        public tbl_FornecedoresTableAdapter tbl_FornecedoresTableAdapter {
+            get {
+                return this._tbl_FornecedoresTableAdapter;
+            }
+            set {
+                this._tbl_FornecedoresTableAdapter = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
+            "a", "System.Drawing.Design.UITypeEditor")]
+        public tbl_OrcamentosTableAdapter tbl_OrcamentosTableAdapter {
+            get {
+                return this._tbl_OrcamentosTableAdapter;
+            }
+            set {
+                this._tbl_OrcamentosTableAdapter = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
+            "a", "System.Drawing.Design.UITypeEditor")]
+        public tbl_ServicosTableAdapter tbl_ServicosTableAdapter {
+            get {
+                return this._tbl_ServicosTableAdapter;
+            }
+            set {
+                this._tbl_ServicosTableAdapter = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public bool BackupDataSetBeforeUpdate {
             get {
                 return this._backupDataSetBeforeUpdate;
@@ -10220,6 +15035,22 @@ SELECT id, NomeFant_Cliente, RazaoSocial_Cliente, CNPJ_Cliente, IE_Cliente, Emai
                             && (this._tbl_Clientes_PJTableAdapter.Connection != null))) {
                     return this._tbl_Clientes_PJTableAdapter.Connection;
                 }
+                if (((this._tbl_FormaPgtoTableAdapter != null) 
+                            && (this._tbl_FormaPgtoTableAdapter.Connection != null))) {
+                    return this._tbl_FormaPgtoTableAdapter.Connection;
+                }
+                if (((this._tbl_FornecedoresTableAdapter != null) 
+                            && (this._tbl_FornecedoresTableAdapter.Connection != null))) {
+                    return this._tbl_FornecedoresTableAdapter.Connection;
+                }
+                if (((this._tbl_OrcamentosTableAdapter != null) 
+                            && (this._tbl_OrcamentosTableAdapter.Connection != null))) {
+                    return this._tbl_OrcamentosTableAdapter.Connection;
+                }
+                if (((this._tbl_ServicosTableAdapter != null) 
+                            && (this._tbl_ServicosTableAdapter.Connection != null))) {
+                    return this._tbl_ServicosTableAdapter.Connection;
+                }
                 return null;
             }
             set {
@@ -10261,6 +15092,18 @@ SELECT id, NomeFant_Cliente, RazaoSocial_Cliente, CNPJ_Cliente, IE_Cliente, Emai
                     count = (count + 1);
                 }
                 if ((this._tbl_Clientes_PJTableAdapter != null)) {
+                    count = (count + 1);
+                }
+                if ((this._tbl_FormaPgtoTableAdapter != null)) {
+                    count = (count + 1);
+                }
+                if ((this._tbl_FornecedoresTableAdapter != null)) {
+                    count = (count + 1);
+                }
+                if ((this._tbl_OrcamentosTableAdapter != null)) {
+                    count = (count + 1);
+                }
+                if ((this._tbl_ServicosTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -10364,6 +15207,42 @@ SELECT id, NomeFant_Cliente, RazaoSocial_Cliente, CNPJ_Cliente, IE_Cliente, Emai
                     allChangedRows.AddRange(updatedRows);
                 }
             }
+            if ((this._tbl_FormaPgtoTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.tbl_FormaPgto.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._tbl_FormaPgtoTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._tbl_FornecedoresTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.tbl_Fornecedores.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._tbl_FornecedoresTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._tbl_OrcamentosTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.tbl_Orcamentos.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._tbl_OrcamentosTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._tbl_ServicosTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.tbl_Servicos.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._tbl_ServicosTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
             return result;
         }
         
@@ -10454,6 +15333,38 @@ SELECT id, NomeFant_Cliente, RazaoSocial_Cliente, CNPJ_Cliente, IE_Cliente, Emai
                     allAddedRows.AddRange(addedRows);
                 }
             }
+            if ((this._tbl_FormaPgtoTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.tbl_FormaPgto.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._tbl_FormaPgtoTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._tbl_FornecedoresTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.tbl_Fornecedores.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._tbl_FornecedoresTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._tbl_OrcamentosTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.tbl_Orcamentos.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._tbl_OrcamentosTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._tbl_ServicosTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.tbl_Servicos.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._tbl_ServicosTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
             return result;
         }
         
@@ -10464,6 +15375,38 @@ SELECT id, NomeFant_Cliente, RazaoSocial_Cliente, CNPJ_Cliente, IE_Cliente, Emai
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private int UpdateDeletedRows(GerenciaOficinaDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
+            if ((this._tbl_ServicosTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.tbl_Servicos.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._tbl_ServicosTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._tbl_OrcamentosTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.tbl_Orcamentos.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._tbl_OrcamentosTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._tbl_FornecedoresTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.tbl_Fornecedores.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._tbl_FornecedoresTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._tbl_FormaPgtoTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.tbl_FormaPgto.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._tbl_FormaPgtoTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
             if ((this._tbl_Clientes_PJTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.tbl_Clientes_PJ.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
@@ -10633,6 +15576,26 @@ SELECT id, NomeFant_Cliente, RazaoSocial_Cliente, CNPJ_Cliente, IE_Cliente, Emai
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
+            if (((this._tbl_FormaPgtoTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._tbl_FormaPgtoTableAdapter.Connection) == false))) {
+                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
+                        "tring.");
+            }
+            if (((this._tbl_FornecedoresTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._tbl_FornecedoresTableAdapter.Connection) == false))) {
+                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
+                        "tring.");
+            }
+            if (((this._tbl_OrcamentosTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._tbl_OrcamentosTableAdapter.Connection) == false))) {
+                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
+                        "tring.");
+            }
+            if (((this._tbl_ServicosTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._tbl_ServicosTableAdapter.Connection) == false))) {
+                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
+                        "tring.");
+            }
             global::System.Data.IDbConnection workConnection = this.Connection;
             if ((workConnection == null)) {
                 throw new global::System.ApplicationException("TableAdapterManager contains no connection information. Set each TableAdapterMana" +
@@ -10755,6 +15718,42 @@ SELECT id, NomeFant_Cliente, RazaoSocial_Cliente, CNPJ_Cliente, IE_Cliente, Emai
                         adaptersWithAcceptChangesDuringUpdate.Add(this._tbl_Clientes_PJTableAdapter.Adapter);
                     }
                 }
+                if ((this._tbl_FormaPgtoTableAdapter != null)) {
+                    revertConnections.Add(this._tbl_FormaPgtoTableAdapter, this._tbl_FormaPgtoTableAdapter.Connection);
+                    this._tbl_FormaPgtoTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._tbl_FormaPgtoTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._tbl_FormaPgtoTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._tbl_FormaPgtoTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._tbl_FormaPgtoTableAdapter.Adapter);
+                    }
+                }
+                if ((this._tbl_FornecedoresTableAdapter != null)) {
+                    revertConnections.Add(this._tbl_FornecedoresTableAdapter, this._tbl_FornecedoresTableAdapter.Connection);
+                    this._tbl_FornecedoresTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._tbl_FornecedoresTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._tbl_FornecedoresTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._tbl_FornecedoresTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._tbl_FornecedoresTableAdapter.Adapter);
+                    }
+                }
+                if ((this._tbl_OrcamentosTableAdapter != null)) {
+                    revertConnections.Add(this._tbl_OrcamentosTableAdapter, this._tbl_OrcamentosTableAdapter.Connection);
+                    this._tbl_OrcamentosTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._tbl_OrcamentosTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._tbl_OrcamentosTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._tbl_OrcamentosTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._tbl_OrcamentosTableAdapter.Adapter);
+                    }
+                }
+                if ((this._tbl_ServicosTableAdapter != null)) {
+                    revertConnections.Add(this._tbl_ServicosTableAdapter, this._tbl_ServicosTableAdapter.Connection);
+                    this._tbl_ServicosTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._tbl_ServicosTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._tbl_ServicosTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._tbl_ServicosTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._tbl_ServicosTableAdapter.Adapter);
+                    }
+                }
                 // 
                 //---- Perform updates -----------
                 //
@@ -10852,6 +15851,22 @@ SELECT id, NomeFant_Cliente, RazaoSocial_Cliente, CNPJ_Cliente, IE_Cliente, Emai
                 if ((this._tbl_Clientes_PJTableAdapter != null)) {
                     this._tbl_Clientes_PJTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._tbl_Clientes_PJTableAdapter]));
                     this._tbl_Clientes_PJTableAdapter.Transaction = null;
+                }
+                if ((this._tbl_FormaPgtoTableAdapter != null)) {
+                    this._tbl_FormaPgtoTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._tbl_FormaPgtoTableAdapter]));
+                    this._tbl_FormaPgtoTableAdapter.Transaction = null;
+                }
+                if ((this._tbl_FornecedoresTableAdapter != null)) {
+                    this._tbl_FornecedoresTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._tbl_FornecedoresTableAdapter]));
+                    this._tbl_FornecedoresTableAdapter.Transaction = null;
+                }
+                if ((this._tbl_OrcamentosTableAdapter != null)) {
+                    this._tbl_OrcamentosTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._tbl_OrcamentosTableAdapter]));
+                    this._tbl_OrcamentosTableAdapter.Transaction = null;
+                }
+                if ((this._tbl_ServicosTableAdapter != null)) {
+                    this._tbl_ServicosTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._tbl_ServicosTableAdapter]));
+                    this._tbl_ServicosTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

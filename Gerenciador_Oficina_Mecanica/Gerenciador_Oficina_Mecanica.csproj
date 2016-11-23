@@ -94,6 +94,7 @@
     <Compile Include="frm_Index.Designer.cs">
       <DependentUpon>frm_Index.cs</DependentUpon>
     </Compile>
+    <Compile Include="Funcoes.cs" />
     <Compile Include="GerenciaOficinaDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
