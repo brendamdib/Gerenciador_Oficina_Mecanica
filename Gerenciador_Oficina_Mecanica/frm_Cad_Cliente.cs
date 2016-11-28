@@ -73,8 +73,7 @@ namespace Gerenciador_Oficina_Mecanica
             // TODO: This line of code loads data into the 'gerenciaOficinaDataSet.tbl_Estado' table. You can move, or remove it, as needed.
             this.tbl_EstadoTableAdapter.Fill(this.gerenciaOficinaDataSet.tbl_Estado);
 
-            txt_CliPF_Cod.Text = (Int32.Parse(txt_CliPF_Cod.Text) + 1).ToString();
-            //txt_CliPJ_Cod.Text = (Int32.Parse(txt_CliPJ_Cod.Text) + 1).ToString();
+           
         }
 
         private void cbo_Estado_SelectedIndexChanged(object sender, EventArgs e)
@@ -102,8 +101,7 @@ namespace Gerenciador_Oficina_Mecanica
 
         private void btn_CliPF_addVeiculo_Click(object sender, EventArgs e)
         {
-            frm_Cad_Veiculo_Cliente frmCadVeicCliente = new frm_Cad_Veiculo_Cliente();
-            frmCadVeicCliente.MdiParent = this;
+            frm_Cad_Veiculo_Cliente frmCadVeicCliente = new frm_Cad_Veiculo_Cliente();            
             frmCadVeicCliente.Show();
         }
     }

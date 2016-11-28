@@ -228,7 +228,6 @@
             this.grp_Cli_Veiculos.TabIndex = 20;
             this.grp_Cli_Veiculos.TabStop = false;
             this.grp_Cli_Veiculos.Text = "Veículos";
-            this.grp_Cli_Veiculos.Visible = false;
             // 
             // grd_CliPF_Veiculos
             // 
@@ -681,15 +680,14 @@
             this.tableAdapterManager.tbl_Clientes_PFTableAdapter = null;
             this.tableAdapterManager.tbl_Clientes_PJTableAdapter = null;
             this.tableAdapterManager.tbl_EstadoTableAdapter = this.tbl_EstadoTableAdapter;
-            this.tableAdapterManager.tbl_FabricanteTableAdapter = null;
+            this.tableAdapterManager.tbl_FabricantesTableAdapter = null;
             this.tableAdapterManager.tbl_FormaPgtoTableAdapter = null;
             this.tableAdapterManager.tbl_FornecedoresTableAdapter = null;
             this.tableAdapterManager.tbl_ModelosVeiculosTableAdapter = null;
             this.tableAdapterManager.tbl_OperadorasTelefoniaTableAdapter = null;
             this.tableAdapterManager.tbl_OrcamentosTableAdapter = null;
             this.tableAdapterManager.tbl_ServicosTableAdapter = null;
-            this.tableAdapterManager.tbl_SexoTableAdapter = null;
-            this.tableAdapterManager.tbl_TipoFabricanteTableAdapter = null;
+            this.tableAdapterManager.tbl_SexoTableAdapter = null;            
             this.tableAdapterManager.tbl_VeiculoClienteTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = Gerenciador_Oficina_Mecanica.GerenciaOficinaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 

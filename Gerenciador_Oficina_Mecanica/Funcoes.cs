@@ -83,6 +83,11 @@ namespace Gerenciador_Oficina_Mecanica
 
                     cmd.Connection.Close();
 
+                frm_Cad_Cliente frmCadCli = new frm_Cad_Cliente();
+                frmCadCli.grp_PessoaFisica.Visible = true;
+
+
+
                 return "OK";
                 }
                 catch (Exception e)
