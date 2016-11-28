@@ -3065,8 +3065,6 @@ namespace Gerenciador_Oficina_Mecanica {
             
             private global::System.Data.DataColumn columnid;
             
-            private global::System.Data.DataColumn columnNome_Operadora;
-            
             private global::System.Data.DataColumn columnNome_Cliente;
             
             private global::System.Data.DataColumn columnDataNasc_Cliente;
@@ -3139,14 +3137,6 @@ namespace Gerenciador_Oficina_Mecanica {
             public global::System.Data.DataColumn idColumn {
                 get {
                     return this.columnid;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn Nome_OperadoraColumn {
-                get {
-                    return this.columnNome_Operadora;
                 }
             }
             
@@ -3324,7 +3314,6 @@ namespace Gerenciador_Oficina_Mecanica {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public tbl_Clientes_PFRow Addtbl_Clientes_PFRow(
-                        string Nome_Operadora, 
                         string Nome_Cliente, 
                         System.DateTime DataNasc_Cliente, 
                         int Sexo_Cliente, 
@@ -3345,7 +3334,6 @@ namespace Gerenciador_Oficina_Mecanica {
                 tbl_Clientes_PFRow rowtbl_Clientes_PFRow = ((tbl_Clientes_PFRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
-                        Nome_Operadora,
                         Nome_Cliente,
                         DataNasc_Cliente,
                         Sexo_Cliente,
@@ -3393,7 +3381,6 @@ namespace Gerenciador_Oficina_Mecanica {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
                 this.columnid = base.Columns["id"];
-                this.columnNome_Operadora = base.Columns["Nome_Operadora"];
                 this.columnNome_Cliente = base.Columns["Nome_Cliente"];
                 this.columnDataNasc_Cliente = base.Columns["DataNasc_Cliente"];
                 this.columnSexo_Cliente = base.Columns["Sexo_Cliente"];
@@ -3418,8 +3405,6 @@ namespace Gerenciador_Oficina_Mecanica {
             private void InitClass() {
                 this.columnid = new global::System.Data.DataColumn("id", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnid);
-                this.columnNome_Operadora = new global::System.Data.DataColumn("Nome_Operadora", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNome_Operadora);
                 this.columnNome_Cliente = new global::System.Data.DataColumn("Nome_Cliente", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnNome_Cliente);
                 this.columnDataNasc_Cliente = new global::System.Data.DataColumn("DataNasc_Cliente", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
@@ -3462,8 +3447,6 @@ namespace Gerenciador_Oficina_Mecanica {
                 this.columnid.AllowDBNull = false;
                 this.columnid.ReadOnly = true;
                 this.columnid.Unique = true;
-                this.columnNome_Operadora.AllowDBNull = false;
-                this.columnNome_Operadora.MaxLength = 20;
                 this.columnNome_Cliente.AllowDBNull = false;
                 this.columnNome_Cliente.MaxLength = 50;
                 this.columnDataNasc_Cliente.AllowDBNull = false;
@@ -6155,17 +6138,6 @@ namespace Gerenciador_Oficina_Mecanica {
                 }
                 set {
                     this[this.tabletbl_Clientes_PF.idColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Nome_Operadora {
-                get {
-                    return ((string)(this[this.tabletbl_Clientes_PF.Nome_OperadoraColumn]));
-                }
-                set {
-                    this[this.tabletbl_Clientes_PF.Nome_OperadoraColumn] = value;
                 }
             }
             
@@ -10835,7 +10807,6 @@ SELECT id, id_Proprietario_VeiculoCli, id_Modelo_VeiculoCli, Placa_VeiculoCli FR
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "tbl_Clientes_PF";
             tableMapping.ColumnMappings.Add("id", "id");
-            tableMapping.ColumnMappings.Add("Nome_Operadora", "Nome_Operadora");
             tableMapping.ColumnMappings.Add("Nome_Cliente", "Nome_Cliente");
             tableMapping.ColumnMappings.Add("DataNasc_Cliente", "DataNasc_Cliente");
             tableMapping.ColumnMappings.Add("Sexo_Cliente", "Sexo_Cliente");
@@ -10856,10 +10827,9 @@ SELECT id, id_Proprietario_VeiculoCli, id_Modelo_VeiculoCli, Placa_VeiculoCli FR
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[tbl_Clientes_PF] WHERE (([id] = @Original_id) AND ([Nome_Operadora] = @Original_Nome_Operadora) AND ([Nome_Cliente] = @Original_Nome_Cliente) AND ([DataNasc_Cliente] = @Original_DataNasc_Cliente) AND ([Sexo_Cliente] = @Original_Sexo_Cliente) AND ([CPF_Cliente] = @Original_CPF_Cliente) AND ([RG_Cliente] = @Original_RG_Cliente) AND ((@IsNull_Email_Cliente = 1 AND [Email_Cliente] IS NULL) OR ([Email_Cliente] = @Original_Email_Cliente)) AND ((@IsNull_TelRes_Cliente = 1 AND [TelRes_Cliente] IS NULL) OR ([TelRes_Cliente] = @Original_TelRes_Cliente)) AND ((@IsNull_TelCom_Cliente = 1 AND [TelCom_Cliente] IS NULL) OR ([TelCom_Cliente] = @Original_TelCom_Cliente)) AND ((@IsNull_TelCel_Cliente = 1 AND [TelCel_Cliente] IS NULL) OR ([TelCel_Cliente] = @Original_TelCel_Cliente)) AND ((@IsNull_OperadoraCel_Cliente = 1 AND [OperadoraCel_Cliente] IS NULL) OR ([OperadoraCel_Cliente] = @Original_OperadoraCel_Cliente)) AND ((@IsNull_CEP_Cliente = 1 AND [CEP_Cliente] IS NULL) OR ([CEP_Cliente] = @Original_CEP_Cliente)) AND ([Endereco_Cliente] = @Original_Endereco_Cliente) AND ((@IsNull_CompEnd_Cliente = 1 AND [CompEnd_Cliente] IS NULL) OR ([CompEnd_Cliente] = @Original_CompEnd_Cliente)) AND ([Bairro_Cliente] = @Original_Bairro_Cliente) AND ([Estado_Cliente] = @Original_Estado_Cliente) AND ([Cidade_Cliente] = @Original_Cidade_Cliente) AND ([Status_Cliente] = @Original_Status_Cliente))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [tbl_Clientes_PF] WHERE (([id] = @Original_id) AND ([Nome_Cliente] = @Original_Nome_Cliente) AND ([DataNasc_Cliente] = @Original_DataNasc_Cliente) AND ([Sexo_Cliente] = @Original_Sexo_Cliente) AND ([CPF_Cliente] = @Original_CPF_Cliente) AND ([RG_Cliente] = @Original_RG_Cliente) AND ((@IsNull_Email_Cliente = 1 AND [Email_Cliente] IS NULL) OR ([Email_Cliente] = @Original_Email_Cliente)) AND ((@IsNull_TelRes_Cliente = 1 AND [TelRes_Cliente] IS NULL) OR ([TelRes_Cliente] = @Original_TelRes_Cliente)) AND ((@IsNull_TelCom_Cliente = 1 AND [TelCom_Cliente] IS NULL) OR ([TelCom_Cliente] = @Original_TelCom_Cliente)) AND ((@IsNull_TelCel_Cliente = 1 AND [TelCel_Cliente] IS NULL) OR ([TelCel_Cliente] = @Original_TelCel_Cliente)) AND ((@IsNull_OperadoraCel_Cliente = 1 AND [OperadoraCel_Cliente] IS NULL) OR ([OperadoraCel_Cliente] = @Original_OperadoraCel_Cliente)) AND ((@IsNull_CEP_Cliente = 1 AND [CEP_Cliente] IS NULL) OR ([CEP_Cliente] = @Original_CEP_Cliente)) AND ([Endereco_Cliente] = @Original_Endereco_Cliente) AND ((@IsNull_CompEnd_Cliente = 1 AND [CompEnd_Cliente] IS NULL) OR ([CompEnd_Cliente] = @Original_CompEnd_Cliente)) AND ([Bairro_Cliente] = @Original_Bairro_Cliente) AND ([Estado_Cliente] = @Original_Estado_Cliente) AND ([Cidade_Cliente] = @Original_Cidade_Cliente) AND ([Status_Cliente] = @Original_Status_Cliente))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Nome_Operadora", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nome_Operadora", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Nome_Cliente", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nome_Cliente", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_DataNasc_Cliente", global::System.Data.SqlDbType.SmallDateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DataNasc_Cliente", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Sexo_Cliente", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Sexo_Cliente", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -10886,10 +10856,9 @@ SELECT id, id_Proprietario_VeiculoCli, id_Modelo_VeiculoCli, Placa_VeiculoCli FR
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Status_Cliente", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Status_Cliente", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[tbl_Clientes_PF] ([Nome_Operadora], [Nome_Cliente], [DataNasc_Cliente], [Sexo_Cliente], [CPF_Cliente], [RG_Cliente], [Email_Cliente], [TelRes_Cliente], [TelCom_Cliente], [TelCel_Cliente], [OperadoraCel_Cliente], [CEP_Cliente], [Endereco_Cliente], [CompEnd_Cliente], [Bairro_Cliente], [Estado_Cliente], [Cidade_Cliente], [Status_Cliente]) VALUES (@Nome_Operadora, @Nome_Cliente, @DataNasc_Cliente, @Sexo_Cliente, @CPF_Cliente, @RG_Cliente, @Email_Cliente, @TelRes_Cliente, @TelCom_Cliente, @TelCel_Cliente, @OperadoraCel_Cliente, @CEP_Cliente, @Endereco_Cliente, @CompEnd_Cliente, @Bairro_Cliente, @Estado_Cliente, @Cidade_Cliente, @Status_Cliente);
-SELECT id, Nome_Operadora, Nome_Cliente, DataNasc_Cliente, Sexo_Cliente, CPF_Cliente, RG_Cliente, Email_Cliente, TelRes_Cliente, TelCom_Cliente, TelCel_Cliente, OperadoraCel_Cliente, CEP_Cliente, Endereco_Cliente, CompEnd_Cliente, Bairro_Cliente, Estado_Cliente, Cidade_Cliente, Status_Cliente FROM tbl_Clientes_PF WHERE (id = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [tbl_Clientes_PF] ([Nome_Cliente], [DataNasc_Cliente], [Sexo_Cliente], [CPF_Cliente], [RG_Cliente], [Email_Cliente], [TelRes_Cliente], [TelCom_Cliente], [TelCel_Cliente], [OperadoraCel_Cliente], [CEP_Cliente], [Endereco_Cliente], [CompEnd_Cliente], [Bairro_Cliente], [Estado_Cliente], [Cidade_Cliente], [Status_Cliente]) VALUES (@Nome_Cliente, @DataNasc_Cliente, @Sexo_Cliente, @CPF_Cliente, @RG_Cliente, @Email_Cliente, @TelRes_Cliente, @TelCom_Cliente, @TelCel_Cliente, @OperadoraCel_Cliente, @CEP_Cliente, @Endereco_Cliente, @CompEnd_Cliente, @Bairro_Cliente, @Estado_Cliente, @Cidade_Cliente, @Status_Cliente);
+SELECT id, Nome_Cliente, DataNasc_Cliente, Sexo_Cliente, CPF_Cliente, RG_Cliente, Email_Cliente, TelRes_Cliente, TelCom_Cliente, TelCel_Cliente, OperadoraCel_Cliente, CEP_Cliente, Endereco_Cliente, CompEnd_Cliente, Bairro_Cliente, Estado_Cliente, Cidade_Cliente, Status_Cliente FROM tbl_Clientes_PF WHERE (id = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Nome_Operadora", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nome_Operadora", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Nome_Cliente", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nome_Cliente", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DataNasc_Cliente", global::System.Data.SqlDbType.SmallDateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DataNasc_Cliente", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Sexo_Cliente", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Sexo_Cliente", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -10909,38 +10878,36 @@ SELECT id, Nome_Operadora, Nome_Cliente, DataNasc_Cliente, Sexo_Cliente, CPF_Cli
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Status_Cliente", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Status_Cliente", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[tbl_Clientes_PF] SET [Nome_Operadora] = @Nome_Operadora, [Nome_Clie" +
-                "nte] = @Nome_Cliente, [DataNasc_Cliente] = @DataNasc_Cliente, [Sexo_Cliente] = @" +
-                "Sexo_Cliente, [CPF_Cliente] = @CPF_Cliente, [RG_Cliente] = @RG_Cliente, [Email_C" +
-                "liente] = @Email_Cliente, [TelRes_Cliente] = @TelRes_Cliente, [TelCom_Cliente] =" +
-                " @TelCom_Cliente, [TelCel_Cliente] = @TelCel_Cliente, [OperadoraCel_Cliente] = @" +
-                "OperadoraCel_Cliente, [CEP_Cliente] = @CEP_Cliente, [Endereco_Cliente] = @Endere" +
-                "co_Cliente, [CompEnd_Cliente] = @CompEnd_Cliente, [Bairro_Cliente] = @Bairro_Cli" +
-                "ente, [Estado_Cliente] = @Estado_Cliente, [Cidade_Cliente] = @Cidade_Cliente, [S" +
-                "tatus_Cliente] = @Status_Cliente WHERE (([id] = @Original_id) AND ([Nome_Operado" +
-                "ra] = @Original_Nome_Operadora) AND ([Nome_Cliente] = @Original_Nome_Cliente) AN" +
-                "D ([DataNasc_Cliente] = @Original_DataNasc_Cliente) AND ([Sexo_Cliente] = @Origi" +
-                "nal_Sexo_Cliente) AND ([CPF_Cliente] = @Original_CPF_Cliente) AND ([RG_Cliente] " +
-                "= @Original_RG_Cliente) AND ((@IsNull_Email_Cliente = 1 AND [Email_Cliente] IS N" +
-                "ULL) OR ([Email_Cliente] = @Original_Email_Cliente)) AND ((@IsNull_TelRes_Client" +
-                "e = 1 AND [TelRes_Cliente] IS NULL) OR ([TelRes_Cliente] = @Original_TelRes_Clie" +
-                "nte)) AND ((@IsNull_TelCom_Cliente = 1 AND [TelCom_Cliente] IS NULL) OR ([TelCom" +
-                "_Cliente] = @Original_TelCom_Cliente)) AND ((@IsNull_TelCel_Cliente = 1 AND [Tel" +
-                "Cel_Cliente] IS NULL) OR ([TelCel_Cliente] = @Original_TelCel_Cliente)) AND ((@I" +
-                "sNull_OperadoraCel_Cliente = 1 AND [OperadoraCel_Cliente] IS NULL) OR ([Operador" +
-                "aCel_Cliente] = @Original_OperadoraCel_Cliente)) AND ((@IsNull_CEP_Cliente = 1 A" +
-                "ND [CEP_Cliente] IS NULL) OR ([CEP_Cliente] = @Original_CEP_Cliente)) AND ([Ende" +
-                "reco_Cliente] = @Original_Endereco_Cliente) AND ((@IsNull_CompEnd_Cliente = 1 AN" +
-                "D [CompEnd_Cliente] IS NULL) OR ([CompEnd_Cliente] = @Original_CompEnd_Cliente))" +
-                " AND ([Bairro_Cliente] = @Original_Bairro_Cliente) AND ([Estado_Cliente] = @Orig" +
-                "inal_Estado_Cliente) AND ([Cidade_Cliente] = @Original_Cidade_Cliente) AND ([Sta" +
-                "tus_Cliente] = @Original_Status_Cliente));\r\nSELECT id, Nome_Operadora, Nome_Clie" +
-                "nte, DataNasc_Cliente, Sexo_Cliente, CPF_Cliente, RG_Cliente, Email_Cliente, Tel" +
-                "Res_Cliente, TelCom_Cliente, TelCel_Cliente, OperadoraCel_Cliente, CEP_Cliente, " +
-                "Endereco_Cliente, CompEnd_Cliente, Bairro_Cliente, Estado_Cliente, Cidade_Client" +
-                "e, Status_Cliente FROM tbl_Clientes_PF WHERE (id = @id)";
+            this._adapter.UpdateCommand.CommandText = "UPDATE [tbl_Clientes_PF] SET [Nome_Cliente] = @Nome_Cliente, [DataNasc_Cliente] =" +
+                " @DataNasc_Cliente, [Sexo_Cliente] = @Sexo_Cliente, [CPF_Cliente] = @CPF_Cliente" +
+                ", [RG_Cliente] = @RG_Cliente, [Email_Cliente] = @Email_Cliente, [TelRes_Cliente]" +
+                " = @TelRes_Cliente, [TelCom_Cliente] = @TelCom_Cliente, [TelCel_Cliente] = @TelC" +
+                "el_Cliente, [OperadoraCel_Cliente] = @OperadoraCel_Cliente, [CEP_Cliente] = @CEP" +
+                "_Cliente, [Endereco_Cliente] = @Endereco_Cliente, [CompEnd_Cliente] = @CompEnd_C" +
+                "liente, [Bairro_Cliente] = @Bairro_Cliente, [Estado_Cliente] = @Estado_Cliente, " +
+                "[Cidade_Cliente] = @Cidade_Cliente, [Status_Cliente] = @Status_Cliente WHERE (([" +
+                "id] = @Original_id) AND ([Nome_Cliente] = @Original_Nome_Cliente) AND ([DataNasc" +
+                "_Cliente] = @Original_DataNasc_Cliente) AND ([Sexo_Cliente] = @Original_Sexo_Cli" +
+                "ente) AND ([CPF_Cliente] = @Original_CPF_Cliente) AND ([RG_Cliente] = @Original_" +
+                "RG_Cliente) AND ((@IsNull_Email_Cliente = 1 AND [Email_Cliente] IS NULL) OR ([Em" +
+                "ail_Cliente] = @Original_Email_Cliente)) AND ((@IsNull_TelRes_Cliente = 1 AND [T" +
+                "elRes_Cliente] IS NULL) OR ([TelRes_Cliente] = @Original_TelRes_Cliente)) AND ((" +
+                "@IsNull_TelCom_Cliente = 1 AND [TelCom_Cliente] IS NULL) OR ([TelCom_Cliente] = " +
+                "@Original_TelCom_Cliente)) AND ((@IsNull_TelCel_Cliente = 1 AND [TelCel_Cliente]" +
+                " IS NULL) OR ([TelCel_Cliente] = @Original_TelCel_Cliente)) AND ((@IsNull_Operad" +
+                "oraCel_Cliente = 1 AND [OperadoraCel_Cliente] IS NULL) OR ([OperadoraCel_Cliente" +
+                "] = @Original_OperadoraCel_Cliente)) AND ((@IsNull_CEP_Cliente = 1 AND [CEP_Clie" +
+                "nte] IS NULL) OR ([CEP_Cliente] = @Original_CEP_Cliente)) AND ([Endereco_Cliente" +
+                "] = @Original_Endereco_Cliente) AND ((@IsNull_CompEnd_Cliente = 1 AND [CompEnd_C" +
+                "liente] IS NULL) OR ([CompEnd_Cliente] = @Original_CompEnd_Cliente)) AND ([Bairr" +
+                "o_Cliente] = @Original_Bairro_Cliente) AND ([Estado_Cliente] = @Original_Estado_" +
+                "Cliente) AND ([Cidade_Cliente] = @Original_Cidade_Cliente) AND ([Status_Cliente]" +
+                " = @Original_Status_Cliente));\r\nSELECT id, Nome_Cliente, DataNasc_Cliente, Sexo_" +
+                "Cliente, CPF_Cliente, RG_Cliente, Email_Cliente, TelRes_Cliente, TelCom_Cliente," +
+                " TelCel_Cliente, OperadoraCel_Cliente, CEP_Cliente, Endereco_Cliente, CompEnd_Cl" +
+                "iente, Bairro_Cliente, Estado_Cliente, Cidade_Cliente, Status_Cliente FROM tbl_C" +
+                "lientes_PF WHERE (id = @id)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Nome_Operadora", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nome_Operadora", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Nome_Cliente", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nome_Cliente", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DataNasc_Cliente", global::System.Data.SqlDbType.SmallDateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DataNasc_Cliente", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Sexo_Cliente", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Sexo_Cliente", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -10959,7 +10926,6 @@ SELECT id, Nome_Operadora, Nome_Cliente, DataNasc_Cliente, Sexo_Cliente, CPF_Cli
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Cidade_Cliente", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cidade_Cliente", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Status_Cliente", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Status_Cliente", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Nome_Operadora", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nome_Operadora", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Nome_Cliente", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nome_Cliente", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_DataNasc_Cliente", global::System.Data.SqlDbType.SmallDateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DataNasc_Cliente", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Sexo_Cliente", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Sexo_Cliente", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -11000,7 +10966,7 @@ SELECT id, Nome_Operadora, Nome_Cliente, DataNasc_Cliente, Sexo_Cliente, CPF_Cli
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = @"SELECT id, Nome_Operadora, Nome_Cliente, DataNasc_Cliente, Sexo_Cliente, CPF_Cliente, RG_Cliente, Email_Cliente, TelRes_Cliente, TelCom_Cliente, TelCel_Cliente, OperadoraCel_Cliente, CEP_Cliente, Endereco_Cliente, CompEnd_Cliente, Bairro_Cliente, Estado_Cliente, Cidade_Cliente, Status_Cliente FROM dbo.tbl_Clientes_PF";
+            this._commandCollection[0].CommandText = @"SELECT id, Nome_Cliente, DataNasc_Cliente, Sexo_Cliente, CPF_Cliente, RG_Cliente, Email_Cliente, TelRes_Cliente, TelCom_Cliente, TelCel_Cliente, OperadoraCel_Cliente, CEP_Cliente, Endereco_Cliente, CompEnd_Cliente, Bairro_Cliente, Estado_Cliente, Cidade_Cliente, Status_Cliente FROM tbl_Clientes_PF";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -11063,7 +11029,6 @@ SELECT id, Nome_Operadora, Nome_Cliente, DataNasc_Cliente, Sexo_Cliente, CPF_Cli
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
         public virtual int Delete(
                     int Original_id, 
-                    string Original_Nome_Operadora, 
                     string Original_Nome_Cliente, 
                     System.DateTime Original_DataNasc_Cliente, 
                     int Original_Sexo_Cliente, 
@@ -11082,103 +11047,97 @@ SELECT id, Nome_Operadora, Nome_Cliente, DataNasc_Cliente, Sexo_Cliente, CPF_Cli
                     int Original_Cidade_Cliente, 
                     int Original_Status_Cliente) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_id));
-            if ((Original_Nome_Operadora == null)) {
-                throw new global::System.ArgumentNullException("Original_Nome_Operadora");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_Nome_Operadora));
-            }
             if ((Original_Nome_Cliente == null)) {
                 throw new global::System.ArgumentNullException("Original_Nome_Cliente");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_Nome_Cliente));
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_Nome_Cliente));
             }
-            this.Adapter.DeleteCommand.Parameters[3].Value = ((System.DateTime)(Original_DataNasc_Cliente));
-            this.Adapter.DeleteCommand.Parameters[4].Value = ((int)(Original_Sexo_Cliente));
+            this.Adapter.DeleteCommand.Parameters[2].Value = ((System.DateTime)(Original_DataNasc_Cliente));
+            this.Adapter.DeleteCommand.Parameters[3].Value = ((int)(Original_Sexo_Cliente));
             if ((Original_CPF_Cliente == null)) {
                 throw new global::System.ArgumentNullException("Original_CPF_Cliente");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((string)(Original_CPF_Cliente));
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_CPF_Cliente));
             }
             if ((Original_RG_Cliente == null)) {
                 throw new global::System.ArgumentNullException("Original_RG_Cliente");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_RG_Cliente));
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((string)(Original_RG_Cliente));
             }
             if ((Original_Email_Cliente == null)) {
-                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_Email_Cliente));
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((string)(Original_Email_Cliente));
             }
             if ((Original_TelRes_Cliente == null)) {
-                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[10].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_TelRes_Cliente));
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[9].Value = ((string)(Original_TelRes_Cliente));
             }
             if ((Original_TelCom_Cliente == null)) {
-                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[12].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[11].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[12].Value = ((string)(Original_TelCom_Cliente));
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[11].Value = ((string)(Original_TelCom_Cliente));
             }
             if ((Original_TelCel_Cliente == null)) {
-                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[14].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[12].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[13].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[14].Value = ((string)(Original_TelCel_Cliente));
+                this.Adapter.DeleteCommand.Parameters[12].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[13].Value = ((string)(Original_TelCel_Cliente));
             }
             if ((Original_OperadoraCel_Cliente.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[16].Value = ((int)(Original_OperadoraCel_Cliente.Value));
+                this.Adapter.DeleteCommand.Parameters[14].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[15].Value = ((int)(Original_OperadoraCel_Cliente.Value));
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[16].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[14].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[15].Value = global::System.DBNull.Value;
             }
             if ((Original_CEP_Cliente == null)) {
-                this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[18].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[16].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[17].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[18].Value = ((string)(Original_CEP_Cliente));
+                this.Adapter.DeleteCommand.Parameters[16].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[17].Value = ((string)(Original_CEP_Cliente));
             }
             if ((Original_Endereco_Cliente == null)) {
                 throw new global::System.ArgumentNullException("Original_Endereco_Cliente");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[19].Value = ((string)(Original_Endereco_Cliente));
+                this.Adapter.DeleteCommand.Parameters[18].Value = ((string)(Original_Endereco_Cliente));
             }
             if ((Original_CompEnd_Cliente == null)) {
-                this.Adapter.DeleteCommand.Parameters[20].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[21].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[19].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[20].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[20].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[21].Value = ((string)(Original_CompEnd_Cliente));
+                this.Adapter.DeleteCommand.Parameters[19].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[20].Value = ((string)(Original_CompEnd_Cliente));
             }
             if ((Original_Bairro_Cliente == null)) {
                 throw new global::System.ArgumentNullException("Original_Bairro_Cliente");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[22].Value = ((string)(Original_Bairro_Cliente));
+                this.Adapter.DeleteCommand.Parameters[21].Value = ((string)(Original_Bairro_Cliente));
             }
-            this.Adapter.DeleteCommand.Parameters[23].Value = ((int)(Original_Estado_Cliente));
-            this.Adapter.DeleteCommand.Parameters[24].Value = ((int)(Original_Cidade_Cliente));
-            this.Adapter.DeleteCommand.Parameters[25].Value = ((int)(Original_Status_Cliente));
+            this.Adapter.DeleteCommand.Parameters[22].Value = ((int)(Original_Estado_Cliente));
+            this.Adapter.DeleteCommand.Parameters[23].Value = ((int)(Original_Cidade_Cliente));
+            this.Adapter.DeleteCommand.Parameters[24].Value = ((int)(Original_Status_Cliente));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -11200,7 +11159,6 @@ SELECT id, Nome_Operadora, Nome_Cliente, DataNasc_Cliente, Sexo_Cliente, CPF_Cli
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
         public virtual int Insert(
-                    string Nome_Operadora, 
                     string Nome_Cliente, 
                     System.DateTime DataNasc_Cliente, 
                     int Sexo_Cliente, 
@@ -11218,89 +11176,83 @@ SELECT id, Nome_Operadora, Nome_Cliente, DataNasc_Cliente, Sexo_Cliente, CPF_Cli
                     int Estado_Cliente, 
                     int Cidade_Cliente, 
                     int Status_Cliente) {
-            if ((Nome_Operadora == null)) {
-                throw new global::System.ArgumentNullException("Nome_Operadora");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(Nome_Operadora));
-            }
             if ((Nome_Cliente == null)) {
                 throw new global::System.ArgumentNullException("Nome_Cliente");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(Nome_Cliente));
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(Nome_Cliente));
             }
-            this.Adapter.InsertCommand.Parameters[2].Value = ((System.DateTime)(DataNasc_Cliente));
-            this.Adapter.InsertCommand.Parameters[3].Value = ((int)(Sexo_Cliente));
+            this.Adapter.InsertCommand.Parameters[1].Value = ((System.DateTime)(DataNasc_Cliente));
+            this.Adapter.InsertCommand.Parameters[2].Value = ((int)(Sexo_Cliente));
             if ((CPF_Cliente == null)) {
                 throw new global::System.ArgumentNullException("CPF_Cliente");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(CPF_Cliente));
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(CPF_Cliente));
             }
             if ((RG_Cliente == null)) {
                 throw new global::System.ArgumentNullException("RG_Cliente");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(RG_Cliente));
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(RG_Cliente));
             }
             if ((Email_Cliente == null)) {
+                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(Email_Cliente));
+            }
+            if ((TelRes_Cliente == null)) {
                 this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(Email_Cliente));
+                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(TelRes_Cliente));
             }
-            if ((TelRes_Cliente == null)) {
+            if ((TelCom_Cliente == null)) {
                 this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[7].Value = ((string)(TelRes_Cliente));
+                this.Adapter.InsertCommand.Parameters[7].Value = ((string)(TelCom_Cliente));
             }
-            if ((TelCom_Cliente == null)) {
+            if ((TelCel_Cliente == null)) {
                 this.Adapter.InsertCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[8].Value = ((string)(TelCom_Cliente));
-            }
-            if ((TelCel_Cliente == null)) {
-                this.Adapter.InsertCommand.Parameters[9].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[9].Value = ((string)(TelCel_Cliente));
+                this.Adapter.InsertCommand.Parameters[8].Value = ((string)(TelCel_Cliente));
             }
             if ((OperadoraCel_Cliente.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[10].Value = ((int)(OperadoraCel_Cliente.Value));
+                this.Adapter.InsertCommand.Parameters[9].Value = ((int)(OperadoraCel_Cliente.Value));
             }
             else {
-                this.Adapter.InsertCommand.Parameters[10].Value = global::System.DBNull.Value;
+                this.Adapter.InsertCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
             if ((CEP_Cliente == null)) {
-                this.Adapter.InsertCommand.Parameters[11].Value = global::System.DBNull.Value;
+                this.Adapter.InsertCommand.Parameters[10].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[11].Value = ((string)(CEP_Cliente));
+                this.Adapter.InsertCommand.Parameters[10].Value = ((string)(CEP_Cliente));
             }
             if ((Endereco_Cliente == null)) {
                 throw new global::System.ArgumentNullException("Endereco_Cliente");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[12].Value = ((string)(Endereco_Cliente));
+                this.Adapter.InsertCommand.Parameters[11].Value = ((string)(Endereco_Cliente));
             }
             if ((CompEnd_Cliente == null)) {
-                this.Adapter.InsertCommand.Parameters[13].Value = global::System.DBNull.Value;
+                this.Adapter.InsertCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[13].Value = ((string)(CompEnd_Cliente));
+                this.Adapter.InsertCommand.Parameters[12].Value = ((string)(CompEnd_Cliente));
             }
             if ((Bairro_Cliente == null)) {
                 throw new global::System.ArgumentNullException("Bairro_Cliente");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[14].Value = ((string)(Bairro_Cliente));
+                this.Adapter.InsertCommand.Parameters[13].Value = ((string)(Bairro_Cliente));
             }
-            this.Adapter.InsertCommand.Parameters[15].Value = ((int)(Estado_Cliente));
-            this.Adapter.InsertCommand.Parameters[16].Value = ((int)(Cidade_Cliente));
-            this.Adapter.InsertCommand.Parameters[17].Value = ((int)(Status_Cliente));
+            this.Adapter.InsertCommand.Parameters[14].Value = ((int)(Estado_Cliente));
+            this.Adapter.InsertCommand.Parameters[15].Value = ((int)(Cidade_Cliente));
+            this.Adapter.InsertCommand.Parameters[16].Value = ((int)(Status_Cliente));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -11322,7 +11274,6 @@ SELECT id, Nome_Operadora, Nome_Cliente, DataNasc_Cliente, Sexo_Cliente, CPF_Cli
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(
-                    string Nome_Operadora, 
                     string Nome_Cliente, 
                     System.DateTime DataNasc_Cliente, 
                     int Sexo_Cliente, 
@@ -11341,7 +11292,6 @@ SELECT id, Nome_Operadora, Nome_Cliente, DataNasc_Cliente, Sexo_Cliente, CPF_Cli
                     int Cidade_Cliente, 
                     int Status_Cliente, 
                     int Original_id, 
-                    string Original_Nome_Operadora, 
                     string Original_Nome_Cliente, 
                     System.DateTime Original_DataNasc_Cliente, 
                     int Original_Sexo_Cliente, 
@@ -11360,188 +11310,176 @@ SELECT id, Nome_Operadora, Nome_Cliente, DataNasc_Cliente, Sexo_Cliente, CPF_Cli
                     int Original_Cidade_Cliente, 
                     int Original_Status_Cliente, 
                     int id) {
-            if ((Nome_Operadora == null)) {
-                throw new global::System.ArgumentNullException("Nome_Operadora");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(Nome_Operadora));
-            }
             if ((Nome_Cliente == null)) {
                 throw new global::System.ArgumentNullException("Nome_Cliente");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(Nome_Cliente));
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(Nome_Cliente));
             }
-            this.Adapter.UpdateCommand.Parameters[2].Value = ((System.DateTime)(DataNasc_Cliente));
-            this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(Sexo_Cliente));
+            this.Adapter.UpdateCommand.Parameters[1].Value = ((System.DateTime)(DataNasc_Cliente));
+            this.Adapter.UpdateCommand.Parameters[2].Value = ((int)(Sexo_Cliente));
             if ((CPF_Cliente == null)) {
                 throw new global::System.ArgumentNullException("CPF_Cliente");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(CPF_Cliente));
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(CPF_Cliente));
             }
             if ((RG_Cliente == null)) {
                 throw new global::System.ArgumentNullException("RG_Cliente");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(RG_Cliente));
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(RG_Cliente));
             }
             if ((Email_Cliente == null)) {
+                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Email_Cliente));
+            }
+            if ((TelRes_Cliente == null)) {
                 this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Email_Cliente));
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(TelRes_Cliente));
             }
-            if ((TelRes_Cliente == null)) {
+            if ((TelCom_Cliente == null)) {
                 this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(TelRes_Cliente));
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(TelCom_Cliente));
             }
-            if ((TelCom_Cliente == null)) {
+            if ((TelCel_Cliente == null)) {
                 this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(TelCom_Cliente));
-            }
-            if ((TelCel_Cliente == null)) {
-                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(TelCel_Cliente));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(TelCel_Cliente));
             }
             if ((OperadoraCel_Cliente.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((int)(OperadoraCel_Cliente.Value));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((int)(OperadoraCel_Cliente.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
             if ((CEP_Cliente == null)) {
-                this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(CEP_Cliente));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(CEP_Cliente));
             }
             if ((Endereco_Cliente == null)) {
                 throw new global::System.ArgumentNullException("Endereco_Cliente");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Endereco_Cliente));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Endereco_Cliente));
             }
             if ((CompEnd_Cliente == null)) {
-                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(CompEnd_Cliente));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(CompEnd_Cliente));
             }
             if ((Bairro_Cliente == null)) {
                 throw new global::System.ArgumentNullException("Bairro_Cliente");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(Bairro_Cliente));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Bairro_Cliente));
             }
-            this.Adapter.UpdateCommand.Parameters[15].Value = ((int)(Estado_Cliente));
-            this.Adapter.UpdateCommand.Parameters[16].Value = ((int)(Cidade_Cliente));
-            this.Adapter.UpdateCommand.Parameters[17].Value = ((int)(Status_Cliente));
-            this.Adapter.UpdateCommand.Parameters[18].Value = ((int)(Original_id));
-            if ((Original_Nome_Operadora == null)) {
-                throw new global::System.ArgumentNullException("Original_Nome_Operadora");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[19].Value = ((string)(Original_Nome_Operadora));
-            }
+            this.Adapter.UpdateCommand.Parameters[14].Value = ((int)(Estado_Cliente));
+            this.Adapter.UpdateCommand.Parameters[15].Value = ((int)(Cidade_Cliente));
+            this.Adapter.UpdateCommand.Parameters[16].Value = ((int)(Status_Cliente));
+            this.Adapter.UpdateCommand.Parameters[17].Value = ((int)(Original_id));
             if ((Original_Nome_Cliente == null)) {
                 throw new global::System.ArgumentNullException("Original_Nome_Cliente");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((string)(Original_Nome_Cliente));
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((string)(Original_Nome_Cliente));
             }
-            this.Adapter.UpdateCommand.Parameters[21].Value = ((System.DateTime)(Original_DataNasc_Cliente));
-            this.Adapter.UpdateCommand.Parameters[22].Value = ((int)(Original_Sexo_Cliente));
+            this.Adapter.UpdateCommand.Parameters[19].Value = ((System.DateTime)(Original_DataNasc_Cliente));
+            this.Adapter.UpdateCommand.Parameters[20].Value = ((int)(Original_Sexo_Cliente));
             if ((Original_CPF_Cliente == null)) {
                 throw new global::System.ArgumentNullException("Original_CPF_Cliente");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[23].Value = ((string)(Original_CPF_Cliente));
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((string)(Original_CPF_Cliente));
             }
             if ((Original_RG_Cliente == null)) {
                 throw new global::System.ArgumentNullException("Original_RG_Cliente");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[24].Value = ((string)(Original_RG_Cliente));
+                this.Adapter.UpdateCommand.Parameters[22].Value = ((string)(Original_RG_Cliente));
             }
             if ((Original_Email_Cliente == null)) {
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[24].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[24].Value = ((string)(Original_Email_Cliente));
+            }
+            if ((Original_TelRes_Cliente == null)) {
                 this.Adapter.UpdateCommand.Parameters[25].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[26].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[25].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[26].Value = ((string)(Original_Email_Cliente));
+                this.Adapter.UpdateCommand.Parameters[26].Value = ((string)(Original_TelRes_Cliente));
             }
-            if ((Original_TelRes_Cliente == null)) {
+            if ((Original_TelCom_Cliente == null)) {
                 this.Adapter.UpdateCommand.Parameters[27].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[28].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[27].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[28].Value = ((string)(Original_TelRes_Cliente));
+                this.Adapter.UpdateCommand.Parameters[28].Value = ((string)(Original_TelCom_Cliente));
             }
-            if ((Original_TelCom_Cliente == null)) {
+            if ((Original_TelCel_Cliente == null)) {
                 this.Adapter.UpdateCommand.Parameters[29].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[30].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[29].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[30].Value = ((string)(Original_TelCom_Cliente));
+                this.Adapter.UpdateCommand.Parameters[30].Value = ((string)(Original_TelCel_Cliente));
             }
-            if ((Original_TelCel_Cliente == null)) {
+            if ((Original_OperadoraCel_Cliente.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[31].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[32].Value = ((int)(Original_OperadoraCel_Cliente.Value));
+            }
+            else {
                 this.Adapter.UpdateCommand.Parameters[31].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[32].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.UpdateCommand.Parameters[31].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[32].Value = ((string)(Original_TelCel_Cliente));
-            }
-            if ((Original_OperadoraCel_Cliente.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[33].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[34].Value = ((int)(Original_OperadoraCel_Cliente.Value));
-            }
-            else {
+            if ((Original_CEP_Cliente == null)) {
                 this.Adapter.UpdateCommand.Parameters[33].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[34].Value = global::System.DBNull.Value;
             }
-            if ((Original_CEP_Cliente == null)) {
-                this.Adapter.UpdateCommand.Parameters[35].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[36].Value = global::System.DBNull.Value;
-            }
             else {
-                this.Adapter.UpdateCommand.Parameters[35].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[36].Value = ((string)(Original_CEP_Cliente));
+                this.Adapter.UpdateCommand.Parameters[33].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[34].Value = ((string)(Original_CEP_Cliente));
             }
             if ((Original_Endereco_Cliente == null)) {
                 throw new global::System.ArgumentNullException("Original_Endereco_Cliente");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[37].Value = ((string)(Original_Endereco_Cliente));
+                this.Adapter.UpdateCommand.Parameters[35].Value = ((string)(Original_Endereco_Cliente));
             }
             if ((Original_CompEnd_Cliente == null)) {
-                this.Adapter.UpdateCommand.Parameters[38].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[39].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[36].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[37].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[38].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[39].Value = ((string)(Original_CompEnd_Cliente));
+                this.Adapter.UpdateCommand.Parameters[36].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[37].Value = ((string)(Original_CompEnd_Cliente));
             }
             if ((Original_Bairro_Cliente == null)) {
                 throw new global::System.ArgumentNullException("Original_Bairro_Cliente");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[40].Value = ((string)(Original_Bairro_Cliente));
+                this.Adapter.UpdateCommand.Parameters[38].Value = ((string)(Original_Bairro_Cliente));
             }
-            this.Adapter.UpdateCommand.Parameters[41].Value = ((int)(Original_Estado_Cliente));
-            this.Adapter.UpdateCommand.Parameters[42].Value = ((int)(Original_Cidade_Cliente));
-            this.Adapter.UpdateCommand.Parameters[43].Value = ((int)(Original_Status_Cliente));
-            this.Adapter.UpdateCommand.Parameters[44].Value = ((int)(id));
+            this.Adapter.UpdateCommand.Parameters[39].Value = ((int)(Original_Estado_Cliente));
+            this.Adapter.UpdateCommand.Parameters[40].Value = ((int)(Original_Cidade_Cliente));
+            this.Adapter.UpdateCommand.Parameters[41].Value = ((int)(Original_Status_Cliente));
+            this.Adapter.UpdateCommand.Parameters[42].Value = ((int)(id));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -11563,7 +11501,6 @@ SELECT id, Nome_Operadora, Nome_Cliente, DataNasc_Cliente, Sexo_Cliente, CPF_Cli
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(
-                    string Nome_Operadora, 
                     string Nome_Cliente, 
                     System.DateTime DataNasc_Cliente, 
                     int Sexo_Cliente, 
@@ -11582,7 +11519,6 @@ SELECT id, Nome_Operadora, Nome_Cliente, DataNasc_Cliente, Sexo_Cliente, CPF_Cli
                     int Cidade_Cliente, 
                     int Status_Cliente, 
                     int Original_id, 
-                    string Original_Nome_Operadora, 
                     string Original_Nome_Cliente, 
                     System.DateTime Original_DataNasc_Cliente, 
                     int Original_Sexo_Cliente, 
@@ -11600,7 +11536,7 @@ SELECT id, Nome_Operadora, Nome_Cliente, DataNasc_Cliente, Sexo_Cliente, CPF_Cli
                     int Original_Estado_Cliente, 
                     int Original_Cidade_Cliente, 
                     int Original_Status_Cliente) {
-            return this.Update(Nome_Operadora, Nome_Cliente, DataNasc_Cliente, Sexo_Cliente, CPF_Cliente, RG_Cliente, Email_Cliente, TelRes_Cliente, TelCom_Cliente, TelCel_Cliente, OperadoraCel_Cliente, CEP_Cliente, Endereco_Cliente, CompEnd_Cliente, Bairro_Cliente, Estado_Cliente, Cidade_Cliente, Status_Cliente, Original_id, Original_Nome_Operadora, Original_Nome_Cliente, Original_DataNasc_Cliente, Original_Sexo_Cliente, Original_CPF_Cliente, Original_RG_Cliente, Original_Email_Cliente, Original_TelRes_Cliente, Original_TelCom_Cliente, Original_TelCel_Cliente, Original_OperadoraCel_Cliente, Original_CEP_Cliente, Original_Endereco_Cliente, Original_CompEnd_Cliente, Original_Bairro_Cliente, Original_Estado_Cliente, Original_Cidade_Cliente, Original_Status_Cliente, Original_id);
+            return this.Update(Nome_Cliente, DataNasc_Cliente, Sexo_Cliente, CPF_Cliente, RG_Cliente, Email_Cliente, TelRes_Cliente, TelCom_Cliente, TelCel_Cliente, OperadoraCel_Cliente, CEP_Cliente, Endereco_Cliente, CompEnd_Cliente, Bairro_Cliente, Estado_Cliente, Cidade_Cliente, Status_Cliente, Original_id, Original_Nome_Cliente, Original_DataNasc_Cliente, Original_Sexo_Cliente, Original_CPF_Cliente, Original_RG_Cliente, Original_Email_Cliente, Original_TelRes_Cliente, Original_TelCom_Cliente, Original_TelCel_Cliente, Original_OperadoraCel_Cliente, Original_CEP_Cliente, Original_Endereco_Cliente, Original_CompEnd_Cliente, Original_Bairro_Cliente, Original_Estado_Cliente, Original_Cidade_Cliente, Original_Status_Cliente, Original_id);
         }
     }
     

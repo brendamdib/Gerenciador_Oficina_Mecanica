@@ -37,6 +37,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -104,6 +105,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frm_Cad_Cliente.resx">
       <DependentUpon>frm_Cad_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Cad_Veiculo_Cliente.resx">
+      <DependentUpon>frm_Cad_Veiculo_Cliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Index.pt-BR.resx">
       <DependentUpon>frm_Index.cs</DependentUpon>
