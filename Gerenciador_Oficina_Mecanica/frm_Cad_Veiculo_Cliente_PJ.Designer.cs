@@ -1,6 +1,6 @@
 ﻿namespace Gerenciador_Oficina_Mecanica
 {
-    partial class frm_Cad_Veiculo_Cliente
+    partial class frm_Cad_Veiculo_Cliente_PJ
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "frm_Cad_Veiculo_Cliente";
+            this.Text = "frm_Cad_Veiculo_Cliente_PJ";
         }
 
         #endregion

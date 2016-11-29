@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Gerenciador_Oficina_Mecanica
 {
-    public partial class frm_Cad_Veiculo_Cliente : Form
+    public partial class frm_Cad_Veiculo_Cliente_PF : Form
     {
-        public frm_Cad_Veiculo_Cliente()
+        public frm_Cad_Veiculo_Cliente_PF()
         {
             InitializeComponent();
         }

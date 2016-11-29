@@ -102,5 +102,11 @@ namespace Gerenciador_Oficina_Mecanica
             SalvaCli.Cidade_Cliente = Convert.ToInt32(cbo_CliPF_Cidade.SelectedValue);
             SalvaCli.Status_Cliente = 0;
         }
+
+        private void btn_CliPF_addVeiculo_Click(object sender, EventArgs e)
+        {
+            frm_Cad_Veiculo_Cliente_PF CadVeiculoPF = new frm_Cad_Veiculo_Cliente_PF();
+            CadVeiculoPF.Show();
+        }
     }
 }

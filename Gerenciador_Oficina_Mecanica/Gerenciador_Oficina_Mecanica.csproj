@@ -82,11 +82,17 @@
     <Compile Include="frm_Cad_Veiculo.Designer.cs">
       <DependentUpon>frm_Cad_Veiculo.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_Cad_Veiculo_Cliente.cs">
+    <Compile Include="frm_Cad_Veiculo_Cliente_PF.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_Cad_Veiculo_Cliente.Designer.cs">
-      <DependentUpon>frm_Cad_Veiculo_Cliente.cs</DependentUpon>
+    <Compile Include="frm_Cad_Veiculo_Cliente_PF.Designer.cs">
+      <DependentUpon>frm_Cad_Veiculo_Cliente_PF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Cad_Veiculo_Cliente_PJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Cad_Veiculo_Cliente_PJ.Designer.cs">
+      <DependentUpon>frm_Cad_Veiculo_Cliente_PJ.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_Index.cs">
       <SubType>Form</SubType>

@@ -58,36 +58,36 @@ namespace Gerenciador_Oficina_Mecanica
                 SqlCommand cmd = new SqlCommand();
                 cmd.CommandType = CommandType.StoredProcedure;
                 
-                cmd.Parameters.AddWithValue("@Nome_Cliente", Nome_Cliente);
+               // cmd.Parameters.AddWithValue("@Nome_Cliente", Nome_Cliente);
 
 
                 
-                @DataNasc_Cliente,
-                @Sexo_Cliente,
-                @CPF_Cliente,
-                @RG_Cliente,
-                @Email_Cliente,
-                @TelRes_Cliente,
-                @TelCom_Cliente,
-                @TelCel_Cliente,
-                @OperadoraCel_Cliente,
-				@CEP_Cliente,
-                @Endereco_Cliente,
-                @CompEnd_Cliente,
-                @Bairro_Cliente,
-                @Estado_Cliente,
-                @Cidade_Cliente
+    //            @DataNasc_Cliente,
+    //            @Sexo_Cliente,
+    //            @CPF_Cliente,
+    //            @RG_Cliente,
+    //            @Email_Cliente,
+    //            @TelRes_Cliente,
+    //            @TelCom_Cliente,
+    //            @TelCel_Cliente,
+    //            @OperadoraCel_Cliente,
+				//@CEP_Cliente,
+    //            @Endereco_Cliente,
+    //            @CompEnd_Cliente,
+    //            @Bairro_Cliente,
+    //            @Estado_Cliente,
+    //            @Cidade_Cliente
 
 
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
 
-                da.Fill(ds);
+                //da.Fill(ds);
 
-                lblmsg.Text = "Contatos com idade superior a " + Convert.ToInt32(txtIdade.Text);
+                //lblmsg.Text = "Contatos com idade superior a " + Convert.ToInt32(txtIdade.Text);
 
-                GridView1.DataSource = ds;
+                //GridView1.DataSource = ds;
 
-                GridView1.DataBind();
+                //GridView1.DataBind();
             }
             catch (Exception e)
             {
