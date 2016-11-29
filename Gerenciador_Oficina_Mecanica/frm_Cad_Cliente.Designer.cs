@@ -32,7 +32,7 @@
             System.Windows.Forms.Label lbl_CliPF_Cod;
             System.Windows.Forms.Label lbl_CliPJ_Cod;
             this.pnl_CadCliente = new System.Windows.Forms.Panel();
-            this.idTextBox = new System.Windows.Forms.TextBox();
+            this.txt_CliPJ_Cod = new System.Windows.Forms.TextBox();
             this.tbl_Clientes_PJBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gerenciaOficinaDataSet = new Gerenciador_Oficina_Mecanica.GerenciaOficinaDataSet();
             this.grp_PessoaFisica = new System.Windows.Forms.GroupBox();
@@ -116,6 +116,7 @@
             lbl_CliPF_Cod.Size = new System.Drawing.Size(91, 13);
             lbl_CliPF_Cod.TabIndex = 37;
             lbl_CliPF_Cod.Text = "Código Cliente PF";
+            lbl_CliPF_Cod.Visible = false;
             // 
             // lbl_CliPJ_Cod
             // 
@@ -126,6 +127,7 @@
             lbl_CliPJ_Cod.Size = new System.Drawing.Size(90, 13);
             lbl_CliPJ_Cod.TabIndex = 38;
             lbl_CliPJ_Cod.Text = "Codigo Cliente PJ";
+            lbl_CliPJ_Cod.Visible = false;
             // 
             // pnl_CadCliente
             // 
@@ -135,7 +137,7 @@
             this.pnl_CadCliente.AutoSize = true;
             this.pnl_CadCliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnl_CadCliente.Controls.Add(lbl_CliPJ_Cod);
-            this.pnl_CadCliente.Controls.Add(this.idTextBox);
+            this.pnl_CadCliente.Controls.Add(this.txt_CliPJ_Cod);
             this.pnl_CadCliente.Controls.Add(lbl_CliPF_Cod);
             this.pnl_CadCliente.Controls.Add(this.grp_PessoaFisica);
             this.pnl_CadCliente.Controls.Add(this.txt_CliPF_Cod);
@@ -146,14 +148,15 @@
             this.pnl_CadCliente.Size = new System.Drawing.Size(1152, 614);
             this.pnl_CadCliente.TabIndex = 0;
             // 
-            // idTextBox
+            // txt_CliPJ_Cod
             // 
-            this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbl_Clientes_PJBindingSource, "id", true));
-            this.idTextBox.Enabled = false;
-            this.idTextBox.Location = new System.Drawing.Point(355, 28);
-            this.idTextBox.Name = "idTextBox";
-            this.idTextBox.Size = new System.Drawing.Size(100, 20);
-            this.idTextBox.TabIndex = 39;
+            this.txt_CliPJ_Cod.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbl_Clientes_PJBindingSource, "id", true));
+            this.txt_CliPJ_Cod.Enabled = false;
+            this.txt_CliPJ_Cod.Location = new System.Drawing.Point(355, 28);
+            this.txt_CliPJ_Cod.Name = "txt_CliPJ_Cod";
+            this.txt_CliPJ_Cod.Size = new System.Drawing.Size(100, 20);
+            this.txt_CliPJ_Cod.TabIndex = 39;
+            this.txt_CliPJ_Cod.Visible = false;
             // 
             // tbl_Clientes_PJBindingSource
             // 
@@ -225,7 +228,6 @@
             this.grp_Cli_Veiculos.TabIndex = 20;
             this.grp_Cli_Veiculos.TabStop = false;
             this.grp_Cli_Veiculos.Text = "Veículos";
-            this.grp_Cli_Veiculos.Visible = false;
             // 
             // grd_CliPF_Veiculos
             // 
@@ -234,6 +236,7 @@
             this.grd_CliPF_Veiculos.Name = "grd_CliPF_Veiculos";
             this.grd_CliPF_Veiculos.Size = new System.Drawing.Size(829, 148);
             this.grd_CliPF_Veiculos.TabIndex = 32;
+            this.grd_CliPF_Veiculos.TabStop = false;
             // 
             // btn_CliPF_addVeiculo
             // 
@@ -242,7 +245,7 @@
             this.btn_CliPF_addVeiculo.Location = new System.Drawing.Point(841, 20);
             this.btn_CliPF_addVeiculo.Name = "btn_CliPF_addVeiculo";
             this.btn_CliPF_addVeiculo.Size = new System.Drawing.Size(120, 30);
-            this.btn_CliPF_addVeiculo.TabIndex = 34;
+            this.btn_CliPF_addVeiculo.TabIndex = 19;
             this.btn_CliPF_addVeiculo.Text = "Adicionar Veículo";
             this.btn_CliPF_addVeiculo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_CliPF_addVeiculo.UseVisualStyleBackColor = true;
@@ -255,7 +258,7 @@
             this.btn_CliPF_editVeiculo.Location = new System.Drawing.Point(841, 79);
             this.btn_CliPF_editVeiculo.Name = "btn_CliPF_editVeiculo";
             this.btn_CliPF_editVeiculo.Size = new System.Drawing.Size(121, 30);
-            this.btn_CliPF_editVeiculo.TabIndex = 35;
+            this.btn_CliPF_editVeiculo.TabIndex = 20;
             this.btn_CliPF_editVeiculo.Text = "Editar Veículo";
             this.btn_CliPF_editVeiculo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_CliPF_editVeiculo.UseVisualStyleBackColor = true;
@@ -267,7 +270,7 @@
             this.btn_CliPF_delVeiculo.Location = new System.Drawing.Point(841, 138);
             this.btn_CliPF_delVeiculo.Name = "btn_CliPF_delVeiculo";
             this.btn_CliPF_delVeiculo.Size = new System.Drawing.Size(120, 30);
-            this.btn_CliPF_delVeiculo.TabIndex = 36;
+            this.btn_CliPF_delVeiculo.TabIndex = 21;
             this.btn_CliPF_delVeiculo.Text = "Excluir Veículo";
             this.btn_CliPF_delVeiculo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_CliPF_delVeiculo.UseVisualStyleBackColor = true;
@@ -279,7 +282,7 @@
             this.btn_Cli_Salvar.Location = new System.Drawing.Point(854, 155);
             this.btn_Cli_Salvar.Name = "btn_Cli_Salvar";
             this.btn_Cli_Salvar.Size = new System.Drawing.Size(121, 30);
-            this.btn_Cli_Salvar.TabIndex = 37;
+            this.btn_Cli_Salvar.TabIndex = 18;
             this.btn_Cli_Salvar.Text = "Cadastrar Cliente";
             this.btn_Cli_Salvar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Cli_Salvar.UseVisualStyleBackColor = true;
@@ -287,6 +290,8 @@
             // 
             // cbo_CliPF_Operadora
             // 
+            this.cbo_CliPF_Operadora.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbo_CliPF_Operadora.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbo_CliPF_Operadora.DataSource = this.tbl_OperadorasTelefoniaBindingSource;
             this.cbo_CliPF_Operadora.DisplayMember = "Nome_Operadora";
             this.cbo_CliPF_Operadora.FormattingEnabled = true;
@@ -303,13 +308,15 @@
             // 
             // cbo_CliPF_Sexo
             // 
+            this.cbo_CliPF_Sexo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbo_CliPF_Sexo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbo_CliPF_Sexo.DataSource = this.tbl_SexoBindingSource;
             this.cbo_CliPF_Sexo.DisplayMember = "Descricao_Sexo";
             this.cbo_CliPF_Sexo.FormattingEnabled = true;
             this.cbo_CliPF_Sexo.Location = new System.Drawing.Point(594, 32);
             this.cbo_CliPF_Sexo.Name = "cbo_CliPF_Sexo";
             this.cbo_CliPF_Sexo.Size = new System.Drawing.Size(120, 21);
-            this.cbo_CliPF_Sexo.TabIndex = 36;
+            this.cbo_CliPF_Sexo.TabIndex = 4;
             this.cbo_CliPF_Sexo.ValueMember = "id";
             // 
             // tbl_SexoBindingSource
@@ -606,6 +613,7 @@
             this.txt_CliPF_Cod.Name = "txt_CliPF_Cod";
             this.txt_CliPF_Cod.Size = new System.Drawing.Size(100, 20);
             this.txt_CliPF_Cod.TabIndex = 38;
+            this.txt_CliPF_Cod.Visible = false;
             // 
             // tbl_Clientes_PFBindingSource
             // 
@@ -672,15 +680,14 @@
             this.tableAdapterManager.tbl_Clientes_PFTableAdapter = null;
             this.tableAdapterManager.tbl_Clientes_PJTableAdapter = null;
             this.tableAdapterManager.tbl_EstadoTableAdapter = this.tbl_EstadoTableAdapter;
-            this.tableAdapterManager.tbl_FabricanteTableAdapter = null;
+            this.tableAdapterManager.tbl_FabricantesTableAdapter = null;
             this.tableAdapterManager.tbl_FormaPgtoTableAdapter = null;
             this.tableAdapterManager.tbl_FornecedoresTableAdapter = null;
             this.tableAdapterManager.tbl_ModelosVeiculosTableAdapter = null;
             this.tableAdapterManager.tbl_OperadorasTelefoniaTableAdapter = null;
             this.tableAdapterManager.tbl_OrcamentosTableAdapter = null;
             this.tableAdapterManager.tbl_ServicosTableAdapter = null;
-            this.tableAdapterManager.tbl_SexoTableAdapter = null;
-            this.tableAdapterManager.tbl_TipoFabricanteTableAdapter = null;
+            this.tableAdapterManager.tbl_SexoTableAdapter = null;            
             this.tableAdapterManager.tbl_VeiculoClienteTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = Gerenciador_Oficina_Mecanica.GerenciaOficinaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
@@ -742,14 +749,12 @@
         private System.Windows.Forms.RadioButton rdo_Cli_PJ;
         private System.Windows.Forms.RadioButton rdo_Cli_PF;
         private System.Windows.Forms.GroupBox grp_TipoCliente;
-        private System.Windows.Forms.GroupBox grp_PessoaFisica;
         private System.Windows.Forms.GroupBox grp_PessoaJuridica;
         private System.Windows.Forms.Label lbl_Sexo;
         private System.Windows.Forms.Label lbl_DataNasc;
         private System.Windows.Forms.DateTimePicker txt_CliPF_DataNasc;
         private System.Windows.Forms.Label lbl_Email;
         private System.Windows.Forms.Label lbl_Nome;
-        private System.Windows.Forms.TextBox txt_CliPF_Nome;
         private System.Windows.Forms.Label lbl_Cpf;
         private System.Windows.Forms.Label lbl_TelCelular;
         private System.Windows.Forms.Label lbl_TelComercial;
@@ -798,6 +803,8 @@
         private System.Windows.Forms.TextBox txt_CliPF_Cod;
         private System.Windows.Forms.BindingSource tbl_Clientes_PJBindingSource;
         private GerenciaOficinaDataSetTableAdapters.tbl_Clientes_PJTableAdapter tbl_Clientes_PJTableAdapter;
-        private System.Windows.Forms.TextBox idTextBox;
+        private System.Windows.Forms.TextBox txt_CliPJ_Cod;
+        public System.Windows.Forms.TextBox txt_CliPF_Nome;
+        public System.Windows.Forms.GroupBox grp_PessoaFisica;
     }
 }

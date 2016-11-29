@@ -17,6 +17,8 @@ namespace Gerenciador_Oficina_Mecanica
 {
     public partial class frm_Cad_Cliente : Form
     {
+        
+
         public frm_Cad_Cliente()
         {
             InitializeComponent();
@@ -52,7 +54,7 @@ namespace Gerenciador_Oficina_Mecanica
         {
             this.Validate();
             this.tbl_EstadoBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.gerenciaOficinaDataSet);            
+            this.tableAdapterManager.UpdateAll(this.gerenciaOficinaDataSet);
         }
 
         private void frm_Cad_Cliente_Load(object sender, EventArgs e)
@@ -70,11 +72,13 @@ namespace Gerenciador_Oficina_Mecanica
             this.tbl_CidadeTableAdapter.FillBy(this.gerenciaOficinaDataSet.tbl_Cidade, ((int)(System.Convert.ChangeType(1, typeof(int)))));
             // TODO: This line of code loads data into the 'gerenciaOficinaDataSet.tbl_Estado' table. You can move, or remove it, as needed.
             this.tbl_EstadoTableAdapter.Fill(this.gerenciaOficinaDataSet.tbl_Estado);
+
+           
         }
 
         private void cbo_Estado_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cbo_CliPF_Estado.SelectedValue != null )
+            if (cbo_CliPF_Estado.SelectedValue != null)
             {
                 this.tbl_CidadeTableAdapter.FillBy(this.gerenciaOficinaDataSet.tbl_Cidade, ((int)(System.Convert.ChangeType(cbo_CliPF_Estado.SelectedValue, typeof(int)))));
             }
@@ -82,25 +86,23 @@ namespace Gerenciador_Oficina_Mecanica
 
         private void btn_Cli_Salvar_Click(object sender, EventArgs e)
         {
-            FuncoesSQL SalvaCli = new FuncoesSQL();
+            try
+            {
+                FuncoesSQL.CadastraCliente(txt_CliPF_Nome.Text, txt_CliPF_DataNasc.Text, Int32.Parse(cbo_CliPF_Sexo.SelectedValue.ToString()), txt_CliPF_RG.Text, txt_CliPF_Cpf.Text, txt_CliPF_Email.Text, txt_CliPF_TelRes.Text, txt_CliPF_TelCom.Text, txt_CliPF_TelCel.Text, Int32.Parse(cbo_CliPF_Operadora.SelectedValue.ToString()), txt_CliPF_Cep.Text, txt_CliPF_End.Text, txt_CliPF_EndComp.Text, txt_CliPF_Bairro.Text, Int32.Parse(cbo_CliPF_Estado.SelectedValue.ToString()), Int32.Parse(cbo_CliPF_Cidade.SelectedValue.ToString()));
+                
+                grp_Cli_Veiculos.Visible = true;
+            }
+            catch (Exception Erro)
+            {
+                MessageBox.Show(Erro.Message);
+                throw;
+            }
+        }
 
-            SalvaCli.Nome_Cliente = txt_CliPF_Nome.Text;
-            SalvaCli.DataNasc_Cliente = txt_CliPF_DataNasc.Text;
-            SalvaCli.Sexo_Cliente = Convert.ToInt32(cbo_CliPF_Sexo.SelectedValue);
-            SalvaCli.CPF_Cliente = txt_CliPF_Cpf.Text;
-            SalvaCli.RG_Cliente = txt_CliPF_RG.Text;
-            SalvaCli.Email_Cliente = txt_CliPF_Email.Text;
-            SalvaCli.TelRes_Cliente = txt_CliPF_TelRes.Text;
-            SalvaCli.TelCom_Cliente = txt_CliPF_TelCom.Text;
-            SalvaCli.TelCel_Cliente = txt_CliPF_TelCel.Text;
-            SalvaCli.OperadoraCel_Cliente = Convert.ToInt32(cbo_CliPF_Operadora.SelectedValue);
-            SalvaCli.CEP_Cliente = txt_CliPF_Cep.Text;
-            SalvaCli.Endereco_Cliente = txt_CliPF_End.Text;
-            SalvaCli.CompEndereco_Cliente = txt_CliPF_EndComp.Text;
-            SalvaCli.Bairro_Cliente = txt_CliPF_Bairro.Text;
-            SalvaCli.Estado_Cliente = Convert.ToInt32(cbo_CliPF_Estado.SelectedValue);
-            SalvaCli.Cidade_Cliente = Convert.ToInt32(cbo_CliPF_Cidade.SelectedValue);
-            SalvaCli.Status_Cliente = 0;
+        private void btn_CliPF_addVeiculo_Click(object sender, EventArgs e)
+        {
+            frm_Cad_Veiculo_Cliente frmCadVeicCliente = new frm_Cad_Veiculo_Cliente();            
+            frmCadVeicCliente.Show();
         }
 
         private void btn_CliPF_addVeiculo_Click(object sender, EventArgs e)
