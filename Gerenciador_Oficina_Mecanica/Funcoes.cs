@@ -51,6 +51,25 @@ namespace Gerenciador_Oficina_Mecanica
             
         }
 
+        public static string PesquisaCEP(string CEP)
+        {
+            try
+            {
+                string endereco, bairro, cidade, estado;
+                endereco = "Teste";
+                bairro = "Buritis";
+                cidade = "Belo Horizonte";
+                estado = "MG";
+
+                return (endereco, bairro; cidade, estado);
+            }
+            catch (Exception e)
+            {
+                System.Windows.Forms.MessageBox.Show(e.Message);                
+                throw;
+            }
+        }
+
 
           public static string CadastraCliente(string Nome, string DataNasc, int Sexo, string RG, string CPF, string Email, string TelRes, string TelCom, string TelCel, int Operadora, string CEP, string Endereco, string CompEndereco, string Bairro, int UF, int Cidade)
             {            
@@ -84,7 +103,7 @@ namespace Gerenciador_Oficina_Mecanica
                     cmd.Connection.Close();
 
                 frm_Cad_Cliente frmCadCli = new frm_Cad_Cliente();
-                frmCadCli.grp_PessoaFisica.Visible = true;
+                frmCadCli.grp_PessoaFisica.Enabled = true;
 
 
 

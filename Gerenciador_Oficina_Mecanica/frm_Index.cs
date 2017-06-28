@@ -21,14 +21,7 @@ namespace Gerenciador_Oficina_Mecanica
         {
 
         }
-
-        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frm_Cad_Cliente frmCadCliente = new frm_Cad_Cliente();
-            frmCadCliente.MdiParent = this;            
-            frmCadCliente.Show();
-        }
-
+       
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -46,6 +39,20 @@ namespace Gerenciador_Oficina_Mecanica
             frm_Cad_Fornecedor frmCadFornecedor = new frm_Cad_Fornecedor();
             frmCadFornecedor.MdiParent = this;
             frmCadFornecedor.Show();
+        }
+
+        private void cadastrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_Cad_Cliente frmCadCliente = new frm_Cad_Cliente();
+            frmCadCliente.MdiParent = this;
+            frmCadCliente.Show();
+        }
+
+        private void alterarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            /* frm_Alt_Cliente frmCadCliente = new frm_Cad_Cliente();
+            frmCadCliente.MdiParent = this;
+            frmCadCliente.Show();*/
         }
     }
 }

@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="cadastrarToolStripMenuItem.Text" xml:space="preserve">
+    <value>Cadastrar</value>
+  </data>
+  <data name="alterarToolStripMenuItem.Text" xml:space="preserve">
+    <value>Alterar</value>
+  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -130,5 +136,8 @@
   </data>
   <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>On</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Gerenciador de Oficina Mecânica - Dib Motorsport</value>
   </data>
 </root>

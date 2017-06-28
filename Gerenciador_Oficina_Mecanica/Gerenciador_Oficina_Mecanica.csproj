@@ -106,6 +106,9 @@
     <EmbeddedResource Include="frm_Cad_Cliente.resx">
       <DependentUpon>frm_Cad_Cliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_Cad_Fornecedor.resx">
+      <DependentUpon>frm_Cad_Fornecedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_Cad_Veiculo_Cliente.resx">
       <DependentUpon>frm_Cad_Veiculo_Cliente.cs</DependentUpon>
     </EmbeddedResource>

@@ -16,5 +16,17 @@ namespace Gerenciador_Oficina_Mecanica
         {
             InitializeComponent();
         }
+
+        private void frm_Cad_Fornecedor_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'gerenciaOficinaDataSet.tbl_Bancos' table. You can move, or remove it, as needed.
+            this.tbl_BancosTableAdapter.Fill(this.gerenciaOficinaDataSet.tbl_Bancos);
+
+        }
+
+        private void rdo_forn_servicos_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
