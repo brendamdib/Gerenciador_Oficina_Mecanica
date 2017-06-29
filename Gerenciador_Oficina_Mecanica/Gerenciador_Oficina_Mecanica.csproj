@@ -65,6 +65,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frm_Cad_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Cad_Cliente.Designer.cs">
+      <DependentUpon>frm_Cad_Cliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Cad_Fornecedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,17 +83,11 @@
     <Compile Include="frm_Cad_Veiculo.Designer.cs">
       <DependentUpon>frm_Cad_Veiculo.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_Cad_Veiculo_Cliente_PF.cs">
+    <Compile Include="frm_Cad_Veiculo_Cliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_Cad_Veiculo_Cliente_PF.Designer.cs">
-      <DependentUpon>frm_Cad_Veiculo_Cliente_PF.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frm_Cad_Veiculo_Cliente_PJ.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_Cad_Veiculo_Cliente_PJ.Designer.cs">
-      <DependentUpon>frm_Cad_Veiculo_Cliente_PJ.cs</DependentUpon>
+    <Compile Include="frm_Cad_Veiculo_Cliente.Designer.cs">
+      <DependentUpon>frm_Cad_Veiculo_Cliente.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_Index.cs">
       <SubType>Form</SubType>
@@ -103,6 +103,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm_Cad_Cliente.resx">
+      <DependentUpon>frm_Cad_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Cad_Fornecedor.resx">
+      <DependentUpon>frm_Cad_Fornecedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_Cad_Veiculo_Cliente.resx">
       <DependentUpon>frm_Cad_Veiculo_Cliente.cs</DependentUpon>
     </EmbeddedResource>

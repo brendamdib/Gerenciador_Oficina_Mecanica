@@ -32,6 +32,8 @@
             this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.veículosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.alterarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fornecedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.funcionáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
@@ -73,8 +75,22 @@
             // clientesToolStripMenuItem
             // 
             resources.ApplyResources(this.clientesToolStripMenuItem, "clientesToolStripMenuItem");
+            this.clientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cadastrarToolStripMenuItem,
+            this.alterarToolStripMenuItem});
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
+            // 
+            // cadastrarToolStripMenuItem
+            // 
+            resources.ApplyResources(this.cadastrarToolStripMenuItem, "cadastrarToolStripMenuItem");
+            this.cadastrarToolStripMenuItem.Name = "cadastrarToolStripMenuItem";
+            this.cadastrarToolStripMenuItem.Click += new System.EventHandler(this.cadastrarToolStripMenuItem_Click);
+            // 
+            // alterarToolStripMenuItem
+            // 
+            resources.ApplyResources(this.alterarToolStripMenuItem, "alterarToolStripMenuItem");
+            this.alterarToolStripMenuItem.Name = "alterarToolStripMenuItem";
+            this.alterarToolStripMenuItem.Click += new System.EventHandler(this.alterarToolStripMenuItem_Click);
             // 
             // fornecedorToolStripMenuItem
             // 
@@ -225,6 +241,8 @@
         private System.Windows.Forms.ToolStripMenuItem janelasToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cadastrarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem;
     }
 }
 

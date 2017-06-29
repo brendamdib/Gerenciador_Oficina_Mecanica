@@ -124,6 +124,9 @@
   <data name="contasAReceberToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Contas a Receber</value>
   </data>
+  <data name="&gt;&gt;alterarToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="clientesToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Clientes</value>
   </data>
@@ -145,6 +148,9 @@
   </data>
   <data name="&gt;&gt;toolStripMenuItem3.Name" xml:space="preserve">
     <value>toolStripMenuItem3</value>
+  </data>
+  <data name="&gt;&gt;cadastrarToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;serviçosToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -170,11 +176,11 @@
   <data name="&gt;&gt;serviçosToolStripMenuItem.Name" xml:space="preserve">
     <value>serviçosToolStripMenuItem</value>
   </data>
-  <data name="janelasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 20</value>
-  </data>
   <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="contasAPagarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 22</value>
   </data>
   <data name="&gt;&gt;janelasToolStripMenuItem.Name" xml:space="preserve">
     <value>janelasToolStripMenuItem</value>
@@ -188,11 +194,11 @@
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
+  <data name="alterarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
   <data name="ajudaToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Ajuda</value>
-  </data>
-  <data name="&gt;&gt;contasAPagarToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;sairToolStripMenuItem.Name" xml:space="preserve">
     <value>sairToolStripMenuItem</value>
@@ -218,6 +224,12 @@
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="&gt;&gt;cadastrarToolStripMenuItem.Name" xml:space="preserve">
+    <value>cadastrarToolStripMenuItem</value>
+  </data>
+  <data name="toolStripMenuItem3.Text" xml:space="preserve">
+    <value>'''''''''</value>
+  </data>
   <data name="&gt;&gt;fornecedorToolStripMenuItem.Name" xml:space="preserve">
     <value>fornecedorToolStripMenuItem</value>
   </data>
@@ -242,8 +254,8 @@
   <data name="relatórioDeServiçosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>183, 22</value>
   </data>
-  <data name="contasAPagarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>165, 22</value>
+  <data name="cadastrarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
   </data>
   <data name="relatóriosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>71, 20</value>
@@ -257,6 +269,9 @@
   <data name="&gt;&gt;clientesToolStripMenuItem.Name" xml:space="preserve">
     <value>clientesToolStripMenuItem</value>
   </data>
+  <data name="&gt;&gt;clientesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;cadastroToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -268,6 +283,9 @@
   </data>
   <data name="&gt;&gt;toolStripMenuItem3.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;alterarToolStripMenuItem.Name" xml:space="preserve">
+    <value>alterarToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;veículosToolStripMenuItem.Name" xml:space="preserve">
     <value>veículosToolStripMenuItem</value>
@@ -332,8 +350,8 @@
   <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
     <value>149, 6</value>
   </data>
-  <data name="toolStripMenuItem3.Text" xml:space="preserve">
-    <value>'''''''''</value>
+  <data name="janelasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 20</value>
   </data>
   <data name="&gt;&gt;sobreToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -374,7 +392,7 @@
   <data name="sobreToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Sobre</value>
   </data>
-  <data name="&gt;&gt;clientesToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;contasAPagarToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;toolStripMenuItem2.Name" xml:space="preserve">
