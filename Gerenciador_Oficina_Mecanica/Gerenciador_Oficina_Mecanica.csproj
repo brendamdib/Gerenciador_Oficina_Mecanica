@@ -65,12 +65,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frm_Cad_Cliente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_Cad_Cliente.Designer.cs">
-      <DependentUpon>frm_Cad_Cliente.cs</DependentUpon>
-    </Compile>
     <Compile Include="frm_Cad_Fornecedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,9 +103,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frm_Cad_Cliente.resx">
-      <DependentUpon>frm_Cad_Cliente.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frm_Cad_Veiculo_Cliente.resx">
       <DependentUpon>frm_Cad_Veiculo_Cliente.cs</DependentUpon>
     </EmbeddedResource>
