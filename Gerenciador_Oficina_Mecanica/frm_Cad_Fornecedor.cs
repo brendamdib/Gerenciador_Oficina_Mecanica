@@ -24,9 +24,32 @@ namespace Gerenciador_Oficina_Mecanica
 
         }
 
-        private void rdo_forn_servicos_CheckedChanged(object sender, EventArgs e)
+        private void txt_forn_obs_TextChanged(object sender, EventArgs e)
         {
+            lbl_forn_quantcarac.Text = "Quantidade de caracteres: " + txt_forn_obs.TextLength + "/300";
+        }
 
+        private void rdo_forn_fisica_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdo_forn_fisica.Checked == true)
+            {
+                txt_forn_cpf.Visible = true;
+                lbl_forn_cpf.Visible = true;
+                txt_forn_inss.Visible = true;
+                lbl_forn_inss.Visible = true;
+                txt_forn_CNPJ.Visible = false;
+                lbl_forn_cnpj.Visible = false;
+            }
+        }
+
+        private void rdo_forn_juridica_CheckedChanged(object sender, EventArgs e)
+        {
+            txt_forn_cpf.Visible = false;
+            lbl_forn_cpf.Visible = false;
+            txt_forn_inss.Visible = false;
+            lbl_forn_inss.Visible = false;
+            txt_forn_CNPJ.Visible = true;
+            lbl_forn_cnpj.Visible = true;            
         }
     }
 }
