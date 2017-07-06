@@ -1,0 +1,15 @@
+C:\Users\Erick Monteiro Dib\Source\Repos\Gerenciador_Oficina_Mecanica\Gerenciador_Oficina_Mecanica\bin\Debug\Gerenciador_Oficina_Mecanica.exe.config
+C:\Users\Erick Monteiro Dib\Source\Repos\Gerenciador_Oficina_Mecanica\Gerenciador_Oficina_Mecanica\bin\Debug\Gerenciador_Oficina_Mecanica.exe
+C:\Users\Erick Monteiro Dib\Source\Repos\Gerenciador_Oficina_Mecanica\Gerenciador_Oficina_Mecanica\bin\Debug\Gerenciador_Oficina_Mecanica.pdb
+C:\Users\Erick Monteiro Dib\Source\Repos\Gerenciador_Oficina_Mecanica\Gerenciador_Oficina_Mecanica\bin\Debug\pt-BR\Gerenciador_Oficina_Mecanica.resources.dll
+C:\Users\Erick Monteiro Dib\Source\Repos\Gerenciador_Oficina_Mecanica\Gerenciador_Oficina_Mecanica\obj\Debug\Gerenciador_Oficina_Mecanica.frm_Cad_Cliente.resources
+C:\Users\Erick Monteiro Dib\Source\Repos\Gerenciador_Oficina_Mecanica\Gerenciador_Oficina_Mecanica\obj\Debug\Gerenciador_Oficina_Mecanica.frm_Cad_Fornecedor.resources
+C:\Users\Erick Monteiro Dib\Source\Repos\Gerenciador_Oficina_Mecanica\Gerenciador_Oficina_Mecanica\obj\Debug\Gerenciador_Oficina_Mecanica.frm_Cad_Veiculo_Cliente.resources
+C:\Users\Erick Monteiro Dib\Source\Repos\Gerenciador_Oficina_Mecanica\Gerenciador_Oficina_Mecanica\obj\Debug\Gerenciador_Oficina_Mecanica.frm_Index.resources
+C:\Users\Erick Monteiro Dib\Source\Repos\Gerenciador_Oficina_Mecanica\Gerenciador_Oficina_Mecanica\obj\Debug\Gerenciador_Oficina_Mecanica.Properties.Resources.resources
+C:\Users\Erick Monteiro Dib\Source\Repos\Gerenciador_Oficina_Mecanica\Gerenciador_Oficina_Mecanica\obj\Debug\Gerenciador_Oficina_Mecanica.frm_Index.pt-BR.resources
+C:\Users\Erick Monteiro Dib\Source\Repos\Gerenciador_Oficina_Mecanica\Gerenciador_Oficina_Mecanica\obj\Debug\Gerenciador_Oficina_Mecanica.csproj.GenerateResource.Cache
+C:\Users\Erick Monteiro Dib\Source\Repos\Gerenciador_Oficina_Mecanica\Gerenciador_Oficina_Mecanica\obj\Debug\pt-BR\Gerenciador_Oficina_Mecanica.resources.dll
+C:\Users\Erick Monteiro Dib\Source\Repos\Gerenciador_Oficina_Mecanica\Gerenciador_Oficina_Mecanica\obj\Debug\Gerenciador_Oficina_Mecanica.exe
+C:\Users\Erick Monteiro Dib\Source\Repos\Gerenciador_Oficina_Mecanica\Gerenciador_Oficina_Mecanica\obj\Debug\Gerenciador_Oficina_Mecanica.pdb
+C:\Users\Erick Monteiro Dib\Source\Repos\Gerenciador_Oficina_Mecanica\Gerenciador_Oficina_Mecanica\obj\Debug\Gerenciador_Oficina_Mecanica.csprojResolveAssemblyReference.cache

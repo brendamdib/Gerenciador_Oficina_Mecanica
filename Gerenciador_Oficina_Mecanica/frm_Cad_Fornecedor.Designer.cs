@@ -47,16 +47,23 @@
             this.tbl_BancosTableAdapter = new Gerenciador_Oficina_Mecanica.GerenciaOficinaDataSetTableAdapters.tbl_BancosTableAdapter();
             this.pnl_CadCliente = new System.Windows.Forms.Panel();
             this.grp_PessoaFisica = new System.Windows.Forms.GroupBox();
+            this.lbl_forn_quantcarac = new System.Windows.Forms.Label();
+            this.lbl_forn_obs = new System.Windows.Forms.Label();
+            this.txt_forn_obs = new System.Windows.Forms.TextBox();
+            this.cbo_forn_operadora = new System.Windows.Forms.ComboBox();
+            this.tbl_OperadorasTelefoniaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.txt_forn_skype = new System.Windows.Forms.TextBox();
             this.txt_forn_nomevendedor = new System.Windows.Forms.TextBox();
             this.lbl_forn_nomevendedor = new System.Windows.Forms.Label();
             this.lbl_forn_skype = new System.Windows.Forms.Label();
-            this.txt_forn_cel = new System.Windows.Forms.MaskedTextBox();
+            this.txt_forn_celVendedor = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.gpo_forn_Segmento = new System.Windows.Forms.GroupBox();
             this.rdo_forn_servicos = new System.Windows.Forms.RadioButton();
             this.rdo_forn_pecas = new System.Windows.Forms.RadioButton();
             this.gpo_forn_tipo = new System.Windows.Forms.GroupBox();
+            this.txt_forn_inss = new System.Windows.Forms.MaskedTextBox();
+            this.txt_forn_cpf = new System.Windows.Forms.MaskedTextBox();
             this.rdo_forn_juridica = new System.Windows.Forms.RadioButton();
             this.rdo_forn_fisica = new System.Windows.Forms.RadioButton();
             this.txt_forn_CNPJ = new System.Windows.Forms.MaskedTextBox();
@@ -64,7 +71,7 @@
             this.lbl_forn_cpf = new System.Windows.Forms.Label();
             this.lbl_forn_inss = new System.Windows.Forms.Label();
             this.gbo_forn_banco = new System.Windows.Forms.GroupBox();
-            this.cbo_bancos = new System.Windows.Forms.ComboBox();
+            this.cbo_forn_bancos = new System.Windows.Forms.ComboBox();
             this.txt_forn_conta = new System.Windows.Forms.TextBox();
             this.txt_forn_agencia = new System.Windows.Forms.TextBox();
             this.lbl_forn_banco = new System.Windows.Forms.Label();
@@ -87,7 +94,7 @@
             this.txt_forn_cep = new System.Windows.Forms.MaskedTextBox();
             this.lbl_forn_Cep = new System.Windows.Forms.Label();
             this.txt_forn_TelVendedor = new System.Windows.Forms.MaskedTextBox();
-            this.txt_forn_Geral = new System.Windows.Forms.MaskedTextBox();
+            this.txt_forn_telGeral = new System.Windows.Forms.MaskedTextBox();
             this.lbl_TelComercial = new System.Windows.Forms.Label();
             this.lbl_forn_TelGeral = new System.Windows.Forms.Label();
             this.lbl_nomefant = new System.Windows.Forms.Label();
@@ -95,13 +102,11 @@
             this.txt_forn_Email = new System.Windows.Forms.TextBox();
             this.lbl_razsoc = new System.Windows.Forms.Label();
             this.txt_forn_razsoc = new System.Windows.Forms.TextBox();
-            this.tbl_OperadorasTelefoniaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.cbo_forn_operadora = new System.Windows.Forms.ComboBox();
-            this.txt_forn_obs = new System.Windows.Forms.TextBox();
-            this.lbl_forn_obs = new System.Windows.Forms.Label();
-            this.txt_forn_cpf = new System.Windows.Forms.MaskedTextBox();
-            this.txt_forn_inss = new System.Windows.Forms.MaskedTextBox();
-            this.lbl_forn_quantcarac = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Ativo = new System.Windows.Forms.RadioButton();
+            this.rdo_forn_inativo = new System.Windows.Forms.RadioButton();
+            this.lbl_forn_inscestadual = new System.Windows.Forms.Label();
+            this.txt_forn_inscestadual = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.tbl_OperadorasTelefoniaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gerenciaOficinaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbl_CidadeBindingSource)).BeginInit();
@@ -112,10 +117,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.tblBancosBindingSource)).BeginInit();
             this.pnl_CadCliente.SuspendLayout();
             this.grp_PessoaFisica.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_OperadorasTelefoniaBindingSource1)).BeginInit();
             this.gpo_forn_Segmento.SuspendLayout();
             this.gpo_forn_tipo.SuspendLayout();
             this.gbo_forn_banco.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbl_OperadorasTelefoniaBindingSource1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbl_OperadorasTelefoniaBindingSource
@@ -224,6 +230,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.grp_PessoaFisica.AutoSize = true;
+            this.grp_PessoaFisica.Controls.Add(this.groupBox1);
             this.grp_PessoaFisica.Controls.Add(this.lbl_forn_quantcarac);
             this.grp_PessoaFisica.Controls.Add(this.lbl_forn_obs);
             this.grp_PessoaFisica.Controls.Add(this.txt_forn_obs);
@@ -232,7 +239,7 @@
             this.grp_PessoaFisica.Controls.Add(this.txt_forn_nomevendedor);
             this.grp_PessoaFisica.Controls.Add(this.lbl_forn_nomevendedor);
             this.grp_PessoaFisica.Controls.Add(this.lbl_forn_skype);
-            this.grp_PessoaFisica.Controls.Add(this.txt_forn_cel);
+            this.grp_PessoaFisica.Controls.Add(this.txt_forn_celVendedor);
             this.grp_PessoaFisica.Controls.Add(this.label1);
             this.grp_PessoaFisica.Controls.Add(this.gpo_forn_Segmento);
             this.grp_PessoaFisica.Controls.Add(this.gpo_forn_tipo);
@@ -254,7 +261,7 @@
             this.grp_PessoaFisica.Controls.Add(this.txt_forn_cep);
             this.grp_PessoaFisica.Controls.Add(this.lbl_forn_Cep);
             this.grp_PessoaFisica.Controls.Add(this.txt_forn_TelVendedor);
-            this.grp_PessoaFisica.Controls.Add(this.txt_forn_Geral);
+            this.grp_PessoaFisica.Controls.Add(this.txt_forn_telGeral);
             this.grp_PessoaFisica.Controls.Add(this.lbl_TelComercial);
             this.grp_PessoaFisica.Controls.Add(this.lbl_forn_TelGeral);
             this.grp_PessoaFisica.Controls.Add(this.lbl_nomefant);
@@ -268,6 +275,53 @@
             this.grp_PessoaFisica.TabIndex = 1;
             this.grp_PessoaFisica.TabStop = false;
             this.grp_PessoaFisica.Text = "Fornecedor";
+            // 
+            // lbl_forn_quantcarac
+            // 
+            this.lbl_forn_quantcarac.AutoSize = true;
+            this.lbl_forn_quantcarac.Location = new System.Drawing.Point(6, 403);
+            this.lbl_forn_quantcarac.Name = "lbl_forn_quantcarac";
+            this.lbl_forn_quantcarac.Size = new System.Drawing.Size(168, 13);
+            this.lbl_forn_quantcarac.TabIndex = 53;
+            this.lbl_forn_quantcarac.Text = "Quantidade de caracteres:  0/300";
+            // 
+            // lbl_forn_obs
+            // 
+            this.lbl_forn_obs.AutoSize = true;
+            this.lbl_forn_obs.Location = new System.Drawing.Point(6, 290);
+            this.lbl_forn_obs.Name = "lbl_forn_obs";
+            this.lbl_forn_obs.Size = new System.Drawing.Size(70, 13);
+            this.lbl_forn_obs.TabIndex = 52;
+            this.lbl_forn_obs.Text = "Observações";
+            // 
+            // txt_forn_obs
+            // 
+            this.txt_forn_obs.AcceptsReturn = true;
+            this.txt_forn_obs.AcceptsTab = true;
+            this.txt_forn_obs.Location = new System.Drawing.Point(6, 306);
+            this.txt_forn_obs.MaxLength = 300;
+            this.txt_forn_obs.Multiline = true;
+            this.txt_forn_obs.Name = "txt_forn_obs";
+            this.txt_forn_obs.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txt_forn_obs.Size = new System.Drawing.Size(969, 94);
+            this.txt_forn_obs.TabIndex = 23;
+            this.txt_forn_obs.TextChanged += new System.EventHandler(this.txt_forn_obs_TextChanged);
+            // 
+            // cbo_forn_operadora
+            // 
+            this.cbo_forn_operadora.DataSource = this.tbl_OperadorasTelefoniaBindingSource1;
+            this.cbo_forn_operadora.DisplayMember = "Nome_Operadora";
+            this.cbo_forn_operadora.FormattingEnabled = true;
+            this.cbo_forn_operadora.Location = new System.Drawing.Point(484, 70);
+            this.cbo_forn_operadora.Name = "cbo_forn_operadora";
+            this.cbo_forn_operadora.Size = new System.Drawing.Size(89, 21);
+            this.cbo_forn_operadora.TabIndex = 7;
+            this.cbo_forn_operadora.ValueMember = "id";
+            // 
+            // tbl_OperadorasTelefoniaBindingSource1
+            // 
+            this.tbl_OperadorasTelefoniaBindingSource1.DataMember = "tbl_OperadorasTelefonia";
+            this.tbl_OperadorasTelefoniaBindingSource1.DataSource = this.gerenciaOficinaDataSet;
             // 
             // txt_forn_skype
             // 
@@ -305,13 +359,13 @@
             this.lbl_forn_skype.TabIndex = 46;
             this.lbl_forn_skype.Text = "Skype Vendedor:";
             // 
-            // txt_forn_cel
+            // txt_forn_celVendedor
             // 
-            this.txt_forn_cel.Location = new System.Drawing.Point(374, 71);
-            this.txt_forn_cel.Mask = "(99) 00000-0000";
-            this.txt_forn_cel.Name = "txt_forn_cel";
-            this.txt_forn_cel.Size = new System.Drawing.Size(104, 20);
-            this.txt_forn_cel.TabIndex = 6;
+            this.txt_forn_celVendedor.Location = new System.Drawing.Point(374, 71);
+            this.txt_forn_celVendedor.Mask = "(99) 00000-0000";
+            this.txt_forn_celVendedor.Name = "txt_forn_celVendedor";
+            this.txt_forn_celVendedor.Size = new System.Drawing.Size(104, 20);
+            this.txt_forn_celVendedor.TabIndex = 6;
             // 
             // label1
             // 
@@ -341,13 +395,13 @@
             this.rdo_forn_servicos.Name = "rdo_forn_servicos";
             this.rdo_forn_servicos.Size = new System.Drawing.Size(66, 17);
             this.rdo_forn_servicos.TabIndex = 22;
-            this.rdo_forn_servicos.TabStop = true;
             this.rdo_forn_servicos.Text = "Serviços";
             this.rdo_forn_servicos.UseVisualStyleBackColor = true;
             // 
             // rdo_forn_pecas
             // 
             this.rdo_forn_pecas.AutoSize = true;
+            this.rdo_forn_pecas.Checked = true;
             this.rdo_forn_pecas.Location = new System.Drawing.Point(7, 20);
             this.rdo_forn_pecas.Name = "rdo_forn_pecas";
             this.rdo_forn_pecas.Size = new System.Drawing.Size(55, 17);
@@ -358,15 +412,17 @@
             // 
             // gpo_forn_tipo
             // 
-            this.gpo_forn_tipo.Controls.Add(this.txt_forn_inss);
-            this.gpo_forn_tipo.Controls.Add(this.txt_forn_cpf);
+            this.gpo_forn_tipo.Controls.Add(this.lbl_forn_inscestadual);
             this.gpo_forn_tipo.Controls.Add(this.rdo_forn_juridica);
             this.gpo_forn_tipo.Controls.Add(this.rdo_forn_fisica);
+            this.gpo_forn_tipo.Controls.Add(this.txt_forn_inscestadual);
             this.gpo_forn_tipo.Controls.Add(this.txt_forn_CNPJ);
             this.gpo_forn_tipo.Controls.Add(this.lbl_forn_cnpj);
             this.gpo_forn_tipo.Controls.Add(this.lbl_forn_cpf);
             this.gpo_forn_tipo.Controls.Add(this.lbl_forn_inss);
-            this.gpo_forn_tipo.Location = new System.Drawing.Point(410, 156);
+            this.gpo_forn_tipo.Controls.Add(this.txt_forn_cpf);
+            this.gpo_forn_tipo.Controls.Add(this.txt_forn_inss);
+            this.gpo_forn_tipo.Location = new System.Drawing.Point(393, 156);
             this.gpo_forn_tipo.Name = "gpo_forn_tipo";
             this.gpo_forn_tipo.Size = new System.Drawing.Size(217, 131);
             this.gpo_forn_tipo.TabIndex = 41;
@@ -374,9 +430,28 @@
             this.gpo_forn_tipo.Text = "Tipo de Fornecedor";
             this.gpo_forn_tipo.UseCompatibleTextRendering = true;
             // 
+            // txt_forn_inss
+            // 
+            this.txt_forn_inss.Location = new System.Drawing.Point(7, 105);
+            this.txt_forn_inss.Mask = "000000000000";
+            this.txt_forn_inss.Name = "txt_forn_inss";
+            this.txt_forn_inss.Size = new System.Drawing.Size(120, 20);
+            this.txt_forn_inss.TabIndex = 33;
+            this.txt_forn_inss.Visible = false;
+            // 
+            // txt_forn_cpf
+            // 
+            this.txt_forn_cpf.Location = new System.Drawing.Point(7, 66);
+            this.txt_forn_cpf.Mask = "000.000.000-00";
+            this.txt_forn_cpf.Name = "txt_forn_cpf";
+            this.txt_forn_cpf.Size = new System.Drawing.Size(120, 20);
+            this.txt_forn_cpf.TabIndex = 32;
+            this.txt_forn_cpf.Visible = false;
+            // 
             // rdo_forn_juridica
             // 
             this.rdo_forn_juridica.AutoSize = true;
+            this.rdo_forn_juridica.Checked = true;
             this.rdo_forn_juridica.Location = new System.Drawing.Point(105, 20);
             this.rdo_forn_juridica.Name = "rdo_forn_juridica";
             this.rdo_forn_juridica.Size = new System.Drawing.Size(101, 17);
@@ -393,19 +468,17 @@
             this.rdo_forn_fisica.Name = "rdo_forn_fisica";
             this.rdo_forn_fisica.Size = new System.Drawing.Size(92, 17);
             this.rdo_forn_fisica.TabIndex = 19;
-            this.rdo_forn_fisica.TabStop = true;
             this.rdo_forn_fisica.Text = "Pessoa Física";
             this.rdo_forn_fisica.UseVisualStyleBackColor = true;
             this.rdo_forn_fisica.CheckedChanged += new System.EventHandler(this.rdo_forn_fisica_CheckedChanged);
             // 
             // txt_forn_CNPJ
             // 
-            this.txt_forn_CNPJ.Location = new System.Drawing.Point(9, 66);
+            this.txt_forn_CNPJ.Location = new System.Drawing.Point(8, 66);
             this.txt_forn_CNPJ.Mask = "00,000,000/0000-00";
             this.txt_forn_CNPJ.Name = "txt_forn_CNPJ";
             this.txt_forn_CNPJ.Size = new System.Drawing.Size(118, 20);
             this.txt_forn_CNPJ.TabIndex = 5;
-            this.txt_forn_CNPJ.Visible = false;
             // 
             // lbl_forn_cnpj
             // 
@@ -415,7 +488,6 @@
             this.lbl_forn_cnpj.Size = new System.Drawing.Size(37, 13);
             this.lbl_forn_cnpj.TabIndex = 9;
             this.lbl_forn_cnpj.Text = "CNPJ:";
-            this.lbl_forn_cnpj.Visible = false;
             // 
             // lbl_forn_cpf
             // 
@@ -439,7 +511,7 @@
             // 
             // gbo_forn_banco
             // 
-            this.gbo_forn_banco.Controls.Add(this.cbo_bancos);
+            this.gbo_forn_banco.Controls.Add(this.cbo_forn_bancos);
             this.gbo_forn_banco.Controls.Add(this.txt_forn_conta);
             this.gbo_forn_banco.Controls.Add(this.txt_forn_agencia);
             this.gbo_forn_banco.Controls.Add(this.lbl_forn_banco);
@@ -453,18 +525,18 @@
             this.gbo_forn_banco.Text = "Dados bancários";
             this.gbo_forn_banco.UseCompatibleTextRendering = true;
             // 
-            // cbo_bancos
+            // cbo_forn_bancos
             // 
-            this.cbo_bancos.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cbo_bancos.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cbo_bancos.DataSource = this.tblBancosBindingSource;
-            this.cbo_bancos.DisplayMember = "Nome_Banco";
-            this.cbo_bancos.FormattingEnabled = true;
-            this.cbo_bancos.Location = new System.Drawing.Point(7, 42);
-            this.cbo_bancos.Name = "cbo_bancos";
-            this.cbo_bancos.Size = new System.Drawing.Size(193, 21);
-            this.cbo_bancos.TabIndex = 16;
-            this.cbo_bancos.ValueMember = "id";
+            this.cbo_forn_bancos.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbo_forn_bancos.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbo_forn_bancos.DataSource = this.tblBancosBindingSource;
+            this.cbo_forn_bancos.DisplayMember = "Nome_Banco";
+            this.cbo_forn_bancos.FormattingEnabled = true;
+            this.cbo_forn_bancos.Location = new System.Drawing.Point(7, 42);
+            this.cbo_forn_bancos.Name = "cbo_forn_bancos";
+            this.cbo_forn_bancos.Size = new System.Drawing.Size(193, 21);
+            this.cbo_forn_bancos.TabIndex = 16;
+            this.cbo_forn_bancos.ValueMember = "id";
             // 
             // txt_forn_conta
             // 
@@ -549,6 +621,7 @@
             this.btn_forn_Salvar.Text = "Cadastrar Fornecedor";
             this.btn_forn_Salvar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_forn_Salvar.UseVisualStyleBackColor = true;
+            this.btn_forn_Salvar.Click += new System.EventHandler(this.btn_forn_Salvar_Click);
             // 
             // cbo_forn_cidade
             // 
@@ -671,13 +744,13 @@
             this.txt_forn_TelVendedor.Size = new System.Drawing.Size(104, 20);
             this.txt_forn_TelVendedor.TabIndex = 5;
             // 
-            // txt_forn_Geral
+            // txt_forn_telGeral
             // 
-            this.txt_forn_Geral.Location = new System.Drawing.Point(9, 71);
-            this.txt_forn_Geral.Mask = "(99) 0000-0000";
-            this.txt_forn_Geral.Name = "txt_forn_Geral";
-            this.txt_forn_Geral.Size = new System.Drawing.Size(104, 20);
-            this.txt_forn_Geral.TabIndex = 3;
+            this.txt_forn_telGeral.Location = new System.Drawing.Point(9, 71);
+            this.txt_forn_telGeral.Mask = "(99) 0000-0000";
+            this.txt_forn_telGeral.Name = "txt_forn_telGeral";
+            this.txt_forn_telGeral.Size = new System.Drawing.Size(104, 20);
+            this.txt_forn_telGeral.TabIndex = 3;
             // 
             // lbl_TelComercial
             // 
@@ -742,70 +815,56 @@
             this.txt_forn_razsoc.TabIndex = 0;
             this.txt_forn_razsoc.WordWrap = false;
             // 
-            // tbl_OperadorasTelefoniaBindingSource1
+            // groupBox1
             // 
-            this.tbl_OperadorasTelefoniaBindingSource1.DataMember = "tbl_OperadorasTelefonia";
-            this.tbl_OperadorasTelefoniaBindingSource1.DataSource = this.gerenciaOficinaDataSet;
+            this.groupBox1.Controls.Add(this.rdo_forn_inativo);
+            this.groupBox1.Controls.Add(this.Ativo);
+            this.groupBox1.Location = new System.Drawing.Point(616, 156);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(123, 131);
+            this.groupBox1.TabIndex = 42;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Status Fornecedor";
+            this.groupBox1.UseCompatibleTextRendering = true;
             // 
-            // cbo_forn_operadora
+            // Ativo
             // 
-            this.cbo_forn_operadora.DataSource = this.tbl_OperadorasTelefoniaBindingSource1;
-            this.cbo_forn_operadora.DisplayMember = "Nome_Operadora";
-            this.cbo_forn_operadora.FormattingEnabled = true;
-            this.cbo_forn_operadora.Location = new System.Drawing.Point(484, 70);
-            this.cbo_forn_operadora.Name = "cbo_forn_operadora";
-            this.cbo_forn_operadora.Size = new System.Drawing.Size(89, 21);
-            this.cbo_forn_operadora.TabIndex = 7;
-            this.cbo_forn_operadora.ValueMember = "id";
+            this.Ativo.AutoSize = true;
+            this.Ativo.Checked = true;
+            this.Ativo.Location = new System.Drawing.Point(6, 39);
+            this.Ativo.Name = "Ativo";
+            this.Ativo.Size = new System.Drawing.Size(49, 17);
+            this.Ativo.TabIndex = 0;
+            this.Ativo.TabStop = true;
+            this.Ativo.Text = "Ativo";
+            this.Ativo.UseVisualStyleBackColor = true;
             // 
-            // txt_forn_obs
+            // rdo_forn_inativo
             // 
-            this.txt_forn_obs.AcceptsReturn = true;
-            this.txt_forn_obs.AcceptsTab = true;
-            this.txt_forn_obs.Location = new System.Drawing.Point(6, 306);
-            this.txt_forn_obs.MaxLength = 300;
-            this.txt_forn_obs.Multiline = true;
-            this.txt_forn_obs.Name = "txt_forn_obs";
-            this.txt_forn_obs.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txt_forn_obs.Size = new System.Drawing.Size(969, 94);
-            this.txt_forn_obs.TabIndex = 23;
-            this.txt_forn_obs.TextChanged += new System.EventHandler(this.txt_forn_obs_TextChanged);
+            this.rdo_forn_inativo.AutoSize = true;
+            this.rdo_forn_inativo.Location = new System.Drawing.Point(6, 83);
+            this.rdo_forn_inativo.Name = "rdo_forn_inativo";
+            this.rdo_forn_inativo.Size = new System.Drawing.Size(57, 17);
+            this.rdo_forn_inativo.TabIndex = 1;
+            this.rdo_forn_inativo.Text = "Inativo";
+            this.rdo_forn_inativo.UseVisualStyleBackColor = true;
             // 
-            // lbl_forn_obs
+            // lbl_forn_inscestadual
             // 
-            this.lbl_forn_obs.AutoSize = true;
-            this.lbl_forn_obs.Location = new System.Drawing.Point(6, 290);
-            this.lbl_forn_obs.Name = "lbl_forn_obs";
-            this.lbl_forn_obs.Size = new System.Drawing.Size(70, 13);
-            this.lbl_forn_obs.TabIndex = 52;
-            this.lbl_forn_obs.Text = "Observações";
+            this.lbl_forn_inscestadual.AutoSize = true;
+            this.lbl_forn_inscestadual.Location = new System.Drawing.Point(6, 90);
+            this.lbl_forn_inscestadual.Name = "lbl_forn_inscestadual";
+            this.lbl_forn_inscestadual.Size = new System.Drawing.Size(74, 13);
+            this.lbl_forn_inscestadual.TabIndex = 34;
+            this.lbl_forn_inscestadual.Text = "Insc. Estadual";
             // 
-            // txt_forn_cpf
+            // txt_forn_inscestadual
             // 
-            this.txt_forn_cpf.Location = new System.Drawing.Point(7, 66);
-            this.txt_forn_cpf.Mask = "000.000.000-00";
-            this.txt_forn_cpf.Name = "txt_forn_cpf";
-            this.txt_forn_cpf.Size = new System.Drawing.Size(120, 20);
-            this.txt_forn_cpf.TabIndex = 32;
-            this.txt_forn_cpf.Visible = false;
-            // 
-            // txt_forn_inss
-            // 
-            this.txt_forn_inss.Location = new System.Drawing.Point(7, 105);
-            this.txt_forn_inss.Mask = "000000000000";
-            this.txt_forn_inss.Name = "txt_forn_inss";
-            this.txt_forn_inss.Size = new System.Drawing.Size(120, 20);
-            this.txt_forn_inss.TabIndex = 33;
-            this.txt_forn_inss.Visible = false;
-            // 
-            // lbl_forn_quantcarac
-            // 
-            this.lbl_forn_quantcarac.AutoSize = true;
-            this.lbl_forn_quantcarac.Location = new System.Drawing.Point(6, 403);
-            this.lbl_forn_quantcarac.Name = "lbl_forn_quantcarac";
-            this.lbl_forn_quantcarac.Size = new System.Drawing.Size(168, 13);
-            this.lbl_forn_quantcarac.TabIndex = 53;
-            this.lbl_forn_quantcarac.Text = "Quantidade de caracteres:  0/300";
+            this.txt_forn_inscestadual.Location = new System.Drawing.Point(7, 105);
+            this.txt_forn_inscestadual.Mask = "000000000000";
+            this.txt_forn_inscestadual.Name = "txt_forn_inscestadual";
+            this.txt_forn_inscestadual.Size = new System.Drawing.Size(120, 20);
+            this.txt_forn_inscestadual.TabIndex = 35;
             // 
             // frm_Cad_Fornecedor
             // 
@@ -831,13 +890,15 @@
             this.pnl_CadCliente.PerformLayout();
             this.grp_PessoaFisica.ResumeLayout(false);
             this.grp_PessoaFisica.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_OperadorasTelefoniaBindingSource1)).EndInit();
             this.gpo_forn_Segmento.ResumeLayout(false);
             this.gpo_forn_Segmento.PerformLayout();
             this.gpo_forn_tipo.ResumeLayout(false);
             this.gpo_forn_tipo.PerformLayout();
             this.gbo_forn_banco.ResumeLayout(false);
             this.gbo_forn_banco.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbl_OperadorasTelefoniaBindingSource1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -863,7 +924,7 @@
         private System.Windows.Forms.Panel pnl_CadCliente;
         public System.Windows.Forms.GroupBox grp_PessoaFisica;
         private System.Windows.Forms.Label lbl_forn_skype;
-        private System.Windows.Forms.MaskedTextBox txt_forn_cel;
+        private System.Windows.Forms.MaskedTextBox txt_forn_celVendedor;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox gpo_forn_Segmento;
         private System.Windows.Forms.RadioButton rdo_forn_servicos;
@@ -876,7 +937,7 @@
         private System.Windows.Forms.Label lbl_forn_cpf;
         private System.Windows.Forms.Label lbl_forn_inss;
         private System.Windows.Forms.GroupBox gbo_forn_banco;
-        private System.Windows.Forms.ComboBox cbo_bancos;
+        private System.Windows.Forms.ComboBox cbo_forn_bancos;
         public System.Windows.Forms.TextBox txt_forn_conta;
         public System.Windows.Forms.TextBox txt_forn_agencia;
         private System.Windows.Forms.Label lbl_forn_banco;
@@ -899,7 +960,7 @@
         private System.Windows.Forms.MaskedTextBox txt_forn_cep;
         private System.Windows.Forms.Label lbl_forn_Cep;
         private System.Windows.Forms.MaskedTextBox txt_forn_TelVendedor;
-        private System.Windows.Forms.MaskedTextBox txt_forn_Geral;
+        private System.Windows.Forms.MaskedTextBox txt_forn_telGeral;
         private System.Windows.Forms.Label lbl_TelComercial;
         private System.Windows.Forms.Label lbl_forn_TelGeral;
         private System.Windows.Forms.Label lbl_nomefant;
@@ -917,5 +978,10 @@
         private System.Windows.Forms.MaskedTextBox txt_forn_inss;
         private System.Windows.Forms.MaskedTextBox txt_forn_cpf;
         private System.Windows.Forms.Label lbl_forn_quantcarac;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton rdo_forn_inativo;
+        private System.Windows.Forms.RadioButton Ativo;
+        private System.Windows.Forms.Label lbl_forn_inscestadual;
+        private System.Windows.Forms.MaskedTextBox txt_forn_inscestadual;
     }
 }
